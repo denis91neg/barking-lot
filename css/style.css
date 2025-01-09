@@ -33560,7 +33560,7 @@ body.dark {
   background-color: rgba(0, 0, 0, 0.2);
 }
 #form-availability-submit{
-  font-weight:bold;
+  font-weight:bold !important;
 }
 
 
