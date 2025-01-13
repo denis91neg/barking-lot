@@ -7895,7 +7895,8 @@ textarea.form-control-lg {
 }
 
 .m-0 {
-  margin: 0 !important;
+  margin-left: 100px !important;
+  margin-right: 100px;
 }
 
 .m-1 {
@@ -13282,7 +13283,7 @@ textarea.form-control-lg {
   --cnvs-themecolor-rgb:	26, 188, 156;
   --bs-link-color:	var(--cnvs-themecolor);
   --bs-link-color-rgb:	var(--cnvs-themecolor-rgb);
-  --bs-link-hover-color:	var(--cnvs-heading-color);
+  --bs-link-hover-color:	var(m);
   --cnvs-white:	#fff;
   --cnvs-black:	#000;
   --cnvs-headings-font-weight:	600;
