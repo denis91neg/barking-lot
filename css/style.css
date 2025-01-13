@@ -7895,8 +7895,7 @@ textarea.form-control-lg {
 }
 
 .m-0 {
-  margin-left: 100px !important;
-  margin-right: 100px !important;
+  margin: 0;
 }
 
 .m-1 {
