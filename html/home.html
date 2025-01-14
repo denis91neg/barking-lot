@@ -4,14 +4,15 @@
 
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sideways Scrolling Logos</title>
+  <title>Full-Width Horizontal Scrolling Logos</title>
   <style>
     /* Container for the logos */
     .logo-container {
-      width: 100%;
+      width: 100%; /* Full-width */
       overflow: hidden; /* Hide any logos that overflow the container */
       white-space: nowrap; /* Prevent logos from wrapping to the next line */
       margin-top: 50px; /* Space from the top of the page */
+      position: relative; /* Ensure it's positioned properly */
     }
 
     /* The scrolling list of logos */
@@ -25,19 +26,26 @@
       display: inline-block;
       margin-right: 30px; /* Space between logos */
       width: 100px; /* Adjust logo size */
+      vertical-align: middle; /* Align logos vertically */
     }
 
-    /* Simple keyframes for the scrolling effect */
+    /* Keyframes for the scrolling effect */
     @keyframes scroll {
       0% {
-        transform: translateX(0);
+        transform: translateX(100%); /* Start from the right */
       }
       100% {
-        transform: translateX(-100%); /* Move logos to the left */
+        transform: translateX(-100%); /* Move all logos to the left */
       }
     }
-  </style>
 
+    /* Ensure the background spans the full width */
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="author" content="SemiColonWeb">
