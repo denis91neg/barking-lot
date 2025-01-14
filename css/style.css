@@ -17391,9 +17391,9 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
   justify-content: space-between;
   position: relative;
   width: 100%;
-  padding: 0 20px;
+ 
 }
-}
+
 .is-expanded-menu .header-row {
   position: initial;
 }
