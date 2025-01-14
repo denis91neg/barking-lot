@@ -17552,7 +17552,8 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
     align-items: center;
     justify-content: center; 
     max-height: 100%;
-    margin: auto;
+    margin: 0 auto;
+    flex: 0 1 auto;
 }
 #logo a {
   color: #000;
@@ -33620,6 +33621,17 @@ body {
 .logos-slide img {
   height: 50px;
   margin: 0 40px;
+}
+#header-wrap, .container-fluid {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+}
+#header-wrap, .container-fluid {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+}
+.primary-menu-trigger, .header-misc {
+  margin: 0;
 }
 
 
