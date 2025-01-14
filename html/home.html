@@ -3,43 +3,41 @@
 <head>
 
 	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* Container for the logos */
-    .logo-container {
-      width: 100%; /* Full width of the viewport */
-      overflow: hidden; /* Hide logos that are off-screen */
-      position: relative;
-      margin-top: 50px; /* Space from the top */
-    }
-
-    /* The scrolling list of logos */
-    .logo-list-wrapper {
-      display: flex; /* Use flexbox to lay out logos horizontally */
-      width: max-content; /* Allow the list to grow wider than the container */
-      animation: scroll 10s linear infinite; /* Continuous scroll animation */
-    }
-
-    /* Individual logos in the list */
-    .logo-item {
-      margin-right: 30px; /* Space between logos */
-      width: 200px; /* Adjust logo size */
-      height: 150px; /* Adjust logo size */
-      object-fit: contain; /* Ensure logos fit their container */
-    }
-
-    /* Keyframes for smooth scrolling of logos */
-    @keyframes scroll {
-      0% {
-        transform: translateX(0); /* Start position */
-      }
-      100% {
-        transform: translateX(-50%); /* Move the entire list left */
-      }
-    }
-  </style>
-</head>
-<body>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Seamless Infinite Scrolling Logos</title>
+	<style>
+	  /* Container for the logos */
+	  .logo-container {
+		width: 100%; /* Full width of the viewport */
+		overflow: hidden; /* Hide logos that are off-screen */
+		position: relative;
+		margin-top: 50px; /* Space from the top */
+	  }
+  
+	  /* The scrolling list of logos */
+	  .logo-list {
+		display: flex; /* Use flexbox to lay out logos horizontally */
+		animation: scroll 10s linear infinite; /* Continuous scroll animation */
+	  }
+  
+	  /* Individual logos in the list */
+	  .logo-item {
+		margin-right: 30px; /* Space between logos */
+		width: 200px; /* Adjust logo size */
+		height: 150px; /* Adjust logo size */
+		object-fit: contain; /* Ensure logos fit their container */
+	  }
+  
+	  /* Keyframes for smooth scrolling of logos */
+	  @keyframes scroll {
+		0% {
+		  transform: translateX(0); /* Start position */
+		}
+		100% {
+		  transform: translateX(-50%); /* Move the entire list left */
+		}
+	  }
+	</style>
 
 	</style>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
