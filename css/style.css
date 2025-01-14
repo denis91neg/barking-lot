@@ -17548,14 +17548,10 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 -----------------------------------------------------------------*/
 #logo {
   position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    max-height: 100%;
     left: 50%;
-    transform: translateX(-50%);
-    
+    transform: translateX(-50%); /* Center the logo horizontally */
 }
+
 #logo a {
   color: #000;
   font-family: var(--cnvs-primary-font);
