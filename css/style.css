@@ -33648,13 +33648,16 @@ body {
   border: none; 
   box-shadow: none; /* Remove shadows */
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){ 
   .header-row {
       display: flex;
       align-items: center;
       justify-content: space-between; /* Ensures space between logo, button, and hamburger */
      
   }
+  .header-row > * {
+    flex-shrink: 0; /* Prevent shrinking of items */
+}
 
   #logo {
       position: relative; /* Allows it to align dynamically */
@@ -33663,14 +33666,23 @@ body {
       flex-grow: 1;
       text-align: center; /* Centers the logo in its space */
   }
+  #logo img {
+    max-width: 120px; /* Adjust the logo size */
+    height: auto; /* Maintain aspect ratio */
+}
 
   .header-misc {
       flex-shrink: 0; /* Prevents the button from shrinking */
   }
+  .header-misc .button {
+    font-size: 14px; /* Reduce font size */
+    padding: 5px 10px; /* Adjust button padding */
+}
 
   .primary-menu-trigger {
-      flex-shrink: 0; /* Prevents the hamburger menu from shrinking */
-      margin-right: auto;
+    position: relative;
+    margin-right: auto; /* Pushes it to the far left */
+    margin-left: 0; /* Ensures no extra left margin */
   }
 
   .primary-menu {
@@ -33699,5 +33711,5 @@ body {
   .menu-container .menu-item {
       margin: 10px 0;
   }
-}
+  
 /*# sourceMappingURL=style.css.map */
