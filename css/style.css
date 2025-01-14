@@ -33648,4 +33648,56 @@ body {
   border: none; 
   box-shadow: none; /* Remove shadows */
 }
+@media screen and (max-width: 767px) {
+  .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Ensures space between logo, button, and hamburger */
+      padding: 0 10px;
+  }
+
+  #logo {
+      position: relative; /* Allows it to align dynamically */
+      left: auto;
+      transform: none;
+      flex-grow: 1;
+      text-align: center; /* Centers the logo in its space */
+  }
+
+  .header-misc {
+      flex-shrink: 0; /* Prevents the button from shrinking */
+  }
+
+  .primary-menu-trigger {
+      flex-shrink: 0; /* Prevents the hamburger menu from shrinking */
+      margin-right: auto;
+  }
+
+  .primary-menu {
+      display: none; /* Initially hides the navigation menu */
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 100%; /* Places the menu below the header */
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+  }
+
+  .primary-menu.open {
+      display: flex; /* Shows the menu when toggled */
+  }
+
+  .menu-container {
+      list-style: none; /* Removes dots */
+      padding: 0;
+      margin: 0;
+      text-align: center; /* Aligns the menu items */
+  }
+
+  .menu-container .menu-item {
+      margin: 10px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
