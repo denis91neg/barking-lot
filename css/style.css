@@ -17550,9 +17550,9 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 -----------------------------------------------------------------*/
 #logo {
   position: absolute;
-  left: 50%; /* Place it in the center */
-  transform: translateX(-50%); /* Adjust for width */
-  z-index: 1; /* Ensure it's on top */
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1; 
   white-space: nowrap;
 }
 
@@ -17629,9 +17629,9 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 -----------------------------------------------------------------*/
 .primary-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; /* Keeps vertical alignment consistent */
-  flex: 1;
+  flex-grow: 1;
   position: relative;
 
 }
@@ -33625,7 +33625,6 @@ body {
 }
 .menu-left, .menu-right {
   display: flex;
-  align-items: center;
   gap: 15 px;
 }
 
@@ -33636,12 +33635,12 @@ body {
   align-items: center;
 }
 .menu-left {
-  margin-right: auto !important; 
+  flex: 1; 
   justify-content: flex-end;
 }
 
 .menu-right {
-  margin-left: auto !important;
+  flex: 1;
   justify-content: flex-start; 
 }
 
