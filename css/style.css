@@ -17585,7 +17585,6 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 }
 .is-expanded-menu .full-header #logo {
   padding-right: 30px;
-  border-right: 1px solid var(--cnvs-header-border-color);
 }
 .is-expanded-menu #header.transparent-header.full-header #logo {
   border-right-color: var(--cnvs-header-transparent-border-color);
@@ -18108,7 +18107,7 @@ body:not(.is-expanded-menu) .mobile-menu-overlay .menu-container {
 .is-expanded-menu .full-header .primary-menu .menu-container {
   padding-right: 0.5rem;
   margin-right: 0.5rem;
-  border-right: 1px solid var(--cnvs-header-border-color);
+  border-right: 0px;
 }
 .is-expanded-menu .transparent-header.full-header .primary-menu .menu-container {
   border-right-color: var(--cnvs-header-transparent-border-color);
