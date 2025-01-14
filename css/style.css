@@ -17553,6 +17553,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
   left: 50%; /* Place it in the center */
   transform: translateX(-50%); /* Adjust for width */
   z-index: 1; /* Ensure it's on top */
+  white-space: nowrap;
 }
 
 #logo a {
@@ -17631,6 +17632,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
   justify-content: center;
   align-items: center; /* Keeps vertical alignment consistent */
   flex: 1;
+  position: relative;
 
 }
 .is-expanded-menu .primary-menu {
@@ -33624,6 +33626,7 @@ body {
 .menu-left, .menu-right {
   display: flex;
   align-items: center;
+  gap: 15 px;
 }
 
 .header-misc {
@@ -33633,11 +33636,13 @@ body {
   align-items: center;
 }
 .menu-left {
-  margin-right: auto !important; /* Pushes left items to the left */
+  margin-right: auto !important; 
+  justify-content: flex-end;
 }
 
 .menu-right {
-  margin-left: auto !important; /* Pushes right items to the right */
+  margin-left: auto !important;
+  justify-content: flex-start; 
 }
 
 .menu-container, #logo, .menu-left, .menu-right {
