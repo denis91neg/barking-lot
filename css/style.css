@@ -17628,7 +17628,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 -----------------------------------------------------------------*/
 .primary-menu {
   display: flex;
-  justify-content: space-between; /* Splits left and right sections */
+  justify-content: space-between !important; /* Splits left and right sections */
   align-items: center; /* Keeps vertical alignment consistent */
   flex: 1;
 
