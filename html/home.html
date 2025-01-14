@@ -2,6 +2,42 @@
 <html dir="ltr" lang="en-US">
 <head>
 
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sideways Scrolling Logos</title>
+  <style>
+    /* Container for the logos */
+    .logo-container {
+      width: 100%;
+      overflow: hidden; /* Hide any logos that overflow the container */
+      white-space: nowrap; /* Prevent logos from wrapping to the next line */
+      margin-top: 50px; /* Space from the top of the page */
+    }
+
+    /* The scrolling list of logos */
+    .logo-list {
+      display: inline-block;
+      animation: scroll 10s linear infinite; /* Infinite scrolling */
+    }
+
+    /* Individual logos in the list */
+    .logo-item {
+      display: inline-block;
+      margin-right: 30px; /* Space between logos */
+      width: 100px; /* Adjust logo size */
+    }
+
+    /* Simple keyframes for the scrolling effect */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%); /* Move logos to the left */
+      }
+    }
+  </style>
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="author" content="SemiColonWeb">
@@ -487,6 +523,19 @@
 						</div>
 					</div>
 				</div>
+					<!-- Scrolling logo list -->
+				<div class="logo-container">
+					<div class="logo-list">
+					  <!-- 7 logos (placeholders for actual logos) -->
+					  <div class="logo-item"><img src="logo1.png" alt="Logo 1" width="100"></div>
+					  <div class="logo-item"><img src="logo2.png" alt="Logo 2" width="100"></div>
+					  <div class="logo-item"><img src="logo3.png" alt="Logo 3" width="100"></div>
+					  <div class="logo-item"><img src="logo4.png" alt="Logo 4" width="100"></div>
+					  <div class="logo-item"><img src="logo5.png" alt="Logo 5" width="100"></div>
+					  <div class="logo-item"><img src="logo6.png" alt="Logo 6" width="100"></div>
+					  <div class="logo-item"><img src="logo7.png" alt="Logo 7" width="100"></div>
+					</div>
+				  </div>
 
 			</div>
 		</section><!-- #content end -->
