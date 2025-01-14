@@ -17387,11 +17387,12 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
 
 .header-row {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; /
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
   width: 100%;
-  
-  box-sizing: border-box;
+  padding: 0 20px;
+}
 }
 .is-expanded-menu .header-row {
   position: initial;
@@ -17549,8 +17550,9 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 -----------------------------------------------------------------*/
 #logo {
   position: absolute;
-    left: 50%; /* Place the logo at the center */
-    transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Ensure it overlaps other elements */
 }
 
 #logo a {
@@ -17627,8 +17629,9 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 -----------------------------------------------------------------*/
 .primary-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex: 1;
+  align-items: center;
 
 }
 .is-expanded-menu .primary-menu {
@@ -17756,9 +17759,10 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
 
 .menu-container {
   display: flex;
-  list-style: none;
+  list-style: none; /* Remove dots */
   padding: 0;
-    margin: 0;
+  margin: 0;
+  gap: 20px; /* Add spacing between items */
 }
 
 .menu-item {
@@ -33622,26 +33626,18 @@ body {
 }
 .menu-left, .menu-right {
   display: flex;
-  gap: 20px; /* Add spacing between menu items */
-  border: none;
-    box-shadow: none;
+  align-items: center;
 }
-.menu-right {
+
+.header-misc {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
 }
-.header-misc {
-  margin-left: auto; /* Push the button to the far right */
-  display: flex;
-  justify-content: flex-end; /* Align inside its container */
-}
 
-.menu-left, .menu-right, .menu-container, #logo {
-  border: none; /* Ensure no borders are applied */
-  box-shadow: none; /* Ensure no shadows are applied */
+.menu-container > li {
+  border: none; /* Remove any borders */
+  box-shadow: none; /* Remove any shadows */
 }
-.menu-container > div, #logo {
-  border: none;
-  box-shadow: none;
-}
-
 /*# sourceMappingURL=style.css.map */
