@@ -17551,6 +17551,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
     align-items: center;
     justify-content: center; 
     max-height: 100%;
+    margin: auto;
 }
 #logo a {
   color: #000;
