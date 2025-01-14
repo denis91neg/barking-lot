@@ -17386,11 +17386,12 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
 }
 
 .header-row {
-  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;;
+  justify-content: space-between; 
+  align-items: center; /
   width: 100%;
+  padding: 0 20px; 
+  box-sizing: border-box;
 }
 .is-expanded-menu .header-row {
   position: initial;
@@ -17547,9 +17548,9 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 	Logo
 -----------------------------------------------------------------*/
 #logo {
-  position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Center the logo horizontally */
+  flex: 0 0 auto; 
+  order: 2; 
+  margin: 0 auto; 
 }
 
 #logo a {
@@ -33618,20 +33619,18 @@ body {
   height: 50px;
   margin: 0 40px;
 }
-#header-wrap, .container-fluid {
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-}
-#header-wrap, .container-fluid {
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-}
 .menu-left, .menu-right {
   display: flex;
-  gap: 1rem; /* Add spacing between menu items */
+  flex: 1; /* Allow equal space distribution */
+  justify-content: flex-start; /* Align left or right content */
+  gap: 20px; /* Add spacing between menu items */
+}
+.menu-right {
+  justify-content: flex-end;
 }
 .header-misc {
-  margin-left: auto;
+  margin-left: auto; /* Pushes the button to the far right */
+  order: 3; /* Ensures it stays at the end */
 }
 
 /*# sourceMappingURL=style.css.map */
