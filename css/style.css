@@ -33653,16 +33653,18 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between; /* Ensures space between logo, button, and hamburger */
-     
+      flex-wrap: nowrap;
+
   }
   .header-row > * {
     flex-shrink: 0; /* Prevent shrinking of items */
 }
 
   #logo {
-
-      flex-grow: 1;
-      text-align: center; /* Centers the logo in its space */
+    margin: 0 auto;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
   }
   #logo img {
     max-width: 120px; /* Adjust the logo size */
@@ -33676,12 +33678,15 @@ body {
     font-size: 14px; /* Reduce font size */
     padding: 5px 10px !important; /* Adjust button padding */
 }
+.header-extras {
+  margin-left: auto;
+}
 
   .primary-menu-trigger {
     position: relative;
-    margin: 0; /* Pushes it to the far left */
-    margin-left: 0;
-    flex-shrink: 0; /* Ensures no extra left margin */
+    left: 0; /* Aligns to the left */
+    margin-right: auto;
+
   }
 
   .primary-menu {
