@@ -17390,7 +17390,7 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
   justify-content: space-between; 
   align-items: center; /
   width: 100%;
-  padding: 0 20px; 
+  
   box-sizing: border-box;
 }
 .is-expanded-menu .header-row {
@@ -17548,11 +17548,9 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 	Logo
 -----------------------------------------------------------------*/
 #logo {
-  flex: 0 0 auto; 
-  order: 2; 
-  margin: 0 auto; 
-  border: none; /* Remove any logo borders */
-    box-shadow: none; /* Remove any shadows */
+  position: absolute;
+    left: 50%; /* Place the logo at the center */
+    transform: translateX(-50%);
 }
 
 #logo a {
@@ -17629,9 +17627,9 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 -----------------------------------------------------------------*/
 .primary-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex: 1;
-  margin: 0 1rem;
+
 }
 .is-expanded-menu .primary-menu {
   flex: 0 0 auto;
@@ -17758,8 +17756,9 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
 
 .menu-container {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  list-style: none;
+  padding: 0;
+    margin: 0;
 }
 
 .menu-item {
@@ -33623,9 +33622,9 @@ body {
 }
 .menu-left, .menu-right {
   display: flex;
-  flex: 1; /* Allow equal space distribution */
-  justify-content: flex-start; /* Align left or right content */
   gap: 20px; /* Add spacing between menu items */
+  border: none;
+    box-shadow: none;
 }
 .menu-right {
   justify-content: flex-end;
@@ -33635,12 +33634,14 @@ body {
   display: flex;
   justify-content: flex-end; /* Align inside its container */
 }
-.primary-menu .menu-container {
+
+.menu-left, .menu-right, .menu-container, #logo {
   border: none; /* Ensure no borders are applied */
-  box-shadow: none; /* Remove any shadows */
+  box-shadow: none; /* Ensure no shadows are applied */
 }
-.menu-container > div {
-  border: none; /* Remove any unnecessary borders for left and right menu sections */
+.menu-container > div, #logo {
+  border: none;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */
