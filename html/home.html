@@ -3,42 +3,41 @@
 <head>
 
 	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seamless Loop Scrolling Logos</title>
-  <style>
-    /* Container for the logos */
-    .logo-container {
-      width: 100%; /* Full width */
-      overflow: hidden; /* Hide overflow */
-      white-space: nowrap; /* Prevent wrapping */
-      margin-top: 50px; /* Space from the top */
-      position: relative;
-    }
-
-    /* The scrolling list of logos */
-    .logo-list {
-      display: flex; /* Use flexbox for alignment */
-      animation: scroll 10s linear infinite; /* Smooth loop animation */
-    }
-
-    /* Individual logos in the list */
-    .logo-item {
-      margin-right: 30px; /* Space between logos */
-      width: 200px; /* Larger logo width */
-      height: 150px; /* Larger logo height */
-      object-fit: contain; /* Ensure images fit inside their box */
-    }
-
-    /* Keyframes for seamless infinite scrolling */
-    @keyframes scroll {
-      0% {
-        transform: translateX(0); /* Start at the default position */
-      }
-      100% {
-        transform: translateX(-100%); /* Scroll the entire list */
-      }
-    }
-  </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Seamless Infinite Scrolling Logos</title>
+	<style>
+	  /* Container for the logos */
+	  .logo-container {
+		width: 100%; /* Full width of the viewport */
+		overflow: hidden; /* Hide logos that are off-screen */
+		position: relative;
+		margin-top: 50px; /* Space from the top */
+	  }
+  
+	  /* The scrolling list of logos */
+	  .logo-list {
+		display: flex; /* Align logos horizontally */
+		animation: scroll 10s linear infinite; /* Continuous scroll animation */
+	  }
+  
+	  /* Individual logos in the list */
+	  .logo-item {
+		margin-right: 30px; /* Space between logos */
+		width: 200px; /* Adjust logo size */
+		height: 150px; /* Adjust logo size */
+		object-fit: contain; /* Ensure logos fit properly */
+	  }
+  
+	  /* Keyframes for smooth scrolling of logos */
+	  @keyframes scroll {
+		0% {
+		  transform: translateX(0); /* Start position */
+		}
+		100% {
+		  transform: translateX(-100%); /* Move the entire list left */
+		}
+	  }
+	</style>
 	  }
   
 	  /* Reset body and html */
