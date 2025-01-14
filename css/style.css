@@ -33660,15 +33660,13 @@ body {
 }
 
   #logo {
-      position: relative; /* Allows it to align dynamically */
-      left: auto;
-      transform: none;
+
       flex-grow: 1;
       text-align: center; /* Centers the logo in its space */
   }
   #logo img {
     max-width: 120px; /* Adjust the logo size */
-    height: auto; /* Maintain aspect ratio */
+    height: auto !important; /* Maintain aspect ratio */
 }
 
   .header-misc {
@@ -33676,13 +33674,14 @@ body {
   }
   .header-misc .button {
     font-size: 14px; /* Reduce font size */
-    padding: 5px 10px; /* Adjust button padding */
+    padding: 5px 10px !important; /* Adjust button padding */
 }
 
   .primary-menu-trigger {
     position: relative;
-    margin-right: auto; /* Pushes it to the far left */
-    margin-left: 0; /* Ensures no extra left margin */
+    margin: 0; /* Pushes it to the far left */
+    margin-left: 0;
+    flex-shrink: 0; /* Ensures no extra left margin */
   }
 
   .primary-menu {
@@ -33711,5 +33710,5 @@ body {
   .menu-container .menu-item {
       margin: 10px 0;
   }
-  
+}
 /*# sourceMappingURL=style.css.map */
