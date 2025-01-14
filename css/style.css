@@ -33633,11 +33633,11 @@ body {
   align-items: center;
 }
 .menu-left {
-  margin-right: auto; /* Pushes left items to the left */
+  margin-right: auto !important; /* Pushes left items to the left */
 }
 
 .menu-right {
-  margin-left: auto; /* Pushes right items to the right */
+  margin-left: auto !important; /* Pushes right items to the right */
 }
 
 .menu-container, #logo, .menu-left, .menu-right {
