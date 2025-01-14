@@ -2,41 +2,60 @@
 <html dir="ltr" lang="en-US">
 <head>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Seamless Infinite Scrolling Logos</title>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<style>
-	  /* Container for the logos */
-	  .logo-container {
-		width: 100%; /* Full width of the viewport */
-		overflow: hidden; /* Hide logos that are off-screen */
-		position: relative;
-		margin-top: 50px; /* Space from the top */
-	  }
-  
-	  /* The scrolling list of logos */
-	  .logo-list {
-		display: flex; /* Use flexbox to lay out logos horizontally */
-		animation: scroll 10s linear infinite; /* Continuous scroll animation */
-	  }
-  
-	  /* Individual logos in the list */
-	  .logo-item {
-		margin-right: 30px; /* Space between logos */
-		width: 200px; /* Adjust logo size */
-		height: 150px; /* Adjust logo size */
-		object-fit: contain; /* Ensure logos fit their container */
-	  }
-  
-	  /* Keyframes for smooth scrolling of logos */
-	  @keyframes scroll {
-		0% {
-		  transform: translateX(0); /* Start position */
-		}
-		100% {
-		  transform: translateX(-50%); /* Move the entire list left */
-		}
-	  }
+	 @keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
 	</style>
 
 	</style>
@@ -526,21 +545,24 @@
 					</div>
 				</div>
 					<!-- Scrolling logo list -->
-				<div class="logo-container">
-					<div class="logo-list">
+				<div class="logos">
+					<div class="logos-slide">
 					  <!-- 7 logos (placeholders for actual logos) -->
-					  <div class="logo-item"><img src="../images/logos/Hills-Logo.png" alt="Logo 1" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/Royal-Canin-Logo.png" alt="Logo 2" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/hunter-logo.png" alt="Logo 3" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/iodogs-logo.png" alt="Logo 4" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/mm-logo.png" alt="Logo 5" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/pawfume-logo.png" alt="Logo 6" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/Hills-Logo.png" alt="Logo 1" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/Royal-Canin-Logo.png" alt="Logo 2" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/hunter-logo.png" alt="Logo 3" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/iodogs-logo.png" alt="Logo 4" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/mm-logo.png" alt="Logo 5" width="100"></div>
-					  <div class="logo-item"><img src="../images/logos/pawfume-logo.png" alt="Logo 6" width="100"></div>
+					  <div class="logos"><img src="../images/logos/Hills-Logo.png" alt="Logo 1" width="100"></div>
+					  <div class="logos"><img src="../images/logos/Royal-Canin-Logo.png" alt="Logo 2" width="100"></div>
+					  <div class="logos"><img src="../images/logos/hunter-logo.png" alt="Logo 3" width="100"></div>
+					  <div class="logos"><img src="../images/logos/iodogs-logo.png" alt="Logo 4" width="100"></div>
+					  <div class="logos"><img src="../images/logos/mm-logo.png" alt="Logo 5" width="100"></div>
+					  <div class="logos"><img src="../images/logos/pawfume-logo.png" alt="Logo 6" width="100"></div>
+					  </div>
+					  <div class="logo-slide">
+					  <div class="logos"><img src="../images/logos/Hills-Logo.png" alt="Logo 1" width="100"></div>
+					  <div class="logos"><img src="../images/logos/Royal-Canin-Logo.png" alt="Logo 2" width="100"></div>
+					  <div class="logos"><img src="../images/logos/hunter-logo.png" alt="Logo 3" width="100"></div>
+					  <div class="logos"><img src="../images/logos/iodogs-logo.png" alt="Logo 4" width="100"></div>
+					  <div class="logos"><img src="../images/logos/mm-logo.png" alt="Logo 5" width="100"></div>
+					  <div class="logos"><img src="../images/logos/pawfume-logo.png" alt="Logo 6" width="100"></div>
+					
 					</div>
 					</div>
 				  </div>
