@@ -17552,7 +17552,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
   position: absolute;
   left: 50%; /* Place it in the center */
   transform: translateX(-50%); /* Adjust for width */
-  z-index: 10; /* Ensure it's on top */
+  z-index: 1; /* Ensure it's on top */
 }
 
 #logo a {
@@ -17628,7 +17628,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 -----------------------------------------------------------------*/
 .primary-menu {
   display: flex;
-  justify-content: space-between !important; /* Splits left and right sections */
+  justify-content: center;
   align-items: center; /* Keeps vertical alignment consistent */
   flex: 1;
 
@@ -33631,6 +33631,13 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+.menu-left {
+  margin-right: auto; /* Pushes left items to the left */
+}
+
+.menu-right {
+  margin-left: auto; /* Pushes right items to the right */
 }
 
 .menu-container, #logo, .menu-left, .menu-right {
