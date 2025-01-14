@@ -17389,7 +17389,7 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;;
   flex-wrap: wrap;
 }
 .is-expanded-menu .header-row {
@@ -17553,7 +17553,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
     justify-content: center; 
     max-height: 100%;
     margin: 0 auto;
-    flex: 0 1 auto;
+    flex: 1;
 }
 #logo a {
   color: #000;
@@ -33631,6 +33631,7 @@ body {
   justify-content: center; /* Center content horizontally */
 }
 .primary-menu-trigger, .header-misc {
+  flex 0;
   margin: 0;
 }
 
