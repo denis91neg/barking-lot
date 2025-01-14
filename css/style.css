@@ -17551,6 +17551,8 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
   flex: 0 0 auto; 
   order: 2; 
   margin: 0 auto; 
+  border: none; /* Remove any logo borders */
+    box-shadow: none; /* Remove any shadows */
 }
 
 #logo a {
@@ -33629,8 +33631,16 @@ body {
   justify-content: flex-end;
 }
 .header-misc {
-  margin-left: auto; /* Pushes the button to the far right */
-  order: 3; /* Ensures it stays at the end */
+  margin-left: auto; /* Push the button to the far right */
+  display: flex;
+  justify-content: flex-end; /* Align inside its container */
+}
+.primary-menu .menu-container {
+  border: none; /* Ensure no borders are applied */
+  box-shadow: none; /* Remove any shadows */
+}
+.menu-container > div {
+  border: none; /* Remove any unnecessary borders for left and right menu sections */
 }
 
 /*# sourceMappingURL=style.css.map */
