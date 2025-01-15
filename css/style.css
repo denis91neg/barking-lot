@@ -17486,7 +17486,7 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
   --cnvs-header-sticky-bg: rgba(var(--cnvs-invert-contrast-rgb),0.7);
 }
 .is-expanded-menu .sticky-header.full-header #header-wrap {
-  border-bottom: 1px solid var(--cnvs-header-border-color);
+  border-bottom: none;
 }
 .is-expanded-menu .sticky-header-shrink .style-3 .menu-container > .menu-item > .menu-link {
   --cnvs-primary-menu-padding-y: 19px;
