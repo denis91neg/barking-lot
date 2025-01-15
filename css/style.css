@@ -17583,7 +17583,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
   }
 }
 #header-wrap #logo img {
-  height: 1.5em;
+  height: 3em;
 }
 .is-expanded-menu .full-header #logo {
   padding-right: 0;
@@ -22913,9 +22913,7 @@ td.actions {
   /* Buttons - Icon Reveal
   -----------------------------------------------------------------*/
 }
-.button:hover {
-color: #1D3557;
-}
+
 .button[class*=bg-opacity-] {
   --cnvs-btn-color: rgba(var(--cnvs-themecolor-rgb),var(--bs-bg-opacity, 1));
 }
@@ -22941,11 +22939,11 @@ color: #1D3557;
   color: var(--cnvs-btn-color-dark);
 }
 .button:hover {
-  background-color: var(--cnvs-btn-color-dark);
-  color: #fff;
+  background-color: var(--cnvs-btn-color-hover);
+  color: #1D3557;
 }
 .button.button-dark:hover {
-  background-color: var(--cnvs-btn-color);
+  background-color: var(--cnvs-btn-color-hover);
 }
 .button.button-mini {
   --cnvs-btn-padding-x: 0.875rem;
@@ -33652,7 +33650,7 @@ body {
   border: none; 
   box-shadow: none; /* Remove shadows */
 }
-@media screen and (max-width: 767px){ 
+@media screen and (max-width: 1024px){ 
   .header-row {
     display: flex;
     align-items: center;
