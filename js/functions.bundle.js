@@ -1852,6 +1852,10 @@ if( typeof jQuery !== 'undefined' ) {
 							body.remove("primary-menu-open");
 						})
 					});
+					if (!document.querySelector('.primary-menu-trigger-active')) {
+						body.classList.remove('primary-menu-open');
+					}
+				}
 
 
 					triggers.forEach( function(trigger) {
@@ -2037,13 +2041,21 @@ if( typeof jQuery !== 'undefined' ) {
 						if( !body.contains('is-expanded-menu') ) {
 							__core.getVars.elPrimaryMenus.forEach( function(el) {
 								if( el.querySelectorAll('.mobile-primary-menu').length > 0 ) {
-									el.matches(elTarget) && el.querySelectorAll('.mobile-primary-menu').forEach( function(elem) {
-										elem.classList.toggle('d-block');
-									});
+									if (el.matches(elTarget)) {
+										el.querySelectorAll('.mobile-primary-menu').forEach(function (elem) {
+											// Log a warning if the menu content is empty
+											if (!elem.innerHTML.trim()) {
+												console.warn('Mobile primary menu is empty. Verify content rendering.');
+											}
+											elem.classList.toggle('d-block');
+										});
+									}
+								}
 								} else {
-									el.matches(elTarget) && el.querySelectorAll('.menu-container').forEach( function(elem) {
-										elem.classList.toggle('d-block');
-									});
+									if (el.matches(elTarget)) {
+										el.querySelectorAll('.menu-container').forEach(function (elem) {
+											elem.classList.toggle('d-block');
+										});
 								}
 							});
 						}
@@ -2053,7 +2065,7 @@ if( typeof jQuery !== 'undefined' ) {
 							elem.matches(elTarget) && elem.classList.toggle('primary-menu-active');
 						});
 
-						body.toggle('primary-menu-open');
+						body.classList.toggle('primary-menu-open');
 
 						if( elTarget != '*' ) {
 							body.toggle('primary-menu-open-' + elTarget.replace(/[^a-zA-Z0-9-]/g, ""));
