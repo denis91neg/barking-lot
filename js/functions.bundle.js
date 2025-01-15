@@ -1853,7 +1853,6 @@ if( typeof jQuery !== 'undefined' ) {
 						})
 					});
 
-
 					triggers.forEach( function(trigger) {
 						trigger.onclick = function(e) {
 							e.preventDefault();
