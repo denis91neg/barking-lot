@@ -1844,14 +1844,10 @@ if( typeof jQuery !== 'undefined' ) {
 				/**
 				 * Mobile Menu Functionality
 				 */
-				if( !body.contains('is-expanded-menu') ) {
-					// Reset Menus to their Closed State
-					__core.getVars.elPrimaryMenus.forEach( function(el) {
-						el.querySelectorAll(subMenusSel).forEach( function(elem) {
-							elem.classList.add('d-none');
-							body.remove("primary-menu-open");
-						})
-					});
+				if (!body.classList.contains('primary-menu-trigger-active')) {
+					elem.classList.add('d-none');
+					body.classList.remove('primary-menu-open');
+				}
 
 					triggers.forEach( function(trigger) {
 						trigger.onclick = function(e) {
@@ -2029,7 +2025,11 @@ if( typeof jQuery !== 'undefined' ) {
 
 						var elTarget = menuTrigger.getAttribute( 'data-target' ) || '*';
 
-						if( __core.filtered( __core.getVars.elPrimaryMenus, elTarget ).length < 1 ) {
+						const targetMenus = Array.from(__core.getVars.elPrimaryMenus).filter(function (el) {
+							return el.matches(elTarget);
+						});
+						if (targetMenus.length < 1) {
+							console.error("No matching menu elements found for target: " + elTarget);
 							return;
 						}
 
@@ -2052,7 +2052,7 @@ if( typeof jQuery !== 'undefined' ) {
 							elem.matches(elTarget) && elem.classList.toggle('primary-menu-active');
 						});
 
-						body.toggle('primary-menu-open');
+						body.classList.toggle('primary-menu-open');
 
 						if( elTarget != '*' ) {
 							body.toggle('primary-menu-open-' + elTarget.replace(/[^a-zA-Z0-9-]/g, ""));
