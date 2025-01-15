@@ -17583,10 +17583,10 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
   }
 }
 #header-wrap #logo img {
-  height: var(--cnvs-header-height);
+  height: 1.5em;
 }
 .is-expanded-menu .full-header #logo {
-  padding-right: 30px;
+  padding-right: 0;
 }
 .is-expanded-menu #header.transparent-header.full-header #logo {
   border-right-color: var(--cnvs-header-transparent-border-color);
@@ -17725,7 +17725,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
 .cnvs-hamburger .cnvs-hamburger-inner, .cnvs-hamburger .cnvs-hamburger-inner::before, .cnvs-hamburger .cnvs-hamburger-inner::after {
   width: var(--cnvs-hamburger-size);
   height: var(--cnvs-hamburger-width);
-  background-color: var(--cnvs-contrast-900);
+  background-color: #ECEFF4;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
@@ -22912,6 +22912,9 @@ td.actions {
   -----------------------------------------------------------------*/
   /* Buttons - Icon Reveal
   -----------------------------------------------------------------*/
+}
+.button:hover {
+color: #1D3557;
 }
 .button[class*=bg-opacity-] {
   --cnvs-btn-color: rgba(var(--cnvs-themecolor-rgb),var(--bs-bg-opacity, 1));
@@ -33667,6 +33670,7 @@ body {
     flex: 1; /* Allows the logo to take equal space */
     text-align: center; /* Centers the logo in its area */
     height: auto; /* Maintain aspect ratio */
+    padding-right: 1.6em;
   }
   #logo img {
     max-width: 120px; /* Adjust the logo size */
