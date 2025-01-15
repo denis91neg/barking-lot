@@ -17304,8 +17304,8 @@ img.lazy:not([src]) {
   /*  Side Header */
   --cnvs-side-header-padding-gutters:	30px;
   /*  Primary Menu */
-  --cnvs-primary-menu-color:	var(--cnvs-contrast-900);
-  --cnvs-primary-menu-hover-color: var(--cnvs-themecolor);
+  --cnvs-primary-menu-color:	#ECEFF4;
+  --cnvs-primary-menu-hover-color: #B0BEC5;
   --cnvs-primary-menu-active-color:	var(--cnvs-primary-menu-hover-color);
   --cnvs-primary-menu-font:	var(--cnvs-primary-font);
   --cnvs-primary-menu-font-weight:	700;
@@ -22903,7 +22903,7 @@ td.actions {
   text-align: center;
   background-color: var(--cnvs-btn-color);
   color: #ECEFF4;
-  font-weight: 600;
+  font-weight: 600 !important;
   border: var(--cnvs-btn-border-width) solid transparent;
   transition: all 0.2s ease-in-out;
   /* Buttons - Border
@@ -33656,6 +33656,7 @@ body {
     justify-content: space-between; /* Spread out the items */
     position: relative;
     width: 100%;
+    height: 5em;
 
   }
   .header-row > * {
@@ -33678,7 +33679,7 @@ body {
 }
   .header-misc .button {
     font-size: 16px; /* Reduce font size */
-    padding: 12px 10px !important; /* Adjust button padding */
+    padding: 1.67em 10px !important; /* Adjust button padding */
 }
 .header-extras {
   margin-left: auto;
