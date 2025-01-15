@@ -33665,7 +33665,6 @@ body {
   #logo {
     flex: 1; /* Allows the logo to take equal space */
     text-align: center; /* Centers the logo in its area */
-    max-width: 100px; /* Adjust logo size */
     height: auto; /* Maintain aspect ratio */
   }
   #logo img {
