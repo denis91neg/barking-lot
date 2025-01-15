@@ -33662,12 +33662,10 @@ body {
 }
 
   #logo {
-    position: absolute;
-    left: 50%; /* Center the logo horizontally */
-    transform: translateX(-50%); /* Adjust for its width */
-    text-align: center;
+    flex: 1; /* Allows the logo to take equal space */
+    text-align: center; /* Centers the logo in its area */
     max-width: 100px; /* Adjust logo size */
-    height: auto;
+    height: auto; /* Maintain aspect ratio */
   }
   #logo img {
     max-width: 120px; /* Adjust the logo size */
@@ -33675,7 +33673,7 @@ body {
 }
 
 .header-misc {
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0 0 auto; /* Prevent shrinking */
   margin-left: auto; /* Push the button to the far right */
 }
   .header-misc .button {
@@ -33687,7 +33685,7 @@ body {
 }
 
   .primary-menu-trigger {
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-shrink: 0 0 auto; /* Prevent shrinking */
     margin-right: auto; /* Push the menu trigger to the far left */
   }
 
