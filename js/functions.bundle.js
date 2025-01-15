@@ -1852,8 +1852,6 @@ if( typeof jQuery !== 'undefined' ) {
 							body.remove("primary-menu-open");
 						})
 					});
-					
-				}
 
 
 					triggers.forEach( function(trigger) {
