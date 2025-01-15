@@ -33704,9 +33704,6 @@ body {
       z-index: 1000;
   }
 
-  .primary-menu-open {
-      display: flex; /* Shows the menu when toggled */
-  }
 
   .menu-container {
       list-style: none; /* Removes dots */
