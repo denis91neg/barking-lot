@@ -216,7 +216,7 @@ body:not(.form-availability-processing) .form-availability-loader { display: non
 	}
 
 	.menu-item.active > .menu-link,
-	.menu-item.current > .menu-link { color: var(--cnvs-themecolor, #FD5C63); }
+	.menu-item.current > .menu-link { color: var(--cnvs-primary-menu-active-color, #b0bec5); }
 
 	.menu-item.menu-link:hover::after,
 	.menu-item.active > .menu-link::after,

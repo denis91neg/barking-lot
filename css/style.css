@@ -33650,7 +33650,7 @@ body {
   border: none; 
   box-shadow: none; /* Remove shadows */
 }
-@media screen and (max-width: 1024px){ 
+@media screen and (max-width: 992px){ 
   .header-row {
     display: flex;
     align-items: center;
