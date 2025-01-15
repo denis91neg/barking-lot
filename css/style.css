@@ -33650,10 +33650,11 @@ body {
 }
 @media screen and (max-width: 767px){ 
   .header-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; /* Ensures space between logo, button, and hamburger */
-      flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread out the items */
+    position: relative;
+    width: 100%;
 
   }
   .header-row > * {
@@ -33661,32 +33662,33 @@ body {
 }
 
   #logo {
-    margin: 0 auto;
-    transform: translateX(-50%);
     position: absolute;
-    left: 50%;
+    left: 50%; /* Center the logo horizontally */
+    transform: translateX(-50%); /* Adjust for its width */
+    text-align: center;
+    max-width: 100px; /* Adjust logo size */
+    height: auto;
   }
   #logo img {
     max-width: 120px; /* Adjust the logo size */
     height: auto !important; /* Maintain aspect ratio */
 }
 
-  .header-misc {
-      flex-shrink: 0; /* Prevents the button from shrinking */
-  }
+.header-misc {
+  flex-shrink: 0; /* Prevent shrinking */
+  margin-left: auto; /* Push the button to the far right */
+}
   .header-misc .button {
-    font-size: 14px; /* Reduce font size */
-    padding: 5px 10px !important; /* Adjust button padding */
+    font-size: 16px; /* Reduce font size */
+    padding: 12px 10px !important; /* Adjust button padding */
 }
 .header-extras {
   margin-left: auto;
 }
 
   .primary-menu-trigger {
-    position: relative;
-    left: 0; /* Aligns to the left */
-    margin-right: auto;
-
+    flex-shrink: 0; /* Prevent shrinking */
+    margin-right: auto; /* Push the menu trigger to the far left */
   }
 
   .primary-menu {
