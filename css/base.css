@@ -208,7 +208,7 @@ body:not(.form-availability-processing) .form-availability-loader { display: non
 		top: -2px;
 		width: 100%;
 		transform: scaleX(0);
-		border-bottom: 3px solid var(--cnvs-themecolor, #FD5C63);
+		border-bottom: 3px solid var(--cnvs-primary-menu-active-color, #b0bec5);
 		transform-origin: 0 100%;
 		-webkit-transition: all .25s cubic-bezier(.02, .01, .5, 1);
 			-o-transition: all .25s cubic-bezier(.02, .01, .5, 1);
