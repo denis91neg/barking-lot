@@ -17636,7 +17636,8 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
   position: relative;
 
 }
-.is-expanded-menu .primary-menu {
+.primary-menu.is-expanded-menu {
+  display: block; /* or flex, depending on your desired layout */
   flex: 0 0 auto;
   flex-grow: 0;
 }
