@@ -22908,6 +22908,7 @@ td.actions {
   font-weight: 600 !important;
   border: var(--cnvs-btn-border-width) solid transparent;
   transition: all 0.2s ease-in-out;
+  border-radius: 10px;
   /* Buttons - Border
   -----------------------------------------------------------------*/
   /* Buttons - 3D
@@ -22943,6 +22944,7 @@ td.actions {
 .button:hover {
   background-color: var(--cnvs-btn-color-hover) !important;
   color: #1D3557;
+  box-shadow: 0px 8px 12px rgba(29, 53, 87, 0.3);
 }
 .button.button-dark:hover {
   background-color: var(--cnvs-btn-color-hover);
