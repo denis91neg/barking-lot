@@ -33717,5 +33717,8 @@ body {
   .menu-container .menu-item {
       margin: 10px 0;
   }
+  .menu-item.current{
+    text-decoration: underline 3px #B0BEC5;
+  }
 }
 /*# sourceMappingURL=style.css.map */
