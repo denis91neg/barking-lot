@@ -17351,7 +17351,6 @@ img.lazy:not([src]) {
   z-index: 299;
   width: 100%;
   background-color: var(--cnvs-header-bg);
-  border-bottom: 1px solid var(--cnvs-header-border-color);
   transition: height 0.2s ease 0s, background-color 0.3s ease 0s;
   backface-visibility: hidden;
 }
