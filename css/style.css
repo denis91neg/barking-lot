@@ -33725,7 +33725,7 @@ body {
   bottom: 0;
   margin-left: 2.5rem;
   width: 33.33333%;
-  background-image: linear-gradient(to right, var(--gradient-stops))
+  background-image: linear-gradient(to right, #f0faff, rgba(240, 250, 255, 0));
 }
 .logo-slider.gradient.right{
   pointer-events: none;
@@ -33734,6 +33734,6 @@ body {
   bottom: 0;
   margin-right: 2.5rem;
   width: 33.33333%;
-  background-image: linear-gradient(to right, var(--gradient-stops))
+  background-image: linear-gradient(to right, #f0faff, rgba(240, 250, 255, 0));
 }
 /*# sourceMappingURL=style.css.map */
