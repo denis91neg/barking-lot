@@ -17379,7 +17379,7 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) #header-wrap 
 }
 
 body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-clone {
-  display: none;
+  display: flex;
 }
 
 .header-wrap-clone {
