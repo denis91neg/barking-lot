@@ -24633,7 +24633,7 @@ td.actions {
 .i-plain,
 .i-bordered,
 .social-icon {
-  --cnvs-i-color: var(--cnvs-white);
+  --cnvs-i-color: #ECEFF4 !important;
   text-align: center !important;
   font-size: var(--cnvs-i-fontsize);
   color: var(--cnvs-i-color);
@@ -33592,6 +33592,12 @@ body {
   background: white;
   white-space: nowrap;
   position: relative;
+  width: 90vw;
+  height: 10vh;
+  max-width: 970px;
+  max-height: 116px;
+  display: flex;
+  gap: 5rem
 }
 
 .logos:before,
@@ -33620,7 +33626,7 @@ body {
 
 .logos-slide {
   display: inline-block;
-  animation: 35s slide infinite linear;
+  animation: 18s slide infinite linear;
 }
 
 .logos-slide img {
