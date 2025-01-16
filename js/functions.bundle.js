@@ -1,7 +1,15 @@
 if( typeof jQuery !== 'undefined' ) {
 	var $ = jQuery.noConflict();
 }
+document.addEventListener('DOMContentLoaded', () => {
+	// Your code here
+	const triggerButton = document.querySelector('.cnvs-hamburger-box');
+	const primaryMenu = document.querySelector('.primary-menu');
 
+	triggerButton.addEventListener('click', () => {
+	  primaryMenu.classList.toggle('is-expanded-menu');
+	});
+  });
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
