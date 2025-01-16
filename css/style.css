@@ -33705,4 +33705,35 @@ body {
   display: flex;
   flex-shrink: 0;
 }
+@media (min-width: 768px ){
+  .logo-slider.gradient.left{
+    margin-left: 0;
+  }
+  .logo-slider.gradient.right{
+    margin-right: 0;
+  }
+}
+.logo-slider-gradient{
+  --gradient-from: #f0faff;
+  --gradeint-to: rgba(240, 250, 255, 0);
+  --gradient-stops: var(--gradient-from), var(--gradeint-to);
+}
+.logo-slider.gradient.left{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: 2.5rem;
+  width: 33.33333%;
+  background-image: linear-gradient(to right, var(--gradient-stops))
+}
+.logo-slider.gradient.right{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-right: 2.5rem;
+  width: 33.33333%;
+  background-image: linear-gradient(to right, var(--gradient-stops))
+}
 /*# sourceMappingURL=style.css.map */
