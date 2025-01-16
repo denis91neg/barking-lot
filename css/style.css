@@ -33571,53 +33571,7 @@ body {
   background: #f2f2f2;
 }
 
-@keyframes slides {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
 
-.logos {
-  overflow: hidden;
-  padding: 30px 0px;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos:before, .logos:after {
-  position: absolute;
-  top: 0;
-  content: '';
-  width: 250px;
-  height: 100%;
-  z-index: 2;
-}
-
-.logos:before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
-}
-
-.logos:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
-}
-
-.logo_items {
-  display: inline-block;
-  animation: 35s slides infinite linear;
-}
-
-.logos:hover .logo_items {
-  animation-play-state: paused;
-}
-
-.logo_items img{
-  height: 100px;
-}
 .menu-left, .menu-right {
   display: flex;
   gap: 15 px;
@@ -33708,15 +33662,18 @@ body {
   .is-expanded-menu .menu-link {
     --cnvs-primary-menu-padding-y: 0.6em;
   }
-  @keyframes marquee{
-    0%{
-      transform: translateX(0);
-    }
-    100%{
-      transform: translateX(calc(-100% - 5rem));
-    }
+ 
+}
+
+@keyframes marquee{
+  0%{
+    transform: translateX(0);
   }
-} 
+  100%{
+    transform: translateX(calc(-100% - 5rem));
+  }
+}
+
   .logo-slider{
     position: relative;
     text-align: center;
