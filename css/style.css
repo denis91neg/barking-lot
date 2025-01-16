@@ -17379,7 +17379,7 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) #header-wrap 
 }
 
 body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-clone {
-  display: flex;
+  display: none;
 }
 
 .header-wrap-clone {
@@ -17831,9 +17831,10 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
   letter-spacing: var(--cnvs-primary-menu-ls);
 }
 .is-expanded-menu .menu-link {
-  --cnvs-primary-menu-padding-y: 1em;
+  --cnvs-primary-menu-padding-y: 0.6em;
   --cnvs-primary-menu-padding-x: 15px;
   transition: margin 0.4s ease, padding 0.4s ease;
+  font-size: 0.46em;
 }
 @media (prefers-reduced-motion: reduce) {
   .is-expanded-menu .menu-link {
@@ -33709,7 +33710,8 @@ body {
       list-style: none; /* Removes dots */
       padding: 0;
       margin: 0;
-      text-align: center; /* Aligns the menu items */
+      text-align: left; /* Aligns the menu items */
+      
   }
 
   .menu-container .menu-item {
