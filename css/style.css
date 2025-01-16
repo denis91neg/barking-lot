@@ -33745,5 +33745,7 @@ body {
   justify-content: space-around;
   flex-direction: row;
   animation: marquee 20s linear infinite;
+  display: flex;
+  flex-shrink: 0;
 }
 /*# sourceMappingURL=style.css.map */
