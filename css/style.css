@@ -33732,6 +33732,7 @@ body {
 }
 .logo-slider.basic{
   gap: 5rem;
+  animation-name: marquee;
   animation-duration: 20s;
   padding: .5rem;
   overflow: hidden;
