@@ -33627,6 +33627,7 @@ body {
 .logos-slide {
   display: inline-block;
   animation: 18s slide infinite linear;
+  animation-fill-mode: both;
 }
 
 .logos-slide img {
