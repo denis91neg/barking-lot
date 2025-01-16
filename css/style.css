@@ -81,7 +81,7 @@
   --bs-danger-border-subtle: #f1aeb5;
   --bs-light-border-subtle: #e9ecef;
   --bs-dark-border-subtle: #adb5bd;
-  --bs-white-rgb: 255, 255, 255;
+  --bs-white-rgb: 236, 239, 244;
   --bs-black-rgb: 0, 0, 0;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -22888,7 +22888,7 @@ td.actions {
   --cnvs-btn-color: #1D3557;
   --cnvs-btn-color-dark: #DCE2E8;
   --cnvs-btn-color-light: #8D99AE;
-  --cnvs-btn-color-hover: var(--cnvs-btn-color-dark);
+  --cnvs-btn-color-hover: #DCE2E8;
   --cnvs-btn-lineheight: calc(var(--cnvs-btn-fontsize) * 1.6);
   --cnvs-btn-border-width: 1px;
   --cnvs-btn-icon-margin: 10px;
@@ -29869,7 +29869,7 @@ form .form-group {
   --cnvs-input-btn-font-weight: 400;
   --cnvs-input-btn-line-height: 1.5;
   --cnvs-input-btn-input-color: var(--bs-body-color);
-  --cnvs-input-btn-input-bg: var(--bs-body-bg);
+  --cnvs-input-btn-input-bg: #ECEFF4;
   --cnvs-form-control-radius: var(--bs-border-radius);
   --cnvs-input-btn-border-width: var(--bs-border-width);
   --cnvs-input-btn-border-color: var(--bs-border-color);
