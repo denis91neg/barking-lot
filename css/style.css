@@ -22941,7 +22941,7 @@ td.actions {
   color: var(--cnvs-btn-color-dark);
 }
 .button:hover {
-  background-color: var(--cnvs-btn-color-hover);
+  background-color: var(--cnvs-btn-color-hover) !important;
   color: #1D3557;
 }
 .button.button-dark:hover {
