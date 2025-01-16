@@ -9199,7 +9199,7 @@ textarea.form-control-lg {
 }
 
 .rounded-0 {
-  border-radius: 0 !important;
+  border-radius: 10 !important;
 }
 
 .rounded-1 {
