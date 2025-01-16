@@ -17834,7 +17834,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
   --cnvs-primary-menu-padding-y: 0.6em;
   --cnvs-primary-menu-padding-x: 15px;
   transition: margin 0.4s ease, padding 0.4s ease;
-  font-size: 0.46em;
+  
 }
 @media (prefers-reduced-motion: reduce) {
   .is-expanded-menu .menu-link {
@@ -33718,7 +33718,9 @@ body {
       margin: 10px 0;
   }
   .menu-item.current{
-    text-decoration: underline 3px #B0BEC5;
+    text-decoration: underline 3px #B0BEC5;}
+  .menu-link{
+    font-size: 0.46em;
   }
 }
 /*# sourceMappingURL=style.css.map */
