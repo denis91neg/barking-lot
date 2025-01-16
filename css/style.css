@@ -8784,7 +8784,7 @@ textarea.form-control-lg {
 
 .text-dark {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+  color: #1B2B45, var(--bs-text-opacity)) !important;
 }
 
 .text-black {
@@ -13488,7 +13488,7 @@ textarea.form-control-lg {
   --cnvs-font-size-h2:	1.875rem;
   --cnvs-font-size-h3:	1.625rem;
   --cnvs-font-size-h4:	1.375rem;
-  --cnvs-font-size-h5:	1.125rem;
+  --cnvs-font-size-h5:	1.5 rem;
   --cnvs-font-size-h6:	0.875rem;
   --cnvs-font-size-small:	calc(var(--cnvs-font-size-body) * 0.875);
 }
@@ -13532,8 +13532,8 @@ textarea.form-control-lg {
   --cnvs-header-bg:	var(--cnvs-contrast-0);
   --cnvs-header-sticky-bg:	var(--cnvs-header-bg);
   --cnvs-side-header-bg:	var(--cnvs-contrast-0);
-  --cnvs-section-bg:	var(--cnvs-contrast-bg-offset);
-  --cnvs-heading-color:	var(--cnvs-contrast-900);
+  --cnvs-section-bg: #ECEFF4;
+  --cnvs-heading-color:	#1D3557;
   --cnvs-line-color:	rgba(var(--cnvs-contrast-rgb), .1);
   --cnvs-footer-bg:	var(--cnvs-contrast-bg-offset);
   --cnvs-bg-overlay-bg-opacity: 0.75;
@@ -13840,7 +13840,7 @@ h6,
   color: var(--cnvs-heading-color);
   font-weight: var(--cnvs-headings-font-weight);
   line-height: var(--cnvs-line-height-base);
-  margin: 0 0 30px 0;
+  margin: 0 0 2.5rem 0;
   font-family: var(--cnvs-primary-font);
 }
 
@@ -26164,12 +26164,12 @@ td.actions {
 .toggle,
 .accordion {
   --cnvs-toggle-base-color:	var(--cnvs-heading-color);
-  --cnvs-toggle-font-size:	1rem;
+  --cnvs-toggle-font-size:	1.325rem;
   --cnvs-toggle-border-size:	1px;
   --cnvs-toggle-border-color:	var(--cnvs-contrast-400);
   --cnvs-toggle-border-radius:	4px;
   --cnvs-toggle-bg-color:	var(--cnvs-contrast-100);
-  --cnvs-toggle-title-color:	var(--cnvs-heading-color);
+  --cnvs-toggle-title-color:	#1D3557;
   --cnvs-toggle-content-padding: 0.75rem;
   --cnvs-toggle-bottom-margin:	1.5rem;
   display: block;
@@ -33538,7 +33538,7 @@ img.mfp-img {
   --cnvs-invert-contrast-1000: #000;
   --cnvs-contrast-rgb: 255, 255, 255;
   --cnvs-invert-contrast-rgb: 0, 0, 0;
-  --cnvs-heading-color: var(--cnvs-contrast-900);
+  --cnvs-heading-color: #1D3557;
   --cnvs-topbar-bg: var(--cnvs-contrast-bg-offset);
   --cnvs-header-bg: var(--cnvs-contrast-bg);
   --cnvs-header-sticky-bg: var(--cnvs-contrast-bg);

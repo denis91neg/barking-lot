@@ -113,8 +113,8 @@
 }
 
 .toggle:not(:last-child) {
-	border-bottom: 1px solid #EEE;
-	padding-bottom: 15px;
+	border-bottom: 2.2px solid #B0BEC5;
+	padding-bottom: 0.5rem;
 }
 
 #footer {
