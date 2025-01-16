@@ -13517,7 +13517,7 @@ textarea.form-control-lg {
   --cnvs-invert-contrast-800: #e9ecef;
   --cnvs-invert-contrast-900: #f8f9fa;
   --cnvs-invert-contrast-1000: #fff;
-  --cnvs-body-bg:	var(--bs-body-bg);
+  --cnvs-body-bg:	#ECEFF4;
   --cnvs-body-bg-boxed:	var(--cnvs-body-bg);
   --cnvs-link-color:	var(--cnvs-themecolor);
   --cnvs-link-hover-color:	var(--cnvs---cnvs-heading-color);
@@ -33567,9 +33567,7 @@ body.dark {
   color: rgba(255, 255, 255, 0.4);
   background-color: rgba(0, 0, 0, 0.2);
 }
-body {
-  background: #f2f2f2;
-}
+
 
 
 .menu-left, .menu-right {
@@ -33726,7 +33724,7 @@ body {
   left: 0;
   margin-left: 2.5rem;
   width: 33.33333%;
-  background-image: linear-gradient(to right, #f0faff, rgba(240, 250, 255, 0));
+  background-image: linear-gradient(to right, #ECEFF4, rgba(240, 250, 255, 0));
 }
 .logo-slider.gradient.right{
   pointer-events: none;
@@ -33736,6 +33734,6 @@ body {
   right: 0;
   margin-right: 2.5rem;
   width: 33.33333%;
-  background-image: linear-gradient(to right, #f0faff, rgba(240, 250, 255, 0));
+  background-image: linear-gradient(to right, #ECEFF4, rgba(240, 250, 255, 0));
 }
 /*# sourceMappingURL=style.css.map */
