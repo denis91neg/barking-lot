@@ -33682,7 +33682,7 @@ body {
   margin-left: auto; /* Push the button to the far right */
 }
   .header-misc .button {
-    font-size: 16px; /* Reduce font size */
+    font-size: 1em !important; /* Reduce font size */
     padding: 1.67em 10px !important; /* Adjust button padding */
 }
 .header-extras {
