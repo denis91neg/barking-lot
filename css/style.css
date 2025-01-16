@@ -17831,7 +17831,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
   letter-spacing: var(--cnvs-primary-menu-ls);
 }
 .is-expanded-menu .menu-link {
-  --cnvs-primary-menu-padding-y: 0.6em;
+  --cnvs-primary-menu-padding-y: 1.8em;
   --cnvs-primary-menu-padding-x: 15px;
   transition: margin 0.4s ease, padding 0.4s ease;
   
@@ -33720,7 +33720,10 @@ body {
   .menu-item.current{
     text-decoration: underline 3px #B0BEC5;}
   .menu-link{
-    font-size: 0.46em;
+    font-size: 0.9em;
   }
+  .is-expanded-menu .menu-link {
+    --cnvs-primary-menu-padding-y: 0.6em;
+  } 
 }
 /*# sourceMappingURL=style.css.map */
