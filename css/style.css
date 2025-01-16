@@ -17831,7 +17831,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
   letter-spacing: var(--cnvs-primary-menu-ls);
 }
 .is-expanded-menu .menu-link {
-  --cnvs-primary-menu-padding-y: calc(calc(var(--cnvs-sticky-header-height) - 22px) * 0.5);
+  --cnvs-primary-menu-padding-y: 1em;
   --cnvs-primary-menu-padding-x: 15px;
   transition: margin 0.4s ease, padding 0.4s ease;
 }
@@ -33696,7 +33696,7 @@ body {
   .primary-menu {
       display: none; /* Initially hides the navigation menu */
       flex-direction: column;
-      background-color: #fff;
+      background-color: rgb(29, 53, 87, 0.8);
       position: absolute;
       top: 100%; /* Places the menu below the header */
       left: 0;
