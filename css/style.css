@@ -17398,7 +17398,7 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
   justify-content: space-between;
   position: relative;
   width: 100%;
- background: #1b2b45;
+
 }
 
 .is-expanded-menu .header-row {
@@ -33603,6 +33603,11 @@ body.dark {
     position: relative;
     width: 100%;
     height: 5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    transition: top 0.3s ease-in-out;
 
   }
   .header-row > * {
