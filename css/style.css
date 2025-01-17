@@ -17311,8 +17311,8 @@ img.lazy:not([src]) {
   /*  Side Header */
   --cnvs-side-header-padding-gutters:	30px;
   /*  Primary Menu */
-  --cnvs-primary-menu-color:	#ECEFF4;
-  --cnvs-primary-menu-hover-color: #B0BEC5;
+  --cnvs-primary-menu-color:#1D3557;
+  --cnvs-primary-menu-hover-color: #335D99;
   --cnvs-primary-menu-active-color:	var(--cnvs-primary-menu-hover-color);
   --cnvs-primary-menu-font:	var(--cnvs-primary-font);
   --cnvs-primary-menu-font-weight:	700;
@@ -33750,7 +33750,7 @@ body.dark {
   line-height: 2.25rem;
   font-size: 1.25rem;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   color: #ECEFF4;
   font-weight: 500;
   opacity: 0.8;
@@ -33764,7 +33764,11 @@ body.dark {
   }
   .slider-home-text{
     line-height: 2rem;
-    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+
   }
+}
+.ml-0{
+  margin-left: 0;
 }
 /*# sourceMappingURL=style.css.map */
