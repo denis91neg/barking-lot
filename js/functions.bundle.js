@@ -1125,14 +1125,14 @@ const header = document.querySelector('.header-row');
 window.onscroll = function() {
   const currentScrollPos = window.pageYOffset;
   
-  if (window.innerWidth <= 992) { // Check if it's a mobile screen
+   // Check if it's a mobile screen
     if (prevScrollpos > currentScrollPos) {
       header.style.top = '0';
     } else {
       header.style.top = '-100px'; // Hide the header by setting top to a negative value
     }
     prevScrollpos = currentScrollPos;
-  }
+  
 };
 
 	var DocumentOnResize = function() {
