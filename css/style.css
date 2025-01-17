@@ -33743,10 +33743,10 @@ body.dark {
 .slider-home-gradient{
   display: inline-block;
   background: linear-gradient(90deg, 
-  #DCE2E8 0%, 
-        #B3C5D6 33%, 
-        #8DA8BF 66%, 
-        #6A87A9 100% );
+  #ECEFF4 0%, 
+        #DCE2E8 33%, 
+        #A4B8CB 66%, 
+        #CBD6E1 100% );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
