@@ -28,20 +28,21 @@
 	padding-top: var(--cnvs-slider-padding, 100px);
 
 }
-.slider-element::before {
+#slider-home::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+	background-image: url('../images/png/homepage/homepage-photo-2.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 	filter: blur(7px);
     z-index: 1;
 }
-.slider-element::after {
+#slider-home::after {
     content: '';
     position: absolute;
     top: 0;
