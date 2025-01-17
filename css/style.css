@@ -645,6 +645,9 @@ progress {
   font-weight: 700;
   line-height: 2.5rem;
   color: #ECEFF4;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .display-4 {
