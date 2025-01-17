@@ -33743,12 +33743,15 @@ body.dark {
 .slider-home-gradient{
   display: inline-block;
   background: linear-gradient(90deg, 
-  #ECEFF4 0%, 
-        #DCE2E8 33%, 
-        #A4B8CB 66%, 
-        #CBD6E1 100% );
+  #DCE2E8 0%, 
+  #DCE2E8 25%, 
+  #A4B8CB 50%, 
+  #B1C2D2 75%,
+ #B1C2D2 100%
+ );
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: normal;
 
 }
 /*# sourceMappingURL=style.css.map */
