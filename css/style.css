@@ -17360,7 +17360,7 @@ img.lazy:not([src]) {
   background-color: var(--cnvs-header-bg);
   transition: height 0.2s ease 0s, background-color 0.3s ease 0s;
   backface-visibility: hidden;
-  box-shadow: 0px 4px 4px rgba(29, 53, 87, 0.3);
+
 }
 @media (prefers-reduced-motion: reduce) {
   #header-wrap {
@@ -17399,6 +17399,9 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
   justify-content: space-between;
   position: relative;
   width: 100%;
+  box-shadow: 0px 4px 4px rgba(29, 53, 87, 0.3);
+  transition: top 0.3s ease-in-out;
+  position: fixed;
   background: #DCE2E8;
 }
 
@@ -33604,11 +33607,9 @@ body.dark {
     position: relative;
     width: 100%;
     height: 5em;
-    position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0px 4px 4px rgba(29, 53, 87, 0.3);
-    transition: top 0.3s ease-in-out;
+
 
   }
   .header-row > * {
