@@ -17398,7 +17398,7 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
   justify-content: space-between;
   position: relative;
   width: 100%;
-
+  background: #DCE2E8;
 }
 
 .is-expanded-menu .header-row {
@@ -17732,7 +17732,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
 .cnvs-hamburger .cnvs-hamburger-inner, .cnvs-hamburger .cnvs-hamburger-inner::before, .cnvs-hamburger .cnvs-hamburger-inner::after {
   width: var(--cnvs-hamburger-size);
   height: var(--cnvs-hamburger-width);
-  background-color: #ECEFF4;
+  background-color: #1D3557;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
@@ -33645,7 +33645,7 @@ body.dark {
   .primary-menu {
       display: none; /* Initially hides the navigation menu */
       flex-direction: column;
-      background-color: rgb(29, 53, 87, 0.8);
+      background-color:rgba(220, 226, 232, 0.8);
       position: absolute;
       top: 100%; /* Places the menu below the header */
       left: 0;
@@ -33666,7 +33666,7 @@ body.dark {
       margin: 10px 0;
   }
   .menu-item.current{
-    text-decoration: underline 3px #B0BEC5;}
+    text-decoration: underline 3px #335D99;}
   .menu-link{
     font-size: 0.9em;
   }
