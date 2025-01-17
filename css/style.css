@@ -33711,14 +33711,6 @@ body.dark {
   display: flex;
   flex-shrink: 0;
 }
-@media (min-width: 768px ){
-  .logo-slider.gradient.left{
-    margin-left: 0 !important;
-  }
-  .logo-slider.gradient.right{
-    margin-right: 0 !important;
-  }
-}
 
 .logo-slider.gradient.left{
   pointer-events: none;
@@ -33753,5 +33745,26 @@ body.dark {
   -webkit-text-fill-color: transparent;
   white-space: normal;
 
+}
+.slider-home-text{
+  line-height: 2.25rem;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ECEFF4;
+  font-weight: 500;
+  opacity: 0.8;
+}
+@media (min-width: 768px ){
+  .logo-slider.gradient.left{
+    margin-left: 0 !important;
+  }
+  .logo-slider.gradient.right{
+    margin-right: 0 !important;
+  }
+  .slider-home-text{
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
