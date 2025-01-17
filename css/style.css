@@ -33744,10 +33744,9 @@ body.dark {
   display: inline-block;
   background: linear-gradient(90deg, 
   #DCE2E8 0%, 
-        #B3C5D6 25%, 
-        #8DA8BF 50%, 
-        #6A87A9 75%, 
-        #395C93 100%);
+        #B3C5D6 33%, 
+        #8DA8BF 66%, 
+        #6A87A9 100% );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
