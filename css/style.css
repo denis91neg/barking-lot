@@ -26174,7 +26174,7 @@ td.actions {
 .toggle,
 .accordion {
   --cnvs-toggle-base-color:	var(--cnvs-heading-color);
-  --cnvs-toggle-font-size:	1.325rem;
+  --cnvs-toggle-font-size:	1.15rem;
   --cnvs-toggle-border-size:	1px;
   --cnvs-toggle-border-color:	var(--cnvs-contrast-400);
   --cnvs-toggle-border-radius:	4px;
@@ -33684,7 +33684,10 @@ body.dark {
     transform: translateX(calc(-100% - 5rem));
   }
 }
-
+  .logo-headline{
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
   .logo-slider{
     position: relative;
     text-align: center;
