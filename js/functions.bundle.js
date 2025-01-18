@@ -1133,32 +1133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 
-const button = document.querySelector('#radix-\\:R2rqfafnkq\\:');
-const targetDiv = document.querySelector('#radix-\\:Rarqfafnkq\\:');
-const parentDiv = document.querySelector('.mf');
-const title = document.querySelector('.fm-title');
 
-if (!button || !targetDiv || !parentDiv || !title) {
-  console.error('One or more elements not found');
-} else {
-  let isOpen = false;
-  button.addEventListener('click', () => {
-    isOpen = !isOpen;
-    if (isOpen) {
-      parentDiv.setAttribute('data-state', 'open');
-      title.setAttribute('data-state', 'open');
-      button.setAttribute('data-state', 'open');
-      button.setAttribute('aria-expanded', 'true');
-      targetDiv.removeAttribute('hidden');
-    } else {
-      parentDiv.setAttribute('data-state', 'closed');
-      title.setAttribute('data-state', 'closed');
-      button.setAttribute('data-state', 'closed');
-      button.setAttribute('aria-expanded', 'false');
-      targetDiv.setAttribute('hidden', 'true');
-    }
-  });
-}
 
 	var Custom = function() {
 		return {
