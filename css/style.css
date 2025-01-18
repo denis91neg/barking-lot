@@ -33809,8 +33809,7 @@ body.dark {
 }
 .footer-menu-hidden{
   padding-top: .25rem;
-  gap: 1rem;
-  justify-content: space-between;
+  gap: 1.5rem;
   align-items: flex-start;
   flex-direction: column;
   flex-basis: 0px;
@@ -33936,9 +33935,7 @@ body.dark {
   .footer-main{
     padding-top: 0;
   }
-  .footer-nav{
-    padding-left: 15px;
-  }
+
 .column-allign{
   padding-top: 0;
   padding-bottom: 0;
