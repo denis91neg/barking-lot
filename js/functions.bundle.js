@@ -1104,6 +1104,62 @@ document.addEventListener('DOMContentLoaded', () => {
 	}();
 
 	// Add your Custom JS Codes here
+
+	const button = document.querySelector('#radix-\\3a R1rqfafnkq\\3a');
+	const targetDiv = document.querySelector('#radix-\\3a R9rqfafnkq\\3a');
+	const parentDiv = document.querySelector('.mf');
+	const title = document.querySelector('.fm-title');
+	
+	if (!button || !targetDiv || !parentDiv || !title) {
+	  console.error('One or more elements not found');
+	} else {
+	  let isOpen = false;
+	  button.addEventListener('click', () => {
+		isOpen = !isOpen;
+		if (isOpen) {
+		  parentDiv.setAttribute('data-state', 'open');
+		  title.setAttribute('data-state', 'open');
+		  button.setAttribute('data-state', 'open');
+		  button.setAttribute('aria-expanded', 'true');
+		  targetDiv.removeAttribute('hidden');
+		} else {
+		  parentDiv.setAttribute('data-state', 'closed');
+		  title.setAttribute('data-state', 'closed');
+		  button.setAttribute('data-state', 'closed');
+		  button.setAttribute('aria-expanded', 'false');
+		  targetDiv.setAttribute('hidden', 'true');
+		}
+	  });
+	}
+
+
+const button = document.querySelector('#radix-\\3a R2rqfafnkq\\3a');
+const targetDiv = document.querySelector('#radix-\\3a Rarqfafnkq\\3a');
+const parentDiv = document.querySelector('.mf');
+const title = document.querySelector('.fm-title');
+
+if (!button || !targetDiv || !parentDiv || !title) {
+  console.error('One or more elements not found');
+} else {
+  let isOpen = false;
+  button.addEventListener('click', () => {
+    isOpen = !isOpen;
+    if (isOpen) {
+      parentDiv.setAttribute('data-state', 'open');
+      title.setAttribute('data-state', 'open');
+      button.setAttribute('data-state', 'open');
+      button.setAttribute('aria-expanded', 'true');
+      targetDiv.removeAttribute('hidden');
+    } else {
+      parentDiv.setAttribute('data-state', 'closed');
+      title.setAttribute('data-state', 'closed');
+      button.setAttribute('data-state', 'closed');
+      button.setAttribute('aria-expanded', 'false');
+      targetDiv.setAttribute('hidden', 'true');
+    }
+  });
+}
+
 	var Custom = function() {
 		return {
 			onReady: function() {
