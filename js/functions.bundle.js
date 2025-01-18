@@ -1,7 +1,15 @@
 if( typeof jQuery !== 'undefined' ) {
 	var $ = jQuery.noConflict();
 }
+document.addEventListener('DOMContentLoaded', () => {
+	// Your code here
+	const triggerButton = document.querySelector('.cnvs-hamburger-box');
+	const primaryMenu = document.querySelector('.primary-menu');
 
+	triggerButton.addEventListener('click', () => {
+	  primaryMenu.classList.toggle('is-expanded-menu');
+	});
+  });
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
@@ -1111,6 +1119,21 @@ if( typeof jQuery !== 'undefined' ) {
 			}
 		}
 	}();
+	let prevScrollpos = window.pageYOffset;
+const header = document.querySelector('.header-row');
+
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  
+   // Check if it's a mobile screen
+    if (prevScrollpos > currentScrollPos) {
+      header.style.top = '0';
+    } else {
+      header.style.top = '-100px'; // Hide the header by setting top to a negative value
+    }
+    prevScrollpos = currentScrollPos;
+  
+};
 
 	var DocumentOnResize = function() {
 		return {
@@ -8759,6 +8782,7 @@ if( typeof jQuery !== 'undefined' ) {
 								el.closest( '.style-msg' ).classList.add('d-none');
 							};
 						});
+						
 					});
 				}
 			};
