@@ -1160,11 +1160,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	
 	function setupToggle() {
-		const buttonh1 = document.querySelector('#radix-\\3A R1rqfafnkq\\:');
-		const footerContenth1 = document.querySelector('.footer-content');
-		const targetDivh1 = document.querySelector('#radix-\\3A R9rqfafnkq\\:');
+		const heightbutton = document.querySelector('#radix-\\3A R1rqfafnkq\\3A');
+		const heightfooterContent = document.querySelector('.footer-content');
+		const heighttargetDiv = document.querySelector('#radix-\\3A R9rqfafnkq\\3A');
 	  
-		if (!buttonh1 || !footerContenth1 || !targetDivh1) {
+		if (!heightbutton || !heightfooterContent || !heighttargetDiv) {
 		  console.error('One or more elements not found');
 		  return;
 		}
@@ -1172,7 +1172,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		let isOpen = false;
 		button.addEventListener('click', () => {
 		  isOpen = !isOpen;
-		  const accordionContentHeight = window.getComputedStyle(targetDiv).getPropertyValue('--radix-accordion-content-height');
+		  const accordionContentHeight = window.getComputedStyle(heighttargetDiv).getPropertyValue('--radix-accordion-content-height');
 		  footerContent.style.transition = 'all 0.3s ease-in-out';
 		  if (isOpen) {
 			footerContent.classList.add('open');
