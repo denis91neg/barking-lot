@@ -8788,7 +8788,7 @@ textarea.form-control-lg {
 
 .text-dark {
   --bs-text-opacity: 1;
-  color: #1B2B45, var(--bs-text-opacity) !important;
+  
 }
 
 .text-black {
@@ -33964,5 +33964,28 @@ display: none;
 }
 .img-box{
   box-shadow: 10px 10px 0px 0px rgba(53, 91, 153, 1);
+}
+.ft-box{
+  background: #335D99;
+    width: 90vw;
+    margin: auto;
+    align-content: top;
+}
+.ft-head{
+  color: #ECEFF4;
+  font-weight: 700;
+}
+@media (min-width: 768px){
+  .ft-box{
+    width: 48%;
+  }
+
+
+  
+}
+@media (min-width: 768px){
+  .ft-box{
+    width: 32%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
