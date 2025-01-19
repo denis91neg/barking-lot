@@ -33970,6 +33970,7 @@ display: none;
     width: 90vw;
     margin: auto;
     align-content: top;
+    padding: 1.5rem !important;
 }
 .ft-head{
   color: #ECEFF4;
@@ -33983,9 +33984,11 @@ display: none;
 
   
 }
-@media (min-width: 768px){
+@media (min-width: 992px){
   .ft-box{
     width: 32%;
+    height: 19rem;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
