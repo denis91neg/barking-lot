@@ -290,3 +290,6 @@ body:not(.form-availability-processing) .form-availability-loader { display: non
 	}
 
 }
+.testi-meta{
+	margin: 0 !important;
+}
