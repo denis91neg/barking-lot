@@ -13490,7 +13490,7 @@ textarea.form-control-lg {
   --cnvs-color-twitch-rgb:	100, 65, 165;
   --cnvs-font-size-body:	var(--bs-body-font-size);
   --cnvs-font-size-h1:	2.25rem;
-  --cnvs-font-size-h2:	1.875rem;
+  --cnvs-font-size-h2:	2.5rem;
   --cnvs-font-size-h3:	1.5rem;
   --cnvs-font-size-h4:	1.375rem;
   --cnvs-font-size-h5:	1.5rem;
@@ -33999,5 +33999,21 @@ display: none;
     height: 19rem;
   }
 }
-
+.h3-fs{
+    font-size: 1.5rem !important;
+    padding: 0;
+}
+.h2-fs{
+  font-size: 1.75rem !important;
+  padding: 0;
+}
+@media (min-width: 768px){
+  .h3-fs{
+    font-size: 2rem !important;
+    padding: calc(var(--bs-gutter-x) * 0.5);
+}
+.h2-fs{
+  font-size: 2.125rem !important;
+}
+}
 /*# sourceMappingURL=style.css.map */
