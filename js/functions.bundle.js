@@ -1170,21 +1170,31 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	  
 		let isOpen = false;
-		button.addEventListener('click', () => {
+		heightbutton.addEventListener('click', () => {
 		  isOpen = !isOpen;
-		  const accordionContentHeight = window.getComputedStyle(heighttargetDiv).getPropertyValue('--radix-accordion-content-height');
-		  footerContent.style.transition = 'all 0.3s ease-in-out';
+		  heightfooterContent.style.transition = 'height 0.3s ease-in-out';
+		  heightfooterContent.style.overflow = 'hidden';
 		  if (isOpen) {
-			footerContent.classList.add('open');
-			footerContent.style.setProperty('--radix-accordion-content-height', accordionContentHeight);
+			heightfooterContent.classList.add('open');
+			heightfooterContent.style.height = heighttargetDiv.offsetHeight + 'px';
+			heightfooterContent.style.removeProperty('overflow');
 		  } else {
-			footerContent.classList.remove('open');
+			heightfooterContent.classList.remove('open');
+			heightfooterContent.style.height = '176px';
+			heightfooterContent.style.removeProperty('overflow');
 		  }
 		});
 	  }
 	  
 	  setupToggle();
-
+	  async function setElementStyles(el, styles) {
+		Object.assign(el.style, styles);
+	  }
+	  const footerContent = document.querySelector('.footer-content');
+	  setElementStyles(footerContent, {
+		transition: 'height 0.3s ease-in-out',
+		overflow: 'hidden',
+	  });
 
 
 	var Custom = function() {
