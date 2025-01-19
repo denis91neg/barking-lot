@@ -90,9 +90,9 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #335D99;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #ECEFF4;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -13491,11 +13491,16 @@ textarea.form-control-lg {
   --cnvs-font-size-body:	var(--bs-body-font-size);
   --cnvs-font-size-h1:	2.25rem;
   --cnvs-font-size-h2:	1.875rem;
-  --cnvs-font-size-h3:	1.625rem;
+  --cnvs-font-size-h3:	1.5rem;
   --cnvs-font-size-h4:	1.375rem;
   --cnvs-font-size-h5:	1.5rem;
   --cnvs-font-size-h6:	0.875rem;
   --cnvs-font-size-small:	calc(var(--cnvs-font-size-body) * 0.875);
+}
+@media (min-width:768px){
+  :root{
+    --cnvs-font-size-h3: 2rem;
+  }
 }
 
 :root,
