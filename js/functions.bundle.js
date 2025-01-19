@@ -1159,7 +1159,31 @@ document.addEventListener('DOMContentLoaded', () => {
 	  });
 	}
 	
-	setupToggle();
+	function setupToggle() {
+		const buttonh1 = document.querySelector('#radix-\\3A R1rqfafnkq\\:');
+		const footerContenth1 = document.querySelector('.footer-content');
+		const targetDivh1 = document.querySelector('#radix-\\3A R9rqfafnkq\\:');
+	  
+		if (!buttonh1 || !footerContenth1 || !targetDivh1) {
+		  console.error('One or more elements not found');
+		  return;
+		}
+	  
+		let isOpen = false;
+		button.addEventListener('click', () => {
+		  isOpen = !isOpen;
+		  const accordionContentHeight = window.getComputedStyle(targetDiv).getPropertyValue('--radix-accordion-content-height');
+		  footerContent.style.transition = 'all 0.3s ease-in-out';
+		  if (isOpen) {
+			footerContent.classList.add('open');
+			footerContent.style.setProperty('--radix-accordion-content-height', accordionContentHeight);
+		  } else {
+			footerContent.classList.remove('open');
+		  }
+		});
+	  }
+	  
+	  setupToggle();
 
 
 
