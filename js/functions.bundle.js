@@ -1132,6 +1132,34 @@ document.addEventListener('DOMContentLoaded', () => {
 	  });
 	}
 
+	const newButton = document.querySelector('#radix-\\:R2rqfafnkq\\:');
+	const newTargetDiv = document.querySelector('#radix-\\:Rarqfafnkq\\:');
+	const newParentDiv = document.querySelector('.mf');
+	const newTitle = document.querySelector('.fm-title');
+	
+	if (!newButton || !newTargetDiv || !newParentDiv || !newTitle) {
+	  console.error('One or more elements not found');
+	} else {
+	  let isNewOpen = false;
+	  newButton.addEventListener('click', () => {
+		isNewOpen = !isNewOpen;
+		if (isNewOpen) {
+		  newParentDiv.setAttribute('data-state', 'open');
+		  newTitle.setAttribute('data-state', 'open');
+		  newButton.setAttribute('data-state', 'open');
+		  newButton.setAttribute('aria-expanded', 'true');
+		  newTargetDiv.removeAttribute('hidden');
+		} else {
+		  newParentDiv.setAttribute('data-state', 'closed');
+		  newTitle.setAttribute('data-state', 'closed');
+		  newButton.setAttribute('data-state', 'closed');
+		  newButton.setAttribute('aria-expanded', 'false');
+		  newTargetDiv.setAttribute('hidden', 'true');
+		}
+	  });
+	}
+	
+	setupToggle();
 
 
 
