@@ -293,3 +293,7 @@ body:not(.form-availability-processing) .form-availability-loader { display: non
 .testi-meta{
 	margin: 0 !important;
 }
+.ft-svg{
+	width: 48px;
+	height: 48px;
+}
