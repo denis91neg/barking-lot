@@ -33971,14 +33971,17 @@ display: none;
     margin: auto;
     align-content: top;
     padding: 1.5rem !important;
+
 }
 .ft-head{
   color: #ECEFF4;
   font-weight: 700;
+  font-size: 1.25rem;
 }
 @media (min-width: 768px){
   .ft-box{
     width: 48%;
+    height: 17rem;
   }
 
 
