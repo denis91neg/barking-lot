@@ -20909,7 +20909,6 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 .content-wrap {
   position: relative;
-  padding: var(--cnvs-content-padding) 0;
   overflow: hidden;
 }
 .content-wrap .container {
@@ -34006,6 +34005,12 @@ display: none;
 .h2-fs{
   font-size: 1.75rem !important;
   padding: 0;
+}
+.section-spacing{
+  margin-bottom: 3rem !important;
+  margin-top: 3rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 @media (min-width: 768px){
   .h3-fs{
