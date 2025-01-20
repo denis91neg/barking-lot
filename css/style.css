@@ -33999,10 +33999,10 @@ display: none;
     height: 19rem;
   }
   .br-left{
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px !important;
   }
   .br-right{
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0 !important;
 }
 }
 .h3-fs{
