@@ -34130,7 +34130,7 @@ font-size: 1.4rem !important;
   padding-bottom: 1rem;
 }
 }
-@media (min-width: 640px;){
+@media (min-width: 640px){
   .hero-flex{
     flex-direction: row;
   }
