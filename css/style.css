@@ -34087,10 +34087,10 @@ font-size: 1.4rem !important;
   height: 2.5rem;
 }
 .br-left{
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px 0 0 10px;
 }
-.br-rght{
-  border-radius: 10px 10px 0 0;
+.br-right{
+  border-radius: 0 10px 10px 0;
 }
 @media (min-width: 768px){
   .h3-fs{
