@@ -34142,7 +34142,7 @@ font-size: 1.4rem !important;
   }
 }
 @media (min-width: 992px){
-  .loaction-details{
+  .location-details{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
