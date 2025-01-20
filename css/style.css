@@ -34021,7 +34021,7 @@ font-size: 1.4rem !important;
 }
 .hero{
   background: linear-gradient(
-        90deg, 
+    to bottom left,
         #4A6FAB 0%,  /* Slightly lighter version of #335D99 */
         #335D99 50%, /* Original color at the midpoint */
         #2A4C83 100%  /* Slightly darker version of #335D99 */
@@ -34072,10 +34072,16 @@ font-size: 1.4rem !important;
   flex-wrap: wrap;
   height: 3em;
   display: flex;
+  font-weight: 700;
+  border-style: solid;
 }
 .outline-button:hover{
-  --csv-background-opacity: 0.25;
-  background-color: rgba (220 226 232 / var(--tw-bg-opacity));
+
+  background-color: rgba(220, 226, 232, 0.25);
+
+}
+.white-space{
+  height: 2.5rem;
 }
 @media (min-width: 768px){
   .h3-fs{
@@ -34092,6 +34098,9 @@ font-size: 1.4rem !important;
   padding-top: 1rem;
   padding-bottom: 1rem;
   height: 3.5rem;
+}
+.white-space{
+  height: 5rem;
 }
 }
 @media (min-width: 640px;){
