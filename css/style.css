@@ -27184,6 +27184,7 @@ td.actions {
   font-size: var(--cnvs-counter-font-size);
   font-weight: var(--cnvs-counter-font-weight);
   font-family: var(--cnvs-counter-font-family);
+  margin-bottom: 1rem;
 }
 .counter.counter-small {
   --cnvs-counter-font-size: var(--cnvs-counter-sm-font-size);
@@ -34009,6 +34010,9 @@ display: none;
 .h4-fs{
 font-size: 1.4rem !important;
 }
+.h5-fs{
+  font-size: 1.25rem!;
+}
 .section-spacing{
   margin-bottom: 3rem !important;
   margin-top: 3rem !important;
@@ -34025,6 +34029,9 @@ font-size: 1.4rem !important;
 }
 .h4-fs{
   font-size: 1.75rem !important;
+}
+.h5-fs{
+  font-size: 1.5rem !important;
 }
 }
 /*# sourceMappingURL=style.css.map */
