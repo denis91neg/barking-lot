@@ -34133,6 +34133,9 @@ font-size: 1.4rem !important;
   color: #335D99; 
 }
 }
+.img-uslugi{
+  width: 100%;
+}
 @media (min-width: 640px){
   .hero-flex{
     flex-direction: row;
@@ -34144,6 +34147,9 @@ font-size: 1.4rem !important;
 }
 
 @media (min-width: 992px){
+  .img-uslugi{
+    width: 80%;
+  }
 
   .contact-spacing{
     margin-bottom: 3rem;
