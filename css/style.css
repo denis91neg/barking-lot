@@ -34083,6 +34083,8 @@ font-size: 1.4rem !important;
   display: flex;
   font-weight: 700;
   border-style: solid;
+  max-width: 100%;
+  align-self: center;
 }
 .outline-button:hover{
 
@@ -34134,6 +34136,9 @@ font-size: 1.4rem !important;
 @media (min-width: 640px){
   .hero-flex{
     flex-direction: row;
+  }
+  .outline-button{
+   width: 50%
   }
 
 }
