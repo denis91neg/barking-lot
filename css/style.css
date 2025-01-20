@@ -34011,7 +34011,7 @@ display: none;
 font-size: 1.4rem !important;
 }
 .h5-fs{
-  font-size: 1.25rem!;
+  font-size: 1.25rem !important;
 }
 .section-spacing{
   margin-bottom: 3rem !important;
@@ -34029,9 +34029,6 @@ font-size: 1.4rem !important;
 }
 .h4-fs{
   font-size: 1.75rem !important;
-}
-.h5-fs{
-  font-size: 1.5rem !important;
 }
 }
 /*# sourceMappingURL=style.css.map */
