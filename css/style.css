@@ -34006,6 +34006,9 @@ display: none;
   font-size: 1.75rem !important;
   padding: 0;
 }
+.h4-fs{
+font-size: 1.4rem !important;
+}
 .section-spacing{
   margin-bottom: 3rem !important;
   margin-top: 3rem !important;
@@ -34019,6 +34022,9 @@ display: none;
 }
 .h2-fs{
   font-size: 2.125rem !important;
+}
+.h4-fs{
+  font-size: 1.75rem !important;
 }
 }
 /*# sourceMappingURL=style.css.map */
