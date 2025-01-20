@@ -34129,10 +34129,26 @@ font-size: 1.4rem !important;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.loaction-details{
+  padding: 1.66667em 0 1.33333em;
+  display: block;
+  font-weight: 600;
+  color: #335D99; 
+}
 }
 @media (min-width: 640px){
   .hero-flex{
     flex-direction: row;
   }
 }
+@media (min-width: 992px){
+  .loaction-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+
 /*# sourceMappingURL=style.css.map */
