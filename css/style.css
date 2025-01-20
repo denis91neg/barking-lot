@@ -34061,6 +34061,8 @@ font-size: 1.4rem !important;
   justify-content: center;
   display: flex;
   flex-direction: column;
+  width: 50%;
+  align-self: center;
 }
 .outline-button{
   transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
@@ -34134,6 +34136,7 @@ font-size: 1.4rem !important;
 @media (min-width: 640px){
   .hero-flex{
     flex-direction: row;
+    max-width: 50%;
   }
 
 }
