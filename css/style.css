@@ -34086,6 +34086,12 @@ font-size: 1.4rem !important;
 .white-space{
   height: 2.5rem;
 }
+.br-left{
+  border-radius: 0 0 10px 10px;
+}
+.br-rght{
+  border-radius: 10px 10px 0 0;
+}
 @media (min-width: 768px){
   .h3-fs{
     font-size: 2rem !important;
