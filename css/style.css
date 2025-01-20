@@ -34084,7 +34084,7 @@ font-size: 1.4rem !important;
   font-weight: 700;
   border-style: solid;
   max-width: 100%;
-  align-self: center;
+
 }
 .outline-button:hover{
 
@@ -34142,6 +34142,7 @@ font-size: 1.4rem !important;
   }
   .outline-button{
    width: 50%
+   align-self: center;
   }
 
 }
