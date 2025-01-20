@@ -34019,6 +34019,14 @@ font-size: 1.4rem !important;
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
+.hero{
+  background: linear-gradient(
+        90deg, 
+        #4A6FAB 0%,  /* Slightly lighter version of #335D99 */
+        #335D99 50%, /* Original color at the midpoint */
+        #2A4C83 100%  /* Slightly darker version of #335D99 */
+    );
+}
 .hero-txt-frame{
   color: #DCE2E8;
   text-align: center;
