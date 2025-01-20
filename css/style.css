@@ -34098,6 +34098,12 @@ font-size: 1.4rem !important;
 .br-right{
   border-radius: 0 0 10px 10px;
 }
+.contact-spacing{
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
 @media (min-width: 768px){
   .h3-fs{
     font-size: 2rem !important;
@@ -34116,6 +34122,12 @@ font-size: 1.4rem !important;
 }
 .white-space{
   height: 5rem;
+}
+.contact-spacing{
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 }
 @media (min-width: 640px;){
