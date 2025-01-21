@@ -33845,6 +33845,7 @@ body.dark {
   text-decoration: none !important;
   color: (var(--bs-link-color));
   font-size: 1.1rem;
+  font-weight: 500;
 }
 .footer-nav-item:hover{
   text-decoration: underline;
