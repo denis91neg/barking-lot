@@ -4,17 +4,16 @@ if( typeof jQuery !== 'undefined' ) {
 document.addEventListener('DOMContentLoaded', () => {
 	const triggerButton = document.querySelector('.cnvs-hamburger-box');
 	const primaryMenu = document.querySelector('.primary-menu');
-  
+
 	triggerButton.addEventListener('click', () => {
-	  if (primaryMenu.classList.contains('is-expanded-menu')) {
-		primaryMenu.classList.remove('is-expanded-menu');
-		primaryMenu.style.display = 'none';
-	  } else {
-		primaryMenu.classList.add('is-expanded-menu');
-		primaryMenu.style.display = 'block'; 
-	  }
+	  primaryMenu.classList.toggle('is-expanded-menu');
 	});
   });
+(function (global, factory)) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	( global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.SEMICOLON = factory() );
+}
 
  (this, (function() {
 
