@@ -17409,6 +17409,7 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
   box-shadow: 0px 4px 4px rgba(29, 53, 87, 0.3);
   transition: top 0.3s ease-in-out;
   background: #DCE2E8;
+  height: auto;
 }
 
 
@@ -33610,7 +33611,7 @@ body.dark {
     justify-content: space-between; /* Spread out the items */
     position: fixed;
     width: 100%;
-    height: auto;
+
     top: 0;
     left: 0;
 
@@ -33636,7 +33637,7 @@ body.dark {
   margin-left: auto; /* Push the button to the far right */
 }
   .header-misc .button {
-    font-size: 1.2 em !important; /* Reduce font size */
+    font-size: 1.2em !important; /* Reduce font size */
     padding: 1.67em 10px !important; /* Adjust button padding */
 }
 .header-extras {
