@@ -2,7 +2,6 @@ if( typeof jQuery !== 'undefined' ) {
 	var $ = jQuery.noConflict();
 }
 document.addEventListener('DOMContentLoaded', () => {
-	// Your code here
 	const triggerButton = document.querySelector('.cnvs-hamburger-box');
 	const primaryMenu = document.querySelector('.primary-menu');
 
@@ -14,7 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
 	( global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.SEMICOLON = factory() );
-} (this, (function() {
+}
+
+ (this, (function() {
 
 	// USE STRICT
 	"use strict";

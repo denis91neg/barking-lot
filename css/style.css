@@ -33611,7 +33611,7 @@ body.dark {
     justify-content: space-between; /* Spread out the items */
     position: fixed;
     width: 100%;
-
+    height: auto;
     top: 0;
     left: 0;
 
@@ -33837,7 +33837,7 @@ body.dark {
   line-height: 1.5 rem;
   font-weight: 700;
   margin-bottom: .5rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 
 }
 .footer-nav-item{
@@ -33845,7 +33845,7 @@ body.dark {
   line-height: 1.5;
   text-decoration: none;
   color: (var(--bs-link-color));
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -33947,7 +33947,7 @@ body.dark {
 }
 @media (min-width: 768px){
   .ft-text-size{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .footer-main{
     padding-top: 0;
@@ -34184,6 +34184,9 @@ font-size: 1.4rem !important;
     gap: 0.5rem;
   }
 }
-
+.ps-absolute-bt{
+  position: absolute;
+  bottom: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
