@@ -33848,7 +33848,7 @@ body.dark {
   font-weight: 500;
 }
 .footer-nav-item:hover{
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .mf{
   margin-bottom: 1rem;
