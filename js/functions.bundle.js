@@ -6,14 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	const primaryMenu = document.querySelector('.primary-menu');
   
 	triggerButton.addEventListener('click', () => {
-	  primaryMenu.classList.toggle('is-expanded-menu');
 	  if (primaryMenu.classList.contains('is-expanded-menu')) {
-		primaryMenu.style.display = 'block';
-	  } else {
+		primaryMenu.classList.remove('is-expanded-menu');
 		primaryMenu.style.display = 'none';
+	  } else {
+		primaryMenu.classList.add('is-expanded-menu');
+		primaryMenu.style.display = 'block'; 
 	  }
 	});
   });
+
 
   
 (function (global, factory) {
