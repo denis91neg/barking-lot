@@ -7,10 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
   
 	triggerButton.addEventListener('click', () => {
 	  primaryMenu.classList.toggle('is-expanded-menu');
-	  primaryMenu.classList.toggle('primary-menu-active');
+	  if (primaryMenu.classList.contains('is-expanded-menu')) {
+		primaryMenu.style.display = 'block';
+	  } else {
+		primaryMenu.style.display = 'none';
+	  }
 	});
   });
-
 
   
 (function (global, factory) {
