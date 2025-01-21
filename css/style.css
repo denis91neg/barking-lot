@@ -34188,5 +34188,12 @@ font-size: 1.4rem !important;
   position: absolute;
   bottom: 0;
 }
-
+.goal-roal-align{
+  display: block;
+}
+@media (min-width: 576px){
+  .goal-roal-align{
+    display: flex;
+  }
+}
 /*# sourceMappingURL=style.css.map */
