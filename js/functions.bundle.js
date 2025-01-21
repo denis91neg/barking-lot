@@ -1107,53 +1107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Add your Custom JS Codes here
 
-	document.getElementById('form-availability').addEventListener('submit', function(event) {
-		// Prevent form submission
-		event.preventDefault();
-	
-		// Get form fields
-		const checkInDate = document.getElementById('form-availability-from').value;
-		const checkOutDate = document.getElementById('form-availability-to').value;
-		const guests = parseInt(document.getElementById('form-availability-guests').value, 10);
-		const email = document.getElementById('form-availability-email').value;
-	
-		// Error message element
-		let errorMessage = document.getElementById('form-error-message');
-		if (!errorMessage) {
-			errorMessage = document.createElement('div');
-			errorMessage.id = 'form-error-message';
-			errorMessage.style.color = 'red';
-			errorMessage.style.marginTop = '10px';
-			document.getElementById('form-availability-submit').insertAdjacentElement('afterend', errorMessage);
-		}
-	
-		// Validation
-		let isValid = true;
-		let errorText = "Моля въведете валидни информация!";
-	
-		// Check required fields
-		if (!checkInDate || !checkOutDate || !email || isNaN(guests)) {
-			isValid = false;
-		}
-	
-		// Check email validity
-		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		if (!emailRegex.test(email)) {
-			isValid = false;
-		}
-	
-		// Check guests range
-		if (guests < 1 || guests > 10) {
-			isValid = false;
-		}
-	
-		if (!isValid) {
-			errorMessage.textContent = errorText;
-		} else {
-			errorMessage.textContent = '';
-			this.submit(); // Submit form if valid
-		}
-	});
+
 
 	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
 	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
