@@ -2,6 +2,11 @@
 <html dir="ltr" lang="en-US">
 <head>
 
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="author" content="SemiColonWeb">
@@ -13,24 +18,24 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
 
 	<!-- Core Style -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 
 	<!-- Font Icons -->
-	<link rel="stylesheet" href="css/font-icons.css">
+	<link rel="stylesheet" href="../css/font-icons.css">
 
 	<!-- Plugins/Components CSS -->
-	<link rel="stylesheet" href="css/datepicker.css">
+	<link rel="stylesheet" href="../css/components/datepicker.css">
 
 	<!-- Niche Demos -->
-	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="../css/base.css">
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="../css/custom.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Document Title
 	============================================= -->
-	<title>Hostel | Canvas</title>
+	<title>Начало | The Barking Lot</title>
 
 </head>
 
@@ -46,77 +51,80 @@
 			<div id="header-wrap">
 				<div class="container-fluid pe-0">
 					<div class="header-row">
-
-						<!-- Logo
-						============================================= -->
-						<div id="logo" class="col col-sm-auto">
-							<a href="html/the barking lot.html">
-								<img class="logo-default" srcset="images/logo.png, images/logo@2x.png 2x" src="images/logos/logo@2x.png" alt="Canvas Logo">
-								<img class="logo-dark" srcset="images/logo-dark.png, images/logo-dark@2x.png 2x" src="images/logos/logo-dark@2x.png" alt="Canvas Logo">
-							</a>
-						</div><!-- #logo end -->
-
 						<div class="primary-menu-trigger">
 							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
 								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
 							</button>
 						</div>
+					 <!-- Centered Logo -->
+    <div id="logo">
+        <a href="home.html">
+            <img class="logo-default" srcset="../images/logos/barking lot logo.svg" src="../images/logos/barking lot logo invert.svg" alt="Canvas Logo">
+            <img class="logo-dark" srcset="../images/logos/barking lot logo.svg" src="../images/logos/barking lot logo invert.svg.svg" alt="Canvas Logo">
+        </a>
+    </div>
+	<nav class="primary-menu">
 
-						<div class="header-misc">
-							<a href="html/demo-hostel-tour.html" class="button fw-semibold">Book Now</a>
-						</div>
+		<ul class="menu-container border-end-0 me-0">
+			<li class="menu-item current">
+				<a class="menu-link" href="home.html"><div>Начало</div></a>
+			</li>
+			<li class="menu-item">
+				<a class="menu-link" href="demo-hostel-tour.html"><div>Услуги</div></a>
+			</li>
 
+			<li class="menu-item">
+				<a class="menu-link" href="demo-hostel-about.html"><div>За нас</div></a>
+			</li>
+
+			
+
+			<li class="menu-item">
+				<a class="menu-link" href="demo-hostel-contact.html"><div>Контакти</div></a>
+			</li>
+		</ul>
+
+	</nav><!-- #primary-menu end -->
+
+					 
+					   <!-- Right-Aligned Button -->
+    <div class="header-misc">
+        <a href="../html/demo-hostel-tour.html" class="button fw-semibold">Запазете сега</a>
+    </div>
+	
+	
+</div>
+				
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu">
-
-							<ul class="menu-container border-end-0 me-0">
-								<li class="menu-item current">
-									<a class="menu-link" href="html/home.html"><div>Начало</div></a>
-								</li>
-
-								<li class="menu-item">
-									<a class="menu-link" href="html/demo-hostel-about.html"><div>About Us</div></a>
-								</li>
-
-								<li class="menu-item">
-									<a class="menu-link" href="html/demo-hostel-tour.html"><div>Tour</div></a>
-									<ul class="sub-menu-container">
-										<li class="menu-item">
-											<a class="menu-link" href="html/demo-hostel-single.html"><div>Single</div></a>
-										</li>
-									</ul>
-								</li>
-
-								<li class="menu-item">
-									<a class="menu-link" href="html/demo-hostel-contact.html"><div>Contact Us</div></a>
-								</li>
-							</ul>
-
-						</nav><!-- #primary-menu end -->
 
 					</div>
 				</div>
 			</div>
-			<div class="header-wrap-clone"></div>
+
 		</header><!-- #header end -->
 
 		<!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element" style="background: linear-gradient(to right, rgba(0,0,0, 0.4) 20%, transparent 100%), url('demos/hostel/images/hero1.jpg') no-repeat center center / cover;">
+		<section id="slider-home" class="slider-element">
 
 			<div class="container">
 				<div class="row justify-content-between align-items-center">
 					<div class="col-lg-6 col-md-7 dark mb-5 mb-md-0 py-5">
-						<h2 class="display-4" style="font-weight: 600;">Your Home<br>Away From Home</h2>
-						<p class="mb-5 lead text-white op-07">Objectively matrix exceptional paradigms via strategic testing procedures. Enthusiastically repurpose impactful.</p>
-						<a href="html/demo-hostel-tour.html" class="button button-xlarge bg-color fw-normal text-transform-none ls-0">Book Now</a>
-						<a href="html/demo-hostel-contact.html" class="button button-xlarge button-white button-light fw-normal text-transform-none ls-0">Contact Us</a>
+						<h1 class="display-4">
+						<span data-br=":r4:" data-brr="1" style="display: inline-block; text-decoration: inherit; max-width: 10em; white-space: normal">Почивка за 
+							<span class="slider-home-gradient">Вашия Любимец</span>
+						  </span>
+					
+						  </h1>
+						<p class="slider-home-text">Спокойствие за вас, забавление за тях- професионална грижа и уютна атмосфера за вашия приятел.</p>
+						<a href="../html/demo-hostel-tour.html" class="button button-xlarge bg-color fw-normal text-transform-none ls-0 ml-0">Запазете сега</a>
+						<a href="../html/demo-hostel-contact.html" class="button button-xlarge button-white button-light fw-normal text-transform-none ls-0 ml-0">Свържете се с нас</a>
 					</div>
 					<div class="col-md-5 d-flex align-self-end align-items-center align-items-lg-end col-form">
 						<div class="card bg-white border-0 w-100 shadow p-3 rounded-0">
 							<div class="card-body">
-								<h3 class="mb-0">Check Availability</h3>
+								<h3 class="mb-0">Направете Резервация</h3>
 								<div class="line line-sm mt-3"></div>
 								<div class="widget mt-0 form-widget" data-alert-type="inline">
 
@@ -125,30 +133,30 @@
 										<div class="css3-spinner-double-bounce1"></div>
 										<div class="css3-spinner-double-bounce2"></div>
 									</div>
-									<form id="form-availability" name="form-availability" action="php/form.php" method="post" class="form-availability mb-0">
+									<form id="form-availability" name="form-availability" action="../php/form.php" method="post" class="form-availability mb-0">
 										<div class="input-daterange travel-date-group">
 											<div class="row">
 												<div class="col-6 col-md-12 col-lg-6 form-group">
-													<label class="text-transform-none fw-medium h6" for="form-availability-from">Check-In<small class="text-danger">*</small></label>
-													<input type="text" value="" class="form-control rounded-0 text-start required" id="form-availability-from" name="form-availability-from" placeholder="MM/DD/YYYY">
+													<label class="text-transform-none fw-medium h6 mb-3" for="form-availability-from">Дата на настаняване<small class="text-danger">*</small></label>
+													<input type="text" value="" class="form-control rounded-0 text-start required" id="form-availability-from" name="form-availability-from" placeholder="ден/месец/година">
 												</div>
 												<div class="col-6 col-md-12 col-lg-6 form-group">
-													<label class="text-transform-none fw-medium h6" for="form-availability-to">Check-Out<small class="text-danger">*</small></label>
-													<input type="text" value="" class="form-control rounded-0 text-start required" id="form-availability-to" name="form-availability-to" placeholder="MM/DD/YYYY">
+													<label class="text-transform-none fw-medium h6 mb-3" for="form-availability-to">Дата на напускане<small class="text-danger">*</small></label>
+													<input type="text" value="" class="form-control rounded-0 text-start required ps-absolute-bt" id="form-availability-to" name="form-availability-to" placeholder="ден/месец/година">
 												</div>
 											</div>
 										</div>
 										<div class="form-group">
-											<label class="text-transform-none fw-medium h6" for="form-availability-guests">Number of Guests<small class="text-danger">*</small></label>
-											<input type="number" class="required form-control rounded-0" id="form-availability-guests" name="form-availability-guests" min="1" max="10" value="" placeholder="1-19">
+											<label class="text-transform-none fw-medium h6 mb-3" for="form-availability-guests">Брой кучета<small class="text-danger">*</small></label>
+											<input type="number" class="required form-control rounded-0" id="form-availability-guests" name="form-availability-guests" min="1" max="5" value="" placeholder="1-5">
 										</div>
 										<div class="form-group">
-											<label class="text-transform-none fw-medium h6" for="form-availability-email">Email Address<small class="text-danger">*</small></label>
-											<input type="email" class="required form-control rounded-0 email" id="form-availability-email" name="form-availability-email" value="" placeholder="user@website.com">
+											<label class="text-transform-none fw-medium h6 mb-3" for="form-availability-email">Електронна поща<small class="text-danger">*</small></label>
+											<input type="email" class="required form-control rounded-0 email" id="form-availability-email" name="form-availability-email" value="" placeholder="barkinglot@gmail.com">
 										</div>
 										<input type="text" class="d-none" id="form-availability-botcheck" name="form-availability-botcheck" value="">
 										<input type="hidden" name="prefix" value="form-availability-">
-										<button type="submit" id="form-availability-submit" name="form-availability-submit" class="button button-xlarge w-100 fw-normal text-transform-none ls-0 ms-0 mt-2" value="submit">Изпрати Мейл</button>
+										<button type="submit" id="form-availability-submit" name="form-availability-submit" class="button button-xlarge w-100 fw-normal text-transform-none ls-0 ms-0 mt-2" value="submit">Изпрати И-Мейл</button>
 									</form>
 
 								</div>
@@ -166,286 +174,164 @@
 
 			<div class="content-wrap pb-0">
 
-				<div class="container">
-					<div class="row mt-5">
-						<div class="col-md-5 offset-md-1">
-							<h3 class="text-dark"><i class="bi-check-circle-fill color me-1 position-relative" style="top: 2px"></i> Why do you choose Canvas?</h3>
-							<p>Dramatically re-engineer integrated e-tailers without interoperable growth strategies. Collaboratively create customer directed "outside the box" thinking with world-class e-commerce.</p>
-						</div>
-						<div class="col-md-5 ps-md-5">
-							<h3 class="text-dark"><i class="bi-check-circle-fill color me-1 position-relative" style="top: 2px"></i> How we do</h3>
-							<p>Intrinsicly recaptiualize state of the art information for interactive applications. Dynamically optimize proactive convergence and timely value.</p>
-						</div>
-					</div>
-
-					<div class="clear my-5"></div>
+				<div class="container section-spacing">
+		
 
 					<div class="row align-items-center">
 						<div class="col-lg-4 col-md-7 offset-lg-1 mb-5 mb-lg-0">
-							<h3 class="text-dark text-n-right mb-0">Bed, Breakfast<br>&amp; Workspace</h3>
+							<h3 class="text-dark text-n-right mb-0">Уют, Лакомства<br>и Забавления</h3>
 							<div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget mt-3" data-margin="0" data-items="1" data-pagi="true" data-nav="false">
 
 								<div class="oc-item text-md-end">
-									<h4 class="fw-normal text-size-sm">"Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!"</h4>
-									<h4 class="testi-meta mb-0 text-uppercase">- John Doe</h4>
-									<span class="mb-4 d-block">XYZ Inc.</span>
+									<h4 class="fw-normal text-size-sm">"Хотелът е страхотен! Лакомства, игри и меко легло. Чувствам се като у дома си и никога не ми е скучно!"</h4>
+									<h4 class="testi-meta">- Рекси, йоркширски териер</h4>
+									<span class="mb-4 d-block" style="color:#335D99;">Малък аристократ</span>
 								</div>
 
 								<div class="oc-item text-md-end">
-									<h4 class="fw-normal text-size-sm">"Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias."</h4>
-									<h4 class="testi-meta mb-0 text-uppercase">- Collis Ta'eed</h4>
-									<span class="mb-4 d-block">Envato Inc.</span>
+									<h4 class="fw-normal text-size-sm">"Всеки път, когато идвам тук, ме посрещат с радост. Обичам игрите, разходките и специалното внимание, което получавам!"</h4>
+									<h4 class="testi-meta">- Рики, бийгъл</h4>
+									<span class="mb-4 d-block" style="color:#335D99;">Авантюрист</span>
 								</div>
 
 								<div class="oc-item text-md-end">
-									<h4 class="fw-normal text-size-sm">"Fugit officia dolor sed harum excepturi ex iusto magnam asperiores molestiae qui natus obcaecati facere sint amet."</h4>
-									<h4 class="testi-meta mb-0 text-uppercase">- Mary Jane</h4>
-									<span class="mb-4 d-block">Google Inc.</span>
+									<h4 class="fw-normal text-size-sm">"Моето щастливо място! Персоналът е невероятен, а храната – вкусна. Играх цял ден и заспах като бебе. Просто обожавам това място!"</h4>
+									<h4 class="testi-meta">- Бела, померан</h4>
+									<span class="mb-4 d-block" style="color:#335D99;">Елегантна дама</span>
 								</div>
 
-							</div>
-							<div class="row justify-content-end align-items-center mt-4">
-								<div class="col text-end"><img src="images/svg/amazon.svg" alt="Image" width="80"></div>
-								<div class="col text-end"><img src="images/svg/google.svg" alt="Image" width="80"></div>
-								<div class="col text-end"><img src="images/svg/linkedin.svg" alt="Image" width="80"></div>
 							</div>
 						</div>
 						<div class="col-lg-5 col-md-5 ps-lg-4">
-							<img src="images/png/section-1.jpg" alt="Image">
+							<img src="../images/png/homepage/pexels-edd1egalaxy-3628100.jpg" class="br-10 img-box" alt="happy dog">
 						</div>
 					</div>
 				</div>
 
 				<div class="clear"></div>
 
-				<div class="section text-center studio-tab mb-0" style="background-color: #D6EBEE">
-					<div class="container mx-auto" style="max-width: 800px">
-						<div class="heading-block border-0">
-							<h3 class="text-dark">Check out your Comforts</h3>
-							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, perspiciatis.</span>
-						</div>
 
-						<div id="studio-tab-nav" class="nav canvas-alt-tabs tabs-alt tabs-bb tabs nav-tabs justify-content-center border-bottom-0 mb-4" role="tablist">
-							<a class="nav-link active" id="studio-lobby-tab" data-bs-toggle="tab" href="#studio-lobby" role="tab" aria-controls="studio-lobby" aria-selected="true" data-bg="#D6EBEE">Lobby</a>
-							<a class="nav-link" id="studio-deluxe-twin-room-tab" data-bs-toggle="tab" href="#studio-deluxe-twin-room" role="tab" aria-controls="studio-deluxe-twin-room" aria-selected="false" data-bg="#E4E4E4">Deluxe Twin Rooms</a>
-							<a class="nav-link" id="studio-dormitory-room-tab" data-bs-toggle="tab" href="#studio-dormitory-room" role="tab" aria-controls="studio-dormitory-room" aria-selected="false" data-bg="#EFF1FE">Dormitory Rooms</a>
-							<a class="nav-link" id="studio-4-mixed-bed-tab" data-bs-toggle="tab" href="#studio-4-mixed-bed" role="tab" aria-controls="studio-4-mixed-bed" aria-selected="false" data-bg="#EDF4EA">4 Bed Mixed</a>
-						</div>
-
-						<div class="tab-content mb-5">
-							<div class="tab-pane show active" id="studio-lobby" role="tabpanel" aria-labelledby="studio-lobby-tab">
-								<div class="fslider" data-smooth-height="false" data-pagi="false" data-arrows="false" data-thumbs="true">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide" data-thumb="demos/hostel/images/studios/1/thumbs/1.jpg"><img src="images/png/studios/1/1.jpg" alt="Lobby"></div>
-											<div class="slide" data-thumb="demos/hostel/images/studios/1/thumbs/2.jpg"><img src="images/png/studios/1/2.jpg" alt="Lobby"></div>
-											<div class="slide" data-thumb="demos/hostel/images/studios/1/thumbs/3.jpg"><img src="images/png/studios/1/3.jpg" alt="Lobby"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="studio-deluxe-twin-room" role="tabpanel" aria-labelledby="studio-deluxe-twin-room-tab">
-								<div class="fslider" data-smooth-height="false" data-pagi="false" data-arrows="false" data-thumbs="true">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide" data-thumb="demos/hostel/images/studios/2/thumbs/1.jpg"><img src="images/png/studios/2/1.jpg" alt="Deluxe Twin Room"></div>
-											<div class="slide" data-thumb="demos/hostel/images/studios/2/thumbs/2.jpg"><img src="images/png/studios/2/2.jpg" alt="Deluxe Twin Room"></div>
-											<div class="slide" data-thumb="demos/hostel/images/studios/2/thumbs/3.jpg"><img src="images/png/studios/2/3.jpg" alt="Deluxe Twin Room"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="studio-dormitory-room" role="tabpanel" aria-labelledby="studio-dormitory-room-tab">
-								<div class="fslider" data-smooth-height="false" data-pagi="false" data-arrows="false" data-thumbs="true">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide" data-thumb="demos/hostel/images/studios/3/thumbs/1.jpg"><img src="images/png/studios/3/1.jpg" alt="Dormitory Room"></div>
-											<div class="slide" data-thumb="demos/hostel/images/studios/3/thumbs/2.jpg"><img src="images/png/studios/3/2.jpg" alt="Dormitory Room"></div>
-											<div class="slide" data-thumb="demos/hostel/images/studios/3/thumbs/3.jpg"><img src="images/png/studios/3/3.jpg" alt="Dormitory Room"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="studio-4-mixed-bed" role="tabpanel" aria-labelledby="studio-4-mixed-bed-tab">
-								<div class="fslider" data-smooth-height="false" data-pagi="false" data-arrows="false" data-thumbs="true">
-									<div class="flexslider">
-										<div class="slider-wrap">
-											<div class="slide" data-thumb="demos/hostel/images/studios/4/thumbs/1.jpg"><img src="images/png/studios/4/1.jpg" alt="4 Bed Mixed"></div>
-											<div class="slide" data-thumb="demos/hostel/images/studios/4/thumbs/2.jpg"><img src="images/png/studios/4/2.jpg" alt="4 Bed Mixed"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<a href="html/demo-hostel-single.html" class="button button-large bg-color text-transform-none fw-semibold ls-0">View Full Gallery</a>
-						<a href="html/demo-hostel-tour.html" class="button button-large bg-color text-transform-none fw-semibold ls-0">Book Now</a>
-					</div>
-				</div>
-
-				<div class="section my-5 bg-transparent section-counter">
-					<div class="container">
-						<div class="heading-block text-center mx-auto"  style="max-width: 800px">
-							<h3 class="text-dark">Check out your Comforts</h3>
-							<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, perspiciatis.</span>
-						</div>
-
-						<div class="clear"></div>
-
-						<div class="row justify-content-between mt-5">
-							<div class="col-md-3 col-sm-6 mb-5 mb-lg-0">
-								<h2 class="display-3">4.8</h2>
-								<div class="product-rating mb-1 color">
-									<i class="bi-star-fill"></i>
-									<i class="bi-star-fill"></i>
-									<i class="bi-star-fill"></i>
-									<i class="bi-star-fill"></i>
-									<i class="bi-star-fill"></i>
-								</div>
-								<span class="d-block">2,0321 Ratings</span>
-								<a href="#" class="btn-link">See reviews<i class="bi-arrow-right"></i></a>
-							</div>
-
-							<div class="col-md-3 col-sm-6 mb-5 mb-lg-0">
-								<h2 class="counter"><span data-from="1" data-to="3" data-refresh-interval="1" data-speed="600"></span>.<span data-from="0" data-to="75" data-refresh-interval="100" data-speed="2000"></span><small>M</small></h2>
-								<span class="mb-2 d-block">People Liked and Follows our Hostels in Social Media.</span>
-								<div class="d-flex">
-									<a href="#" class="social-icon si-small me-1 h-op-09 text-white bg-facebook">
-										<i class="fa-brands fa-facebook-f"></i>
-										<i class="fa-brands fa-facebook-f"></i>
-									</a>
-									<a href="#" class="social-icon si-small me-1 h-op-09 text-white bg-instagram">
-										<i class="bi-instagram"></i>
-										<i class="bi-instagram"></i>
-									</a>
-									<a href="#" class="social-icon si-small me-1 h-op-09 text-white bg-pinterest">
-										<i class="fa-brands fa-pinterest-p"></i>
-										<i class="fa-brands fa-pinterest-p"></i>
-									</a>
-								</div>
-							</div>
-
-							<div class="col-md-3 col-sm-6 mb-5 mb-lg-0">
-								<h2 class="counter"><span data-from="10" data-to="4304" data-comma="true"></span>+</h2>
-								<span class="d-block">New People Comes Every Year.</span>
-								<a href="#" class="btn-link">https://google.com<i class="bi-arrow-right"></i></a>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="section m-0" style="background-color: #fcf5ed">
+				<div class="section section-spacing" style="background-color: #24416B; padding: 2rem;">
 					<div class="container">
 						<div class="row justify-content-between">
-
-							<!-- Feature Box
-							============================================= -->
-							<div class="col-lg-4 col-md-6 mb-4">
-								<i class="bi-wifi color ms-0 mb-4 i-plain d-block float-none"></i>
-								<h4 class="mb-3">WiFi Available</h4>
-								<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<div style="padding: 0;">
+								<h3 class="mb-5 mt-4 h3-fs">
+                                    <strong style="color: #DCE2E8">Надежда, Сигурност, Удобство</strong>
+                                </h3>
 							</div>
 
 							<!-- Feature Box
 							============================================= -->
-							<div class="col-lg-4 col-md-6 mb-4">
-								<i class="bi-cup color ms-0 mb-3 i-plain d-block float-none"></i>
-								<h4 class="mb-3">Cafeteria</h4>
-								<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<div class="col-lg-4 col-md-6 mb-4 ft-box br-10">
+								<img srcset="../images/feature_list/comfort.svg" class="ft-svg mb-2 mt-2" alt="comfort icon 2"></img>
+								<h4 style="color: #ECEFF4 !important;" class="mb-2 ft-head">Комфортни помещения</h4>
+								<p style="color: #DCE2E8 !important;" class="text-muted">Просторни и удобни стаи, които осигуряват спокойствие и уют за вашия любимец.</p>
 							</div>
 
 							<!-- Feature Box
 							============================================= -->
-							<div class="col-lg-4 col-md-6 mb-4">
-								<i class="bi-display color ms-0 mb-3 i-plain d-block float-none"></i>
-								<h4 class="mb-3">Workspace Area</h4>
-								<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<div class="col-lg-4 col-md-6 mb-4 ft-box br-10">	
+								<img srcset="../images/feature_list/special-care.svg" class="ft-svg mb-2 mt-2" alt="care icon 2"></img>
+								<h4 style="color: #ECEFF4 !important;" class="mb-2 ft-head">Специализирана грижа</h4>
+								<p style="color: #DCE2E8 !important;" class="text-muted">Индивидуален подход към нуждите на всяко куче, включително специални грижи за по-възрастни или болни животни.</p>
 							</div>
 
 							<!-- Feature Box
 							============================================= -->
-							<div class="col-lg-4 col-md-6 mb-4">
-								<i class="bi-lock color ms-0 mb-3 i-plain d-block float-none"></i>
-								<h4 class="mb-3">Lockers</h4>
-								<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<div class="col-lg-4 col-md-6 mb-4 ft-box br-10">
+								<img srcset="../images/feature_list/staff.svg" class="ft-svg mb-2 mt-2" alt="staff icon 2"></img>
+								<h4 style="color: #ECEFF4 !important;" class="mb-2 ft-head">Опитен и дружелюбен персонал</h4>
+								<p style="color: #DCE2E8 !important;" class="text-muted">Професионален екип, който обича животните и е на разположение 24/7.</p>
 							</div>
 
 							<!-- Feature Box
 							============================================= -->
-							<div class="col-lg-4 col-md-6 mb-4">
-								<i class="bi-shield color ms-0 mb-3 i-plain d-block float-none"></i>
-								<h4 class="mb-3">100% Secured</h4>
-								<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<div class="col-lg-4 col-md-6 mb-4 ft-box br-10">
+								<img srcset="../images/feature_list/food.svg" class="ft-svg mb-2 mt-2" alt="food icon 2"></img>
+								<h4 style="color: #ECEFF4 !important;"  class="mb-2 ft-head">Здравословни храни и лакомства</h4>
+								<p style="color: #DCE2E8 !important;" class="text-muted">Балансирани и вкусни ястия, подходящи за всяка порода и възраст на кучето.</p>
 							</div>
 
 							<!-- Feature Box
 							============================================= -->
-							<div class="col-lg-4 col-md-6 mb-4">
-								<i class="bi-printer color ms-0 mb-3 i-plain d-block float-none"></i>
-								<h4 class="mb-3">Printers &amp; Fax</h4>
-								<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<div class="col-lg-4 col-md-6 mb-4 ft-box br-10">
+								<img srcset="../images/feature_list/vet.svg" class="ft-svg mb-2 mt-2" alt="vet icon 2"></img>
+								<h4 style="color: #ECEFF4 !important;" class="mb-2 ft-head">Достъп до ветеринар</h4>
+								<p style="color: #DCE2E8 !important;" class="text-muted">Пълен медицински надзор и бързо реагиране при нужда.</p>
 							</div>
 
 							<!-- Feature Box
 							============================================= -->
-							<div class="col-lg-4 col-md-6 mb-2">
-								<i class="bi-inbox color ms-0 mb-3 i-plain d-block float-none"></i>
-								<h4 class="mb-3">Well Furnished</h4>
-								<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<div class="col-lg-4 col-md-6 mb-4 ft-box br-10">
+								<img srcset="../images/feature_list/play.svg" class="ft-svg mb-2 mt-2" alt="play icon 2"></img>
+								<h4 style="color: #ECEFF4 !important;" class="mb-2 ft-head">Игри и социализация</h4>
+								<p style="color: #DCE2E8 !important;" class="text-muted">Просторни зони за игра и възможности за кучето да се социализира с други приятели.</p>
 							</div>
 
 							<!-- Feature Box
 							============================================= -->
-							<div class="col-lg-4 col-md-6 mb-2">
-								<i class="bi-clock color ms-0 mb-3 i-plain d-block float-none"></i>
-								<h4 class="mb-3">24x7 Access</h4>
-								<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<div class="col-lg-4 col-md-6 mb-4 ft-box br-10">
+								<img srcset="../images/feature_list/update.svg" class="ft-svg mb-2 mt-2" alt="update"></img>
+								<h4 style="color: #ECEFF4 !important;" class="mb-2 ft-head">Надеждни актуализации</h4>
+								<p style="color: #DCE2E8 !important;" class="text-muted">Редовни отчети за състоянието и настроението на вашето куче.</p>
 							</div>
 
 							<!-- Feature Box
 							============================================= -->
-							<div class="col-lg-4 col-md-6 mb-2">
-								<i class="bi-controller color ms-0 mb-3 i-plain d-block float-none"></i>
-								<h4 class="mb-3">Other Activities</h4>
-								<p class="text-muted">Add any Field to your Custom Form. Canvas's inbuilt Forms Processor will handle the rest. You will never have to touch any PHP Codes.</p>
+							<div class="col-lg-4 col-md-6 mb-4 ft-box br-10">
+								<img srcset="../images/feature_list/safety.svg" class="ft-svg mb-2 mt-2" alt="safety icon 2"></img>
+								<h4 style="color: #ECEFF4 !important;" class="mb-2 ft-head">Сигурност и безопасност</h4>
+								<p style="color: #DCE2E8 !important;" class="text-muted">24-часова охрана и мониторинг за безопасността на вашето куче.</p>
+							</div>
+
+							<!-- Feature Box
+							============================================= -->
+							<div class="col-lg-4 col-md-6 mb-4 ft-box br-10">
+								<img srcset="../images/feature_list/all-year-round.svg" class="ft-svg mb-2 mt-2" alt="all year round icon"></img>
+								<h4 style="color: #ECEFF4 !important;" class="mb-2 ft-head">Обслужване през цялата година</h4>
+								<p style="color: #DCE2E8 !important;" class="text-muted">Няма значение сезона – винаги сме на разположение за вашето куче.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="section bg-transparent my-5">
+				<div class="section bg-transparent section-spacing">
+					<div style="padding: 0;">
+						<h2 class="mb-5 mt-4 text-center h2-fs">
+							<strong>Нашите Услуги</strong>
+						</h2>
+					</div>
 					<div class="container">
 
-						<div class="row align-items-center flex-md-row-reverse col-mb-50 mb-0">
-							<div class="col-lg-6">
-								<img class="box-img shadow-left" src="images/png/box-img/1.jpg" alt="Image">
+						<div class="row align-items-center flex-md-row-reverse col-mb-50 mb-0 align-content-end">
+							<div class="col-lg-6 text-end">
+								<img class="box-img shadow-left br-10 img-uslugi" src="../images/services_photos/1.png" alt="Dog in a hotel">
 							</div>
-							<div class="col-lg-6 pe-0 pe-md-5">
-								<h5 class="color fw-normal mb-2"><i class="bi-geo-alt"></i> Spain</h5>
-								<h3 class="text-dark h1 fw-semibold ls-0 mb-4">Canvas Penthouse</h3>
-								<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eius explicabo, optio repellat saepe inventore dicta quibusdam minima quia, ratione minus a consectetur dolorum, nulla provident tenetur.</p>
+							<div class="col-lg-6 px-3 pe-md-5">
+								
+								<h3 class="text-dark h3 fw-semibold ls-0 mb-3">Настаняване и грижа</h3>
+								<p class="mb-3">Нашата услуга за настаняване и грижа осигурява безопасно и комфортно място за вашето куче, когато не можете да бъдете с него. Ние осигуряваме 24-часово наблюдение, игра и социализация с други кучета, както и редовни разходки и упражнения, за да се чувства като у дома си.</p>
 
-								<h3 class="title-pricing mb-5">$39.99 <span>per week</span></h3>
+								<h3 class="title-pricing mb-4">49.99лв <span>на ден</span></h3>
 
-								<div class="row">
+								<div class="row" style="background: var(--bs-body-bg);">
 									<div class="col-6">
 										<ul class="list-group list-group-flush">
-											<li class="list-group-item ps-0"><i class="bi-wifi me-2"></i>WiFi Availbale</li>
-											<li class="list-group-item ps-0"><i class="bi-cup me-2"></i>Breakfast Included</li>
-											<li class="list-group-item ps-0"><i class="bi-clock me-2"></i>24x7 access</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/nastanqvane_&_griji/24hours.svg" alt="24/7 icon">24/7 наблюдение</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/nastanqvane_&_griji/play_socialise2.svg" alt="play icon">Игри и социализация</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/nastanqvane_&_griji/lots_of_walks.svg" alt="walk icon">Редовни разходки</li>
 										</ul>
 									</div>
 
 									<div class="col-6">
 										<ul class="list-group list-group-flush">
-											<li class="list-group-item ps-0"><i class="bi-lock me-2"></i>Lockers Available</li>
-											<li class="list-group-item ps-0"><i class="bi-boxes me-2"></i>Laundry Available</li>
-											<li class="list-group-item ps-0"><i class="bi-controller me-2"></i>Other Aminities</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/nastanqvane_&_griji/spacial_cells.svg" alt="spaceous icon">Просторни клетки</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/nastanqvane_&_griji/individ_attention.svg" alt="indvidual icon">Индивидуално внимание</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/nastanqvane_&_griji/chill_atmosphere.svg" alt="calm icon">Спокойна атмосфера</li>
 										</ul>
 									</div>
 								</div>
-								<a href="html/demo-hostel-single.html" class="button bg-color text-transform-none ls-0 mt-4 mx-0">View More Details</a>
+								<a href="/barking-lot/html/demo-hostel-tour.html#lf-1" class="button bg-color text-transform-none ls-0 mt-4 mx-0">Научете Повече</a>
 							</div>
 						</div>
 
@@ -453,85 +339,78 @@
 
 						<div class="row align-items-center mt-6 col-mb-50 mb-lg-5">
 							<div class="col-lg-6">
-								<img class="box-img" src="images/png/box-img/2.jpg" alt="Image">
+								<img class="box-img br-10 img-uslugi" src="../images/services_photos/2.png" alt="dog hotel grooming">
 							</div>
-							<div class="col-lg-6 ps-md-5 mb-5 mb-md-0">
-								<h5 class="color fw-normal mb-2"><i class="bi-geo-alt"></i> Denmark</h5>
-								<h3 class="text-dark h1 fw-semibold ls-0 mb-4">Canvas Delux Bed</h3>
-								<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eius explicabo, optio repellat dolorum, nulla provident tenetur.</p>
+							<div class="col-lg-6 ps-md-5 mb-5 mb-md-0 px-3">
+								<h3 class="text-dark h3 fw-semibold ls-0 mb-3">Груминг</h3>
+								<p class="mb-3">Грумингът включва подстригване, баня, сушене и разресване, за да изглежда и да се чувства прекрасно вашето куче. Нашите професионални грумери използват висококачествени продукти, които са безопасни и подходящи за всяка порода и тип кожа, оставяйки кучето ви чисто и красиво.</p>
 
-								<h3 class="title-pricing mb-5">$45.99 <span>per week</span></h3>
+								<h3 class="title-pricing mb-4">39.99лв <span>за процедура</span></h3>
 
 								<div class="row">
 									<div class="col-6">
 										<ul class="list-group list-group-flush">
-											<li class="list-group-item ps-0"><i class="bi-wifi me-2"></i>WiFi Availbale</li>
-											<li class="list-group-item ps-0"><i class="bi-cup me-2"></i>Breakfast Included</li>
-											<li class="list-group-item ps-0"><i class="bi-clock me-2"></i>24x7 access</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/grooming/haircut.svg" alt="haircut icon">Подстригване</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/grooming/hair_combing.svg" alt="combing icon">Разресване</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/grooming/bath_drying.svg" alt="bathe icon">Баня и сушене</li>
 										</ul>
 									</div>
 
 									<div class="col-6">
 										<ul class="list-group list-group-flush">
-											<li class="list-group-item ps-0"><i class="bi-lock me-2"></i>Lockers Available</li>
-											<li class="list-group-item ps-0"><i class="bi-boxes me-2"></i>Laundry Available</li>
-											<li class="list-group-item ps-0"><i class="bi-controller me-2"></i>Other Aminities</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/grooming/top_qual_product.svg" alt="high quality icon">Висококачествени продукти</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/grooming/individ_attention.svg" alt="special care icon">Специализирани грижи</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/grooming/24hours.svg" alt="safety icon">Безопасност и комфорт</li>
 										</ul>
 									</div>
 								</div>
-								<a href="html/demo-hostel-single.html" class="button bg-color text-transform-none ls-0 mt-4 mx-0">View More Details</a>
+								<a href="/barking-lot/html/demo-hostel-tour.html#lf-2" class="button bg-color text-transform-none ls-0 mt-4 mx-0">Научете Повече</a>
 							</div>
 						</div>
 
 						<div class="clear"></div>
 
-						<div class="row align-items-center flex-md-row-reverse mt-6 col-mb-50">
-							<div class="col-lg-6">
-								<img class="box-img shadow-left" src="images/png/box-img/3.jpg" alt="Image">
+						<div class="row align-items-center flex-md-row-reverse mt-6 col-mb-50 align-content-end">
+							<div class="col-lg-6 text-end">
+								<img class="box-img shadow-left br-10 img-uslugi" src="../images/services_photos/3.png" alt="dog hotel spa">
 							</div>
 
-							<div class="col-lg-6 pe-0 pe-md-5 mb-5 mb-lg-0">
-								<h5 class="color fw-normal mb-2"><i class="bi-geo-alt"></i> Amsterdam</h5>
-								<h3 class="text-dark h1 fw-semibold ls-0 mb-4">Canvas Mixed Bed</h3>
-								<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium eius explicabo, optio repellat saepe inventore ratione minus a consectetur dolorum, nulla provident tenetur.</p>
+							<div class="col-lg-6 px-3 pe-md-5 mb-5 mb-lg-0">
+								<h3 class="text-dark h3 fw-semibold ls-0 mb-3">Спа център</h3>
+								<p class="mb-3">Нашият кучешки спа център предлага релаксиращи и възстановителни услуги за вашето куче, включително масажи, ароматерапия и хидратация на кожата. Тези процедури спомагат за намаляване на стреса и напрежението, като същевременно подобряват здравето на кожата и козината на вашето куче, осигурявайки му пълна релаксация.</p>
 
-								<h3 class="title-pricing mb-5">$29.99 <span>per week</span></h3>
+								<h3 class="title-pricing mb-4">59.99лв <span>на процедура</span></h3>
 
 								<div class="row">
 									<div class="col-6">
 										<ul class="list-group list-group-flush">
-											<li class="list-group-item ps-0"><i class="bi-wifi me-2"></i>WiFi Availbale</li>
-											<li class="list-group-item ps-0"><i class="bi-cup me-2"></i>Breakfast Included</li>
-											<li class="list-group-item ps-0"><i class="bi-clock me-2"></i>24x7 access</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/spa/massage_relax.svg" alt="massage icon">Масаж за релакс</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/spa/aromatherapy.svg" alt="aroma icon">Ароматерапия</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/spa/skin_hydratation.svg" alt="hydration icon">Хидратация на кожата</li>
 										</ul>
 									</div>
 
 									<div class="col-6">
 										<ul class="list-group list-group-flush">
-											<li class="list-group-item ps-0"><i class="bi-lock me-2"></i>Lockers Available</li>
-											<li class="list-group-item ps-0"><i class="bi-boxes me-2"></i>Laundry Available</li>
-											<li class="list-group-item ps-0"><i class="bi-controller me-2"></i>Other Aminities</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/spa/antistress.svg" alt="anti-stres icon">Антистрес процедури</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/spa/fur_revival.svg" alt="fur icon">Подмладяване на козината</li>
+											<li class="list-group-item ps-0"><img style="width:24px; height:24px;" src="../images/spa/30.svg" alt="treatment icon">Специализирани терапии</li>
 										</ul>
 									</div>
 								</div>
-								<a href="html/demo-hostel-single.html" class="button bg-color text-transform-none ls-0 mt-4 mx-0">View More Details</a>
+								<a href="/barking-lot/html/demo-hostel-tour.html#lf-3" class="button bg-color text-transform-none ls-0 mt-4 mx-0">Научете Повече</a>
 							</div>
 						</div>
 
 					</div>
 				</div>
 
-				<div class="section m-0 text-center dark parallax" style="background: url('demos/hostel/images/hero.jpg') center center / cover; padding: 170px 0;">
-					<div class="container">
-						<h3 class="h1 mb-5">More than 100,000<br>Travellers Visit Our Hostels.</h3>
-						<a href="html/demo-hostel-tour.html" class="button button-xlarge fw-semibold bg-color text-transform-none ls-0 px-5">Book Now</a>
-					</div>
-				</div>
+				
 
-				<div class="section m-0 bg-transparent">
+				<div class="section bg-transparent section-spacing">
 					<div class="container">
-						<div class="heading-block text-center border-bottom-0 mb-6">
-							<h3 class="text-dark">Frequently asked Questions</h3>
+						<div class="heading-block text-center border-bottom-0">
+							<h3 class="text-dark">Често задавани въпроси</h3>
 						</div>
 						<div class="row justify-content-center">
 							<div class="col-lg-6">
@@ -543,10 +422,10 @@
 											<i class="toggle-open uil uil-minus"></i>
 										</div>
 										<div class="toggle-title fw-semibold">
-											How do I become an author?
+											Какво трябва да нося, когато оставям кучето си?
 										</div>
 									</div>
-									<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									<div class="toggle-content">Когато оставяте кучето си, е добре да донесете любимите му играчки, легло или одеяло, за да се чувства по-комфортно. Също така носете достатъчно храна и всички необходими лекарства, ако кучето ви има специални нужди.</div>
 								</div>
 
 								<div class="toggle">
@@ -556,10 +435,10 @@
 											<i class="toggle-open uil uil-minus"></i>
 										</div>
 										<div class="toggle-title fw-semibold">
-											Helpful Resources for Authors
+											Мога ли да проверявам кучето си по време на престоя му?
 										</div>
 									</div>
-									<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									<div class="toggle-content">Да, повечето хотели за кучета предлагат опции за проверка – чрез снимки, видеа или видеоразговори. Ние разбираме, че е важно да сте спокойни за вашия домашен любимец.</div>
 								</div>
 
 								<div class="toggle">
@@ -569,10 +448,10 @@
 											<i class="toggle-open uil uil-minus"></i>
 										</div>
 										<div class="toggle-title fw-semibold">
-											How much money can I make?
+											Какво става, ако кучето ми има специални нужди или медицинско състояние?
 										</div>
 									</div>
-									<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									<div class="toggle-content">Ако кучето ви има специални нужди или здравословно състояние, уведомете ни предварително. Нашият екип е обучен да се грижи за такива случаи и ще осигури нужната подкрепа и внимание.</div>
 								</div>
 
 								<div class="toggle">
@@ -582,10 +461,12 @@
 											<i class="toggle-open uil uil-minus"></i>
 										</div>
 										<div class="toggle-title fw-semibold">
-											Can I offer my items for free on a promotional basis?
+											Всички кучета ли се наблюдават по време на игра?
 										</div>
 									</div>
-									<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									<div class="toggle-content">Да, всички кучета са под постоянно наблюдение от опитни членове на екипа. Ние гарантираме безопасността и добрата социализация на всички наши гости.
+
+									</div>
 								</div>
 
 								<div class="toggle">
@@ -595,155 +476,314 @@
 											<i class="toggle-open uil uil-minus"></i>
 										</div>
 										<div class="toggle-title fw-semibold">
-											An Introduction to the Marketplaces for Authors
+											Какво се случва, ако има спешен случай?
 										</div>
 									</div>
-									<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+									<div class="toggle-content">В случай на спешност, незабавно се свързваме с най-близкия ветеринарен лекар и информираме собственика. Вашето куче е наш приоритет и ще вземем всички необходими мерки за неговата безопасност.</div>
 								</div>
 
-								<div class="toggle">
-									<div class="toggle-header justify-content-between flex-row-reverse">
-										<div class="toggle-icon">
-											<i class="toggle-closed uil uil-plus"></i>
-											<i class="toggle-open uil uil-minus"></i>
-										</div>
-										<div class="toggle-title fw-semibold">
-											How does the Tuts+ Premium affiliate program work?
-										</div>
-									</div>
-									<div class="toggle-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
-								</div>
-
+								<a href="../html/demo-hostel-contact.html" class="button button-large bg-color fw-normal text-transform-none ls-0 ml-0">Свържете се сега</a>
 							</div>
 						</div>
 					</div>
 				</div>
+					<!-- Scrolling logo list -->
+					<section class="section logo-slider with headline section-spacing">
+						<h3 class="logo-headline h4-fs">Най-добрата грижа за най-добрия Ви приятел</h3>
+						<div class="logo-slider">
+						  <div class="logo-slider spacing">
+							<div class="logo-slider basic">
+							  <div class="logo-slider animation">
+								<img src="../images/logos/the barking lot scrolling logos/2.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+								<img src="../images/logos/the barking lot scrolling logos/1.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+								<img src="../images/logos/the barking lot scrolling logos/3.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+								<img src="../images/logos/the barking lot scrolling logos/4.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+								<img src="../images/logos/the barking lot scrolling logos/5.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+								<img src="../images/logos/the barking lot scrolling logos/6.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+							  </div>
+	
+								<div class="logo-slider animation">
+									<img src="../images/logos/the barking lot scrolling logos/2.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/1.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/3.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/4.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/5.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/6.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+							  </div>
 
-			</div>
+								<div class="logo-slider animation">
+									<img src="../images/logos/the barking lot scrolling logos/2.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/1.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/3.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/4.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/5.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/6.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+							  </div>
+							  
+								<div class="logo-slider animation">
+									<img src="../images/logos/the barking lot scrolling logos/2.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/1.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/3.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/4.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/5.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+									<img src="../images/logos/the barking lot scrolling logos/6.svg" width="200" height="100" alt="vector image" sizes="100vw" loading="lazy">
+							  </div>
+
+						  </div>
+						  <div class="logo-slider gradient left"></div>
+						<div class="logo-slider gradient right"></div>
+						</div>		
+					  </section>
+					  <div id="hero" class="section-spacing hero">
+						<div class="white-space"></div>
+						<div class="hero-txt-frame">
+							<h2 class="hero-txt h2-fs">Вашия любимец заслужава най-доброто - открийте го при нас</h2>
+							<div class="hero-flex">
+								
+								<a class="outline-button" href="tel:+359888199199">Резервирайте Сега</a>
+							</div>
+							<div class="white-space"></div>
+						</div>
+						
+					</div>
+							
 		</section><!-- #content end -->
 
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="bg-transparent">
-			<div class="container">
+		<footer class="footer-main">                
+			<div class="column-allign">
+								<div class="footer-content">
+									<a class="footer-logo" aria-label="Barking Lot About Us" href="../html/demo-hostel-about.html">
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="75" preserveAspectRatio="xMidYMid meet" version="1.0">
+											<defs>
+												<clipPath id="af3d67354b">
+													<path d="M 130 130 L 244 130 L 244 191.757812 L 130 191.757812 Z M 130 130 " clip-rule="nonzero"/>
+												</clipPath>
+											</defs>
+											<g clip-path="url(#af3d67354b)">
+												<path fill="#1d3557" d="M 243.796875 160.128906 C 243.9375 155.9375 240.445312 152.304688 236.253906 152.304688 C 236.253906 152.304688 236.113281 152.304688 236.113281 152.304688 C 231.921875 152.304688 228.429688 155.65625 228.429688 159.847656 C 228.292969 168.789062 220.746094 176.195312 211.667969 176.195312 C 203.984375 176.195312 197.417969 171.023438 195.460938 163.621094 C 194.902344 161.523438 195.460938 159.289062 196.582031 157.472656 L 207.617188 140.152344 C 210.410156 135.820312 207.335938 130.234375 202.167969 130.234375 L 172.273438 130.234375 C 167.242188 130.234375 164.171875 135.820312 166.824219 140.152344 L 177.859375 157.472656 C 178.980469 159.289062 179.539062 161.523438 178.980469 163.621094 C 177.023438 171.023438 170.457031 176.195312 162.773438 176.195312 C 153.695312 176.195312 146.289062 168.789062 146.011719 159.847656 C 145.871094 155.65625 142.519531 152.304688 138.328125 152.304688 C 138.328125 152.304688 138.1875 152.304688 138.1875 152.304688 C 133.996094 152.445312 130.503906 155.9375 130.644531 160.128906 C 131.0625 177.449219 145.453125 191.558594 162.773438 191.558594 C 172.414062 191.558594 181.214844 187.230469 187.21875 180.246094 C 193.226562 187.230469 202.027344 191.558594 211.667969 191.558594 C 229.128906 191.558594 243.519531 177.449219 243.796875 160.128906 Z M 243.796875 160.128906 " fill-opacity="1" fill-rule="nonzero"/>
+											</g>
+											<path fill="#1d3557" d="M 129.664062 75.054688 C 117.371094 87.347656 117.371094 107.460938 129.664062 119.757812 C 141.957031 132.050781 162.074219 132.050781 174.367188 119.757812 C 186.660156 107.460938 186.660156 87.347656 174.367188 75.054688 C 162.074219 62.757812 141.957031 62.757812 129.664062 75.054688 Z M 162.214844 97.40625 C 162.214844 102.992188 157.746094 107.460938 152.15625 107.460938 C 146.570312 107.460938 142.097656 102.992188 142.097656 97.40625 C 142.097656 91.816406 146.570312 87.347656 152.15625 87.347656 C 157.605469 87.207031 162.214844 91.816406 162.214844 97.40625 Z M 162.214844 97.40625 " fill-opacity="1" fill-rule="nonzero"/>
+												<path fill="#1d3557" d="M 232.484375 97.40625 C 232.484375 98.066406 232.417969 98.71875 232.289062 99.367188 C 232.160156 100.015625 231.96875 100.644531 231.71875 101.253906 C 231.464844 101.863281 231.15625 102.441406 230.789062 102.992188 C 230.421875 103.542969 230.003906 104.050781 229.535156 104.515625 C 229.070312 104.984375 228.5625 105.402344 228.011719 105.765625 C 227.464844 106.132812 226.882812 106.445312 226.273438 106.695312 C 225.664062 106.949219 225.035156 107.140625 224.386719 107.269531 C 223.738281 107.398438 223.085938 107.460938 222.425781 107.460938 C 221.765625 107.460938 221.109375 107.398438 220.460938 107.269531 C 219.8125 107.140625 219.183594 106.949219 218.574219 106.695312 C 217.964844 106.445312 217.386719 106.132812 216.835938 105.765625 C 216.289062 105.402344 215.777344 104.984375 215.3125 104.515625 C 214.84375 104.050781 214.429688 103.542969 214.0625 102.992188 C 213.695312 102.441406 213.382812 101.863281 213.132812 101.253906 C 212.878906 100.644531 212.6875 100.015625 212.558594 99.367188 C 212.429688 98.71875 212.367188 98.066406 212.367188 97.40625 C 212.367188 96.742188 212.429688 96.089844 212.558594 95.441406 C 212.6875 94.792969 212.878906 94.164062 213.132812 93.554688 C 213.382812 92.945312 213.695312 92.367188 214.0625 91.816406 C 214.429688 91.265625 214.84375 90.757812 215.3125 90.292969 C 215.777344 89.824219 216.289062 89.40625 216.835938 89.042969 C 217.386719 88.675781 217.964844 88.363281 218.574219 88.113281 C 219.183594 87.859375 219.8125 87.667969 220.460938 87.539062 C 221.109375 87.410156 221.765625 87.347656 222.425781 87.347656 C 223.085938 87.347656 223.738281 87.410156 224.386719 87.539062 C 225.035156 87.667969 225.664062 87.859375 226.273438 88.113281 C 226.882812 88.363281 227.464844 88.675781 228.011719 89.042969 C 228.5625 89.40625 229.070312 89.824219 229.535156 90.292969 C 230.003906 90.757812 230.421875 91.265625 230.789062 91.816406 C 231.15625 92.367188 231.464844 92.945312 231.71875 93.554688 C 231.96875 94.164062 232.160156 94.792969 232.289062 95.441406 C 232.417969 96.089844 232.484375 96.742188 232.484375 97.40625 Z M 232.484375 97.40625 " fill-opacity="1" fill-rule="nonzero"/>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(78.948438, 252.979324)">
+														<g>
+															<path d="M 2.65625 -36.421875 L 13.953125 -36.421875 C 17.367188 -36.421875 20.09375 -35.691406 22.125 -34.234375 C 24.15625 -32.785156 25.171875 -30.425781 25.171875 -27.15625 C 25.171875 -23.507812 23.65625 -20.90625 20.625 -19.34375 C 25.800781 -18.425781 28.390625 -15.363281 28.390625 -10.15625 C 28.390625 -7.09375 27.328125 -4.632812 25.203125 -2.78125 C 23.085938 -0.925781 20.175781 0 16.46875 0 L 2.65625 0 Z M 10.953125 -22.171875 L 11.609375 -22.171875 C 13.460938 -22.171875 14.84375 -22.492188 15.75 -23.140625 C 16.664062 -23.785156 17.125 -24.84375 17.125 -26.3125 C 17.125 -28.789062 15.285156 -30.03125 11.609375 -30.03125 L 10.953125 -30.03125 Z M 10.953125 -6.40625 L 13.5625 -6.40625 C 17.625 -6.40625 19.65625 -7.757812 19.65625 -10.46875 C 19.65625 -12.082031 19.144531 -13.242188 18.125 -13.953125 C 17.113281 -14.660156 15.59375 -15.015625 13.5625 -15.015625 L 10.953125 -15.015625 Z M 10.953125 -6.40625 "/>
+														</g>
+													</g>
+												</g>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(108.359911, 252.979324)">
+														<g><path d="M 21.15625 -36.421875 L 35.859375 0 L 26.9375 0 L 24.234375 -7.28125 L 10.375 -7.28125 L 7.6875 0 L -1.234375 0 L 13.46875 -36.421875 Z M 21.421875 -14.578125 L 17.359375 -25.171875 L 17.265625 -25.171875 L 13.203125 -14.578125 Z M 21.421875 -14.578125 "/>
+														</g>
+													</g>
+												</g>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(142.982435, 252.979324)">
+														<g><path d="M 2.65625 -36.421875 L 15.671875 -36.421875 C 19.179688 -36.421875 22.035156 -35.488281 24.234375 -33.625 C 26.441406 -31.757812 27.546875 -29.085938 27.546875 -25.609375 C 27.546875 -22.929688 26.875 -20.6875 25.53125 -18.875 C 24.195312 -17.0625 22.382812 -15.789062 20.09375 -15.0625 L 32.625 0 L 22.078125 0 L 10.953125 -14.390625 L 10.953125 0 L 2.65625 0 Z M 10.953125 -20.265625 L 11.921875 -20.265625 C 12.679688 -20.265625 13.328125 -20.28125 13.859375 -20.3125 C 14.390625 -20.34375 14.992188 -20.445312 15.671875 -20.625 C 16.347656 -20.800781 16.890625 -21.050781 17.296875 -21.375 C 17.710938 -21.695312 18.066406 -22.164062 18.359375 -22.78125 C 18.660156 -23.40625 18.8125 -24.15625 18.8125 -25.03125 C 18.8125 -25.914062 18.660156 -26.664062 18.359375 -27.28125 C 18.066406 -27.90625 17.710938 -28.378906 17.296875 -28.703125 C 16.890625 -29.023438 16.347656 -29.273438 15.671875 -29.453125 C 14.992188 -29.628906 14.390625 -29.734375 13.859375 -29.765625 C 13.328125 -29.796875 12.679688 -29.8125 11.921875 -29.8125 L 10.953125 -29.8125 Z M 10.953125 -20.265625 "/>
+														</g>
+													</g>
+												</g>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(174.601984, 252.979324)">
+														<g><path d="M 35.8125 0 L 24.375 0 L 10.953125 -15.453125 L 10.953125 0 L 2.65625 0 L 2.65625 -36.421875 L 10.953125 -36.421875 L 10.953125 -21.546875 L 23.453125 -36.421875 L 33.515625 -36.421875 L 18.859375 -19.15625 Z M 35.8125 0 "/></g>
+													</g>
+												</g>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(209.356979, 252.979324)">
+														<g><path d="M 10.953125 -36.421875 L 10.953125 0 L 2.65625 0 L 2.65625 -36.421875 Z M 10.953125 -36.421875 "/></g>
+													</g>
+												</g>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(222.958677, 252.979324)">
+														<g><path d="M 10.953125 -22.609375 L 10.953125 0 L 2.65625 0 L 2.65625 -36.421875 L 10.953125 -36.421875 L 25.4375 -13.828125 L 25.515625 -13.828125 L 25.515625 -36.421875 L 33.828125 -36.421875 L 33.828125 0 L 25.515625 0 L 11.046875 -22.609375 Z M 10.953125 -22.609375 "/></g>
+													</g>
+												</g>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(259.435969, 252.979324)">
+														<g><path d="M 35.59375 -20.40625 L 35.59375 -12.5 C 34.644531 -8.164062 32.582031 -4.890625 29.40625 -2.671875 C 26.226562 -0.453125 22.679688 0.65625 18.765625 0.65625 C 13.847656 0.65625 9.660156 -1.179688 6.203125 -4.859375 C 2.742188 -8.535156 1.015625 -12.976562 1.015625 -18.1875 C 1.015625 -23.488281 2.707031 -27.960938 6.09375 -31.609375 C 9.476562 -35.265625 13.703125 -37.09375 18.765625 -37.09375 C 24.679688 -37.09375 29.363281 -35.015625 32.8125 -30.859375 L 27.375 -24.90625 C 25.4375 -28.019531 22.726562 -29.578125 19.25 -29.578125 C 16.6875 -29.578125 14.5 -28.46875 12.6875 -26.25 C 10.882812 -24.03125 9.984375 -21.34375 9.984375 -18.1875 C 9.984375 -15.101562 10.882812 -12.460938 12.6875 -10.265625 C 14.5 -8.078125 16.6875 -6.984375 19.25 -6.984375 C 21.375 -6.984375 23.222656 -7.617188 24.796875 -8.890625 C 26.367188 -10.171875 27.15625 -11.875 27.15625 -14 L 18.765625 -14 L 18.765625 -20.40625 Z M 35.59375 -20.40625 "/></g>
+													</g>
+												</g>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(156.145994, 309.654319)">
+														<g><path d="M 1.0625 0 L 1.0625 -7.234375 L 3.5625 -7.234375 C 4.300781 -7.234375 4.945312 -7.078125 5.5 -6.765625 C 6.0625 -6.460938 6.492188 -6.039062 6.796875 -5.5 C 7.109375 -4.96875 7.265625 -4.34375 7.265625 -3.625 C 7.265625 -2.914062 7.109375 -2.285156 6.796875 -1.734375 C 6.492188 -1.191406 6.0625 -0.765625 5.5 -0.453125 C 4.945312 -0.148438 4.300781 0 3.5625 0 Z M 1.96875 -0.875 L 3.5625 -0.875 C 4.113281 -0.875 4.597656 -0.988281 5.015625 -1.21875 C 5.429688 -1.445312 5.753906 -1.765625 5.984375 -2.171875 C 6.222656 -2.585938 6.34375 -3.070312 6.34375 -3.625 C 6.34375 -4.175781 6.222656 -4.65625 5.984375 -5.0625 C 5.742188 -5.46875 5.410156 -5.785156 4.984375 -6.015625 C 4.566406 -6.253906 4.078125 -6.375 3.515625 -6.375 L 1.96875 -6.375 Z M 1.96875 -0.875 "/>
+														</g>
+													</g>
+												</g>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(164.018453, 309.654319)">
+														<g><path d="M 4.34375 0.140625 C 3.613281 0.140625 2.960938 -0.0195312 2.390625 -0.34375 C 1.828125 -0.664062 1.382812 -1.109375 1.0625 -1.671875 C 0.75 -2.242188 0.59375 -2.894531 0.59375 -3.625 C 0.59375 -4.363281 0.75 -5.007812 1.0625 -5.5625 C 1.382812 -6.125 1.828125 -6.566406 2.390625 -6.890625 C 2.960938 -7.210938 3.613281 -7.375 4.34375 -7.375 C 5.082031 -7.375 5.734375 -7.210938 6.296875 -6.890625 C 6.859375 -6.566406 7.296875 -6.125 7.609375 -5.5625 C 7.929688 -5.007812 8.09375 -4.363281 8.09375 -3.625 C 8.09375 -2.894531 7.929688 -2.242188 7.609375 -1.671875 C 7.296875 -1.109375 6.859375 -0.664062 6.296875 -0.34375 C 5.734375 -0.0195312 5.082031 0.140625 4.34375 0.140625 Z M 1.53125 -3.625 C 1.53125 -3.0625 1.648438 -2.566406 1.890625 -2.140625 C 2.128906 -1.710938 2.457031 -1.378906 2.875 -1.140625 C 3.300781 -0.898438 3.789062 -0.78125 4.34375 -0.78125 C 4.90625 -0.78125 5.394531 -0.898438 5.8125 -1.140625 C 6.226562 -1.378906 6.554688 -1.710938 6.796875 -2.140625 C 7.035156 -2.566406 7.15625 -3.0625 7.15625 -3.625 C 7.15625 -4.1875 7.035156 -4.675781 6.796875 -5.09375 C 6.554688 -5.519531 6.226562 -5.851562 5.8125 -6.09375 C 5.394531 -6.34375 4.90625 -6.46875 4.34375 -6.46875 C 3.789062 -6.46875 3.300781 -6.34375 2.875 -6.09375 C 2.457031 -5.851562 2.128906 -5.519531 1.890625 -5.09375 C 1.648438 -4.675781 1.53125 -4.1875 1.53125 -3.625 Z M 1.53125 -3.625 "/>
+														</g>
+													</g>
+												</g>
+												<g fill="#1d3557" fill-opacity="1">
+													<g transform="translate(172.708164, 309.654319)">
+														<g><path d="M 4.28125 0.140625 C 3.75 0.140625 3.257812 0.046875 2.8125 -0.140625 C 2.363281 -0.328125 1.972656 -0.585938 1.640625 -0.921875 C 1.304688 -1.253906 1.046875 -1.648438 0.859375 -2.109375 C 0.679688 -2.566406 0.59375 -3.070312 0.59375 -3.625 C 0.59375 -4.164062 0.679688 -4.660156 0.859375 -5.109375 C 1.046875 -5.566406 1.300781 -5.960938 1.625 -6.296875 C 1.957031 -6.640625 2.347656 -6.90625 2.796875 -7.09375 C 3.242188 -7.28125 3.734375 -7.375 4.265625 -7.375 C 4.816406 -7.375 5.328125 -7.273438 5.796875 -7.078125 C 6.265625 -6.878906 6.664062 -6.597656 7 -6.234375 C 7.34375 -5.878906 7.59375 -5.460938 7.75 -4.984375 L 6.75 -4.984375 C 6.519531 -5.453125 6.191406 -5.816406 5.765625 -6.078125 C 5.335938 -6.335938 4.847656 -6.46875 4.296875 -6.46875 C 3.753906 -6.46875 3.273438 -6.34375 2.859375 -6.09375 C 2.441406 -5.851562 2.113281 -5.519531 1.875 -5.09375 C 1.644531 -4.664062 1.53125 -4.175781 1.53125 -3.625 C 1.53125 -3.0625 1.648438 -2.566406 1.890625 -2.140625 C 2.128906 -1.710938 2.457031 -1.378906 2.875 -1.140625 C 3.289062 -0.898438 3.765625 -0.78125 4.296875 -0.78125 C 4.785156 -0.78125 5.21875 -0.875 5.59375 -1.0625 C 5.976562 -1.257812 6.289062 -1.523438 6.53125 -1.859375 C 6.769531 -2.203125 6.921875 -2.601562 6.984375 -3.0625 L 4.03125 -3.0625 L 4.03125 -3.9375 L 7.96875 -3.9375 C 7.976562 -3.132812 7.828125 -2.425781 7.515625 -1.8125 C 7.210938 -1.207031 6.785156 -0.726562 6.234375 -0.375 C 5.679688 -0.03125 5.03125 0.140625 4.28125 0.140625 Z M 4.28125 0.140625 "/>		
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(181.242696, 309.654319)">
+													<g/>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(183.808234, 309.654319)">
+													<g><path d="M 5.796875 0 L 5.796875 -3.265625 L 1.96875 -3.265625 L 1.96875 0 L 1.0625 0 L 1.0625 -7.234375 L 1.96875 -7.234375 L 1.96875 -4.125 L 5.796875 -4.125 L 5.796875 -7.234375 L 6.71875 -7.234375 L 6.71875 0 Z M 5.796875 0 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(191.57725, 309.654319)">
+													<g><path d="M 4.34375 0.140625 C 3.613281 0.140625 2.960938 -0.0195312 2.390625 -0.34375 C 1.828125 -0.664062 1.382812 -1.109375 1.0625 -1.671875 C 0.75 -2.242188 0.59375 -2.894531 0.59375 -3.625 C 0.59375 -4.363281 0.75 -5.007812 1.0625 -5.5625 C 1.382812 -6.125 1.828125 -6.566406 2.390625 -6.890625 C 2.960938 -7.210938 3.613281 -7.375 4.34375 -7.375 C 5.082031 -7.375 5.734375 -7.210938 6.296875 -6.890625 C 6.859375 -6.566406 7.296875 -6.125 7.609375 -5.5625 C 7.929688 -5.007812 8.09375 -4.363281 8.09375 -3.625 C 8.09375 -2.894531 7.929688 -2.242188 7.609375 -1.671875 C 7.296875 -1.109375 6.859375 -0.664062 6.296875 -0.34375 C 5.734375 -0.0195312 5.082031 0.140625 4.34375 0.140625 Z M 1.53125 -3.625 C 1.53125 -3.0625 1.648438 -2.566406 1.890625 -2.140625 C 2.128906 -1.710938 2.457031 -1.378906 2.875 -1.140625 C 3.300781 -0.898438 3.789062 -0.78125 4.34375 -0.78125 C 4.90625 -0.78125 5.394531 -0.898438 5.8125 -1.140625 C 6.226562 -1.378906 6.554688 -1.710938 6.796875 -2.140625 C 7.035156 -2.566406 7.15625 -3.0625 7.15625 -3.625 C 7.15625 -4.1875 7.035156 -4.675781 6.796875 -5.09375 C 6.554688 -5.519531 6.226562 -5.851562 5.8125 -6.09375 C 5.394531 -6.34375 4.90625 -6.46875 4.34375 -6.46875 C 3.789062 -6.46875 3.300781 -6.34375 2.875 -6.09375 C 2.457031 -5.851562 2.128906 -5.519531 1.890625 -5.09375 C 1.648438 -4.675781 1.53125 -4.1875 1.53125 -3.625 Z M 1.53125 -3.625 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(200.266961, 309.654319)">
+													<g><path d="M 2.796875 0 L 2.796875 -6.375 L 0.359375 -6.375 L 0.359375 -7.234375 L 6.15625 -7.234375 L 6.15625 -6.375 L 3.71875 -6.375 L 3.71875 0 Z M 2.796875 0 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(206.784244, 309.654319)">
+													<g><path d="M 1.0625 0 L 1.0625 -7.234375 L 5.453125 -7.234375 L 5.453125 -6.390625 L 1.96875 -6.390625 L 1.96875 -4.109375 L 5.1875 -4.109375 L 5.1875 -3.265625 L 1.96875 -3.265625 L 1.96875 -0.84375 L 5.5625 -0.84375 L 5.5625 0 Z M 1.0625 0 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(213.022213, 309.654319)">
+													<g><path d="M 1.0625 0 L 1.0625 -7.234375 L 1.96875 -7.234375 L 1.96875 -0.875 L 5.484375 -0.875 L 5.484375 0 Z M 1.0625 0 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(142.49839, 292.500484)">
+													<g><path d="M 10.953125 -36.421875 L 10.953125 -7.28125 L 23.484375 -7.28125 L 23.484375 0 L 2.65625 0 L 2.65625 -36.421875 Z M 10.953125 -36.421875 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(167.449561, 292.500484)">
+													<g><path d="M 1.015625 -18.234375 C 1.015625 -23.503906 2.8125 -27.960938 6.40625 -31.609375 C 10 -35.265625 14.328125 -37.09375 19.390625 -37.09375 C 24.484375 -37.09375 28.804688 -35.273438 32.359375 -31.640625 C 35.921875 -28.003906 37.703125 -23.535156 37.703125 -18.234375 C 37.703125 -12.910156 35.953125 -8.429688 32.453125 -4.796875 C 28.953125 -1.160156 24.597656 0.65625 19.390625 0.65625 C 14.054688 0.65625 9.660156 -1.144531 6.203125 -4.75 C 2.742188 -8.351562 1.015625 -12.847656 1.015625 -18.234375 Z M 9.984375 -18.234375 C 9.984375 -16.316406 10.273438 -14.570312 10.859375 -13 C 11.453125 -11.425781 12.484375 -10.09375 13.953125 -9 C 15.421875 -7.914062 17.234375 -7.375 19.390625 -7.375 C 22.472656 -7.375 24.800781 -8.429688 26.375 -10.546875 C 27.957031 -12.671875 28.75 -15.234375 28.75 -18.234375 C 28.75 -21.210938 27.945312 -23.765625 26.34375 -25.890625 C 24.738281 -28.023438 22.421875 -29.09375 19.390625 -29.09375 C 16.378906 -29.09375 14.054688 -28.023438 12.421875 -25.890625 C 10.796875 -23.765625 9.984375 -21.210938 9.984375 -18.234375 Z M 9.984375 -18.234375 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(206.179091, 292.500484)">
+													<g><path d="M 0.359375 -29.140625 L 0.359375 -36.421875 L 25.96875 -36.421875 L 25.96875 -29.140625 L 17.3125 -29.140625 L 17.3125 0 L 9.015625 0 L 9.015625 -29.140625 Z M 0.359375 -29.140625 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(170.410795, 213.756427)">
+													<g><path d="M 0.140625 -11.625 L 0.140625 -14.546875 L 10.359375 -14.546875 L 10.359375 -11.625 L 6.90625 -11.625 L 6.90625 0 L 3.59375 0 L 3.59375 -11.625 Z M 0.140625 -11.625 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(180.915869, 213.756427)">
+													<g><path d="M 4.375 -5.828125 L 4.375 0 L 1.0625 0 L 1.0625 -14.546875 L 4.375 -14.546875 L 4.375 -8.734375 L 9.0625 -8.734375 L 9.0625 -14.546875 L 12.375 -14.546875 L 12.375 0 L 9.0625 0 L 9.0625 -5.828125 Z M 4.375 -5.828125 "/>
+													</g>
+												</g>
+											</g>
+											<g fill="#1d3557" fill-opacity="1">
+												<g transform="translate(194.346864, 213.756427)">
+													<g><path d="M 9.375 -14.546875 L 9.375 -11.625 L 4.375 -11.625 L 4.375 -8.734375 L 9.171875 -8.734375 L 9.171875 -5.828125 L 4.375 -5.828125 L 4.375 -2.90625 L 9.375 -2.90625 L 9.375 0 L 1.0625 0 L 1.0625 -14.546875 Z M 9.375 -14.546875 "/>
+													</g>
+												</g>
+											</g>
+										</svg>
+									</a>
 
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap">
-					<div class="row">
-
-						<div class="col-lg-2 col-md-2 col-6 mb-5 mb-md-0">
-							<div class="widget widget_links widget-li-noicon">
-
-								<h4 class="ls-0 mb-4 text-transform-none">Features</h4>
-
-								<ul class="list-unstyled iconlist ms-0">
-									<li><a href="#">Help Center</a></li>
-									<li><a href="#">Paid with Moblie</a></li>
-									<li><a href="#">Status</a></li>
-								</ul>
-
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-2 col-6 mb-5 mb-md-0">
-							<div class="widget widget_links widget-li-noicon">
-
-								<h4 class="ls-0 mb-4 text-transform-none">Support</h4>
-
-								<ul class="list-unstyled iconlist ms-0">
-									<li><a href="#">Home</a></li>
-									<li><a href="#">About</a></li>
-									<li><a href="#">FAQs</a></li>
-								</ul>
-
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-2 col-6 mb-5 mb-md-0">
-							<div class="widget widget_links widget-li-noicon">
-
-								<h4 class="ls-0 mb-4 text-transform-none">Trending</h4>
-
-								<ul class="list-unstyled iconlist ms-0">
-									<li><a href="#">Shop</a></li>
-									<li><a href="#">Events</a></li>
-									<li><a href="#">Forums</a></li>
-								</ul>
-
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-2 col-6 mb-5 mb-md-0">
-							<div class="widget widget_links widget-li-noicon">
-
-								<h4 class="ls-0 mb-4 text-transform-none">Get to Know us</h4>
-
-								<ul class="list-unstyled iconlist ms-0">
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Personal</a></li>
-									<li><a href="#">OnePage</a></li>
-								</ul>
-
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 text-md-end">
-							<div class="widget">
-								<div>
-									<address>
-										795 Folsom Ave, Suite 600<br>
-										San Francisco, CA 94107<br>
-									</address>
-									<h3 class="mb-3"><a href="tel:111223344" class="text-dark"><i class="bi-headphones me-1"></i> +00-22-33-44</a></h3>
-									<div class="d-flex justify-content-md-end">
-										<a href="#" class="social-icon si-small h-bg-facebook" title="Facebook">
-											<i class="fa-brands fa-facebook-f"></i>
-											<i class="fa-brands fa-facebook-f"></i>
-										</a>
-
-										<a href="#" class="social-icon si-small h-bg-instagram" title="instagram">
-											<i class="bi-instagram"></i>
-											<i class="bi-instagram"></i>
-										</a>
-
-										<a href="#" class="social-icon si-small h-bg-pinterest" title="pinterest">
-											<i class="fa-brands fa-pinterest-p"></i>
-											<i class="fa-brands fa-pinterest-p"></i>
-										</a>
-
-										<a href="#" class="social-icon si-small h-bg-wikipedia" title="Apple Pay">
-											<i class="fa-brands fa-apple-pay"></i>
-											<i class="fa-brands fa-apple-pay"></i>
-										</a>
+									<div class="footer-menu-hidden">
+										<div class="footer-nav">
+											<span class="footer-nav-title">Навигация</span>
+											<a class="footer-nav-item" href="../html/home.html">Начало</a>
+											<a class="footer-nav-item" href="../html/demo-hostel-tour.html">Услуги</a>
+										</div>
+										<div class="footer-nav">
+											<span class="footer-nav-title">За Клиента</span>
+											<a class="footer-nav-item" href="../html/demo-hostel-about.html">За Нас</a>
+											<a class="footer-nav-item" href="../html/demo-hostel-contact.html">Контакти</a>
+										</div>
+										<div class="col-lg-4 col-md-4 text-end px-3 ms-auto">
+											<div class="widget">
+												<div>
+													<address class="mb-2 fw-medium ft-text-size">
+														ул. “Позитано” 7, 1738 София<br>
+													</address>
+													<h3 class="mb-1 text-size-sm"><a href="tel:+359888199199" class="text-dark ft-text-size"><i class="bi-phone-vibrate me-1"></i>0888 199 199</a></h3>
+													<h3 class="mb-3 text-size-sm"><a href="mailto:barkinglot@gmail.com" class="text-dark ft-text-size"><i class="bi-forward me-1"></i>barkinglot@gmail.com</a></h3>
+												</div>
+											</div>
+										</div>
+										
 									</div>
-								</div>
-
-							</div>
-						</div>
-
-					</div>
-
-				</div><!-- .footer-widgets-wrap end -->
-
-			</div>
-
-			<!-- Copyrights
-			============================================= -->
-			<div id="copyrights" class="bg-light">
-				<div class="container">
-
-					<div class="row justify-content-between align-items-center">
-						<div class="col-md-6 text-black-50">
-							Copyrights &copy; 2023 All Rights Reserved by Canvas Inc.
-						</div>
-
-						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
-							<div class="copyrights-menu copyright-links text-black-50">
-								<a href="#">About</a>/<a href="#">Cities</a>/<a href="#">FAQs</a>/<a href="#">Contact</a>
-							</div>
-						</div>
-					</div>
-
+																						
+									<div class="fm:hidden" data-orientation="vertical">
+										<div data-state="closed" data-orientation="vertical" class="mf">
+											<h3 data-orientation="vertical" data-state="closed" class="fm-title">
+												<button type="button" aria-controls="radix-:R9rqfafnkq:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:R1rqfafnkq:" class="footer-button [&[data-state=open]>svg]:rotate-180" data-radix-collection-item>
+													Навигация
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-svg">
+														<path d="m6 9 6 6 6-6"></path>
+													</svg>
+												</button>
+											</h3>
+											<div data-state="closed" id="radix-:R9rqfafnkq:" hidden role="region" aria-labelledby="radix-:R1rqfafnkq:" data-orientation="vertical" class="footer-elmnt-closed data-\[state\=closed\]\:animate-accordion-up[data-state=closed] data-\[state\=open\]\:animate-accordion-down[data-state=open]" style="--radix-accordion-content-height:var(--radix-collapsible-content-height);--radix-accordion-content-width:var(--radix-collapsible-content-width)">
+												<div class="footer-mobile-nav-align">
+													<a class="footer-mobile-nav-item" href="../html/home.html">Начало</a>
+													<a class="footer-mobile-nav-item" href="../html/demo-hostel-tour.html">Услуги</a>
+												</div>
+											</div>
+										</div>
+										<div data-state="closed" data-orientation="vertical" class="mf">
+											<h3 data-orientation="vertical" data-state="closed" class="fm-title">
+												<button type="button" aria-controls="radix-:Rarqfafnkq:" aria-expanded="false" data-state="closed" data-orientation="vertical" id="radix-:R2rqfafnkq:" class="footer-button [&[data-state=open]>svg]:rotate-180" data-radix-collection-item>
+													За Клиента
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-svg">
+														<path d="m6 9 6 6 6-6"></path>
+													</svg>
+												</button>
+											</h3>
+											<div data-state="closed" id="radix-:Rarqfafnkq:" hidden role="region" aria-labelledby="radix-:R2rqfafnkq:" data-orientation="vertical" class="footer-elmnt-closed data-\[state\=closed\]\:animate-accordion-up[data-state=closed] data-\[state\=open\]\:animate-accordion-down[data-state=open]" style="--radix-accordion-content-height:var(--radix-collapsible-content-height);--radix-accordion-content-width:var(--radix-collapsible-content-width)">
+												<div class="footer-mobile-nav-align">
+													<a class="footer-nav-item" href="../html/demo-hostel-about.html">За Нас</a>
+													<a class="footer-nav-item" href="../html/demo-hostel-contact.html">Контакти</a>
+													
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
 				</div>
-			</div><!-- #copyrights end -->
-		</footer><!-- #footer end -->
+									
+				<div class="col-lg-4 col-md-4 text-md-end px-3 mb-display">
+					<div class="widget">
+						<div>
+							<address class="mb-2 fw-medium">
+								ул. “Позитано” 7, 1738 София<br>
+							</address>
+							<h3 class="mb-1 text-size-sm"><a href="tel:+359888199199" class="text-dark"><i class="bi-phone-vibrate me-1"></i>0888 199 199</a></h3>
+							<h3 class="mb-3 text-size-sm"><a href="mailto:barkinglot@gmail.com" class="text-dark"><i class="bi-forward me-1"></i>barkinglot@gmail.com</a></h3>
+						</div>
+					</div>
+				</div>
+			<div class="px-3 py-3 fw-bold text-center" style="background-color: #ECEFF4;">
+	
+				<div class="flex flex-col gap-3 md:hidden">
+
+					</div>
+					<span class="">© 
+					<!-- -->
+					2025
+					<!-- -->
+					BarkingLot</span>
+
+			
+			 </footer><!-- #footer end -->
 
 	</div><!-- #wrapper end -->
 
@@ -753,11 +793,11 @@
 
 	<!-- JavaScripts
 	============================================= -->
-	<script src="js/plugins.min.js"></script>
-	<script src="js/functions.bundle.js"></script>
+	<script src="../js/plugins.min.js"></script>
+	<script src="../js/functions.bundle.js"></script>
 
 	<!-- Travel Demo Specific Script -->
-	<script src="js/datepicker.js"></script>
+	<script src="../js/datepicker.js"></script>
 
 	<script>
 		jQuery(function() {
