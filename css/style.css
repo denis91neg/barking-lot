@@ -34106,7 +34106,13 @@ font-size: 1.4rem !important;
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
+.mb-display{
+  display: block;
+}
 @media (min-width: 768px){
+  .mb-display{
+    display:none !important;
+  }
   .h3-fs{
     font-size: 2rem !important;
     padding: calc(var(--bs-gutter-x) * 0.5);
