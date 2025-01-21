@@ -1107,7 +1107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Add your Custom JS Codes here
 
-
+	
 
 	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
 	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
@@ -1298,7 +1298,7 @@ window.onscroll = function() {
 	};
 
 	return canvas_umd;
-})));
+}));
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
