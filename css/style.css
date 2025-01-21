@@ -33806,7 +33806,7 @@ body.dark {
   padding-top: 1rem;
   padding-bottom: 1em;
   align-items: flex-start;
-  max-width: 72.5rem;
+  max-width: 100%;
   display: flex;
   margin-left: 0;
   margin-right: 0;
