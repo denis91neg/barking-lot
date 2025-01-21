@@ -33828,12 +33828,15 @@ body.dark {
   flex-direction: column;
   display: flex;
 
+
 }
+
 .footer-nav-title{
   color: rgb(29 53 87/var(--tw-text-opacity));
   line-height: 1.5 rem;
   font-weight: 700;
   margin-bottom: .5rem;
+  font-size: 1.3rem;
 
 }
 .footer-nav-item{
@@ -33841,6 +33844,10 @@ body.dark {
   line-height: 1.5;
   text-decoration: none !important;
   color: (var(--bs-link-color));
+  font-size: 1.1rem;
+}
+.footer-nav-item:hover{
+  text-decoration: underline;
 }
 .mf{
   margin-bottom: 1rem;
