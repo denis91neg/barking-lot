@@ -1187,7 +1187,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		  footerContent.style.transition = 'all 0.3s ease-in-out';
 		  if (isOpen) {
 			footerContent.classList.add('open');
-			footerContent.style.setProperty('--radix-accordion-content-height', accordionContentHeight);
+			requestAnimationFrame(() => {
+				footerContent.style.setProperty('--radix-accordion-content-height', accordionContentHeight);
+			  });
 		  } else {
 			footerContent.classList.remove('open');
 		  }
