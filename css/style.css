@@ -34207,5 +34207,6 @@ font-size: 1.4rem !important;
 }
 .primary-menu-active{
   display: block;
+  padding-left: 0.4rem;
 }
 /*# sourceMappingURL=style.css.map */

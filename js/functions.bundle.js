@@ -1100,15 +1100,6 @@ if( typeof jQuery !== 'undefined' ) {
 	}();
 
 	// Add your Custom JS Codes here
-	document.addEventListener('DOMContentLoaded', () => {
-		const triggerButton = document.querySelector('.primary-menu-trigger');
-		const primaryMenu = document.querySelector('.primary-menu');
-	  
-		triggerButton.addEventListener('click', () => {
-		  primaryMenu.classList.toggle('primary-menu-active');
-		});
-	  });
-
 
 	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
 	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
