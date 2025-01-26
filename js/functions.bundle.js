@@ -1201,7 +1201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		const heightnewfooterContent = document.querySelector('.footer-content');
 		const heightnewtargetDiv = document.querySelector('#radix-\\:Rarqfafnkq\\:');
 	  
-		if (!heightbutton || !heightfooterContent || !heightnewtargetDiv) {
+		if (!heightnewbutton || !heightnewfooterContent || !heightnewtargetDiv) {
 		  console.error('One or more elements not found');
 		  return;
 		}
