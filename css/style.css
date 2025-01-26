@@ -33903,6 +33903,9 @@ body.dark {
   margin-left: .5rem;
   display: block;
 }
+.\[\&\[data-state\=open\]\>svg\]\:rotate-180[data-state=open]>svg{
+  transform: translateX(0) translateY(0) rotate(180deg) skewX(0) skewY(0) scaleX(1) scaleY(1);
+}
 @keyframes accordion-up{
   0%{
     height: var(--radix-acordion-content-height);
