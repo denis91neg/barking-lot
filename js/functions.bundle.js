@@ -1196,6 +1196,32 @@ document.addEventListener('DOMContentLoaded', () => {
 	  
 	  setupToggle();
 
+	  function setupToggle() {
+		const heightnewbutton = document.querySelector('#radix-\\:R2rqfafnkq\\:');
+		const heightnewfooterContent = document.querySelector('.footer-content');
+		const heightnewtargetDiv = document.querySelector('#radix-\\:Rarqfafnkq\\:');
+	  
+		if (!heightbutton || !heightfooterContent || !heightnewtargetDiv) {
+		  console.error('One or more elements not found');
+		  return;
+		}
+	  
+		let isOpen = false;
+		button.addEventListener('click', () => {
+		  isOpen = !isOpen;
+		  const accordionnewContentHeight = window.getComputedStyle(heightnewtargetDiv).getPropertyValue('--radix-accordion-content-height');
+		  footerContent.style.transition = 'all 0.3s ease-in-out';
+		  if (isOpen) {
+			footerContent.classList.add('open');
+			footerContent.style.setProperty('--radix-accordion-content-height', accordionnewContentHeight);
+		  } else {
+			footerContent.classList.remove('open');
+		  }
+		});
+	  }
+	  
+	  setupToggle();
+
 
 
 
