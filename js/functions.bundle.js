@@ -1101,7 +1101,7 @@ if( typeof jQuery !== 'undefined' ) {
 
 	// Add your Custom JS Codes here
 	document.addEventListener('DOMContentLoaded', () => {
-		const triggerButton = document.querySelector('.cnvs-hamburger-box');
+		const triggerButton = document.querySelector('.primary-menu-trigger');
 		const primaryMenu = document.querySelector('.primary-menu');
 	  
 		triggerButton.addEventListener('click', () => {
