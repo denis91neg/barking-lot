@@ -33951,6 +33951,8 @@ body.dark {
   width: 100%;
   height: auto;
   background: #335D99;
+  padding: 1.5rem !important;
+  align-content: flex-start;
 }
 
 @media (min-width: 768px){
@@ -33982,15 +33984,16 @@ body.dark {
 }
 .fm\:hidden{
 display: none;
+}
 .ft-box{
   
-  padding: 1.5rem !important;
+  
   width: 48%;
   height: 17rem;
 
 }
 }
-}
+
 .br-10{
  border-radius: 10px;
 }
