@@ -34209,4 +34209,7 @@ font-size: 1.4rem !important;
   display: block;
   padding-left: 0.4rem;
 }
+.bg-img-none{
+background-image: none !important;
+}
 /*# sourceMappingURL=style.css.map */
