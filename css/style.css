@@ -33887,9 +33887,7 @@ body.dark {
   margin: 0;
   padding: 0;;
 }
-.footer-button:hover{
-  text-decoration-line: underline;
-}
+
 .footer-svg{
   animation-duration: .2s;
   transition-duration: .2s;
@@ -33953,6 +33951,7 @@ body.dark {
   color: (var(--bs-link-color));
 }
 @media (min-width: 768px){
+
   .ft-text-size{
     font-size: 1rem;
   }
