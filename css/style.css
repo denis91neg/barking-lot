@@ -33953,6 +33953,11 @@ body.dark {
   text-decoration: none !important;
   color: (var(--bs-link-color));
 }
+.ft-box{
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 768px){
 
   .ft-text-size{
@@ -33996,6 +34001,8 @@ display: none;
     margin: auto;
     align-content: top;
     padding: 1.5rem !important;
+    width: 48%;
+    height: 17rem;
 
 }
 .ft-head{
@@ -34003,11 +34010,6 @@ display: none;
   font-weight: 700;
   font-size: 1.25rem;
 }
-
-  .ft-box{
-    width: 48%;
-    height: 17rem;
-  }
 
 
 @media (min-width: 992px){
