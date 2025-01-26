@@ -1184,6 +1184,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		button.addEventListener('click', () => {
 		  isOpen = !isOpen;
 		  const accordionContentHeight = window.getComputedStyle(heighttargetDiv).getPropertyValue('--radix-accordion-content-height');
+		  footerContent.style.setProperty('--radix-accordion-content-height', isOpen ? accordionContentHeight : '0px'); 
 		  footerContent.style.transition = 'all 0.3s ease-in-out';
 		  if (isOpen) {
 			footerContent.classList.add('open');
