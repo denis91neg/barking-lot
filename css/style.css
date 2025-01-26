@@ -33848,6 +33848,10 @@ body.dark {
   font-size: 1rem;
   font-weight: 500;
 }
+.footer-nav-item:hover{
+  text-decoration: underline !important;
+
+}
 
 .mf{
   margin-bottom: 1rem;
@@ -33994,16 +33998,13 @@ display: none;
   font-weight: 700;
   font-size: 1.25rem;
 }
-@media (min-width: 768px){
+
   .ft-box{
     width: 48%;
     height: 17rem;
   }
-  .footer-nav-item:hover{
-    text-decoration: underline !important;
 
-  }
-}
+
 @media (min-width: 992px){
   .ft-box{
     width: 32%;
