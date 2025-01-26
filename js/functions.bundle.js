@@ -1,20 +1,7 @@
 if( typeof jQuery !== 'undefined' ) {
 	var $ = jQuery.noConflict();
 }
-document.addEventListener('DOMContentLoaded', () => {
-	const triggerButton = document.querySelector('.cnvs-hamburger-box');
-	const primaryMenu = document.querySelector('.primary-menu');
-  
-	triggerButton.addEventListener('click', () => {
-	  if (primaryMenu.classList.contains('is-expanded-menu')) {
-		primaryMenu.classList.remove('is-expanded-menu');
-		primaryMenu.style.display = 'none';
-	  } else {
-		primaryMenu.classList.add('is-expanded-menu');
-		primaryMenu.style.display = 'block'; 
-	  }
-	});
-  });
+
 
   
 (function (global, factory) {
@@ -1114,7 +1101,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Add your Custom JS Codes here
 
-
+	document.addEventListener('DOMContentLoaded', () => {
+		const triggerButton = document.querySelector('.cnvs-hamburger-box');
+		const primaryMenu = document.querySelector('.primary-menu');
+	  
+		triggerButton.addEventListener('click', () => {
+		  if (primaryMenu.classList.contains('is-expanded-menu')) {
+			primaryMenu.classList.remove('is-expanded-menu');
+			primaryMenu.style.display = 'none';
+		  } else {
+			primaryMenu.classList.add('is-expanded-menu');
+			primaryMenu.style.display = 'block'; 
+		  }
+		});
+	  });
 
 	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
 	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
