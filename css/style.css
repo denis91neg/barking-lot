@@ -34205,4 +34205,7 @@ font-size: 1.4rem !important;
     display: flex;
   }
 }
+.primary-menu-active{
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
