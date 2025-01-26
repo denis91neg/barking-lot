@@ -1105,13 +1105,7 @@ if( typeof jQuery !== 'undefined' ) {
 		const primaryMenu = document.querySelector('.primary-menu');
 	  
 		triggerButton.addEventListener('click', () => {
-		  if (primaryMenu.classList.contains('is-expanded-menu')) {
-			primaryMenu.classList.remove('is-expanded-menu');
-			primaryMenu.style.display = 'none';
-		  } else {
-			primaryMenu.classList.add('is-expanded-menu');
-			primaryMenu.style.display = 'block'; 
-		  }
+		  primaryMenu.classList.toggle('primary-menu-active');
 		});
 	  });
 

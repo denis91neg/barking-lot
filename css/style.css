@@ -33659,6 +33659,7 @@ body.dark {
       width: 100%;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       z-index: 1000;
+      transition: 0.3s ease-in-out;
   }
 
   .menu-container {
