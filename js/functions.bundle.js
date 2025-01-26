@@ -2,19 +2,28 @@ if( typeof jQuery !== 'undefined' ) {
 	var $ = jQuery.noConflict();
 }
 document.addEventListener('DOMContentLoaded', () => {
-	// Your code here
 	const triggerButton = document.querySelector('.cnvs-hamburger-box');
 	const primaryMenu = document.querySelector('.primary-menu');
-
+  
 	triggerButton.addEventListener('click', () => {
-	  primaryMenu.classList.toggle('is-expanded-menu');
+	  if (primaryMenu.classList.contains('is-expanded-menu')) {
+		primaryMenu.classList.remove('is-expanded-menu');
+		primaryMenu.style.display = 'none';
+	  } else {
+		primaryMenu.classList.add('is-expanded-menu');
+		primaryMenu.style.display = 'block'; 
+	  }
 	});
   });
+
+  
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
 	( global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.SEMICOLON = factory() );
-} (this, (function() {
+}
+
+ (this, (function() {
 
 	// USE STRICT
 	"use strict";
@@ -1104,6 +1113,121 @@ document.addEventListener('DOMContentLoaded', () => {
 	}();
 
 	// Add your Custom JS Codes here
+
+	const data = {};
+const form = document.querySelector('#form-availability');
+const submitButton = document.querySelector('#form-availability-submit');
+const requiredFields = Array.from(form.querySelectorAll('[required]'));
+const inputs = Array.from(form.querySelectorAll('input, select, textarea'));
+
+data.requiredFields = requiredFields.map(field => ({
+  id: field.id,
+  name: field.name,
+  type: field.type,
+  value: field.value,
+  tagName: field.tagName
+}));
+
+data.inputs = inputs.map(input => ({
+  id: input.id,
+  name: input.name,
+  type: input.type,
+  value: input.value,
+  tagName: input.tagName
+}));
+
+data.submitButton = {
+  id: submitButton.id,
+  disabled: submitButton.disabled,
+  tagName: submitButton.tagName,
+  type: submitButton.type,
+  textContent: submitButton.textContent
+};
+
+const isFormValid = () => {
+  return requiredFields.every(field => {
+    if (field.type === 'checkbox') {
+      return field.checked;
+    }
+    if (field.type === 'radio') {
+      return Array.from(form.querySelectorAll(`input[name="${field.name}"]:checked`)).length > 0;
+    }
+    return field.value.trim() !== '';
+  });
+};
+
+const disableButton = () => {
+  submitButton.disabled = true;
+};
+
+const enableButton = () => {
+  submitButton.disabled = false;
+};
+
+const handleInputChange = (event) => {
+  if (isFormValid()) {
+    enableButton();
+  } else {
+    disableButton();
+  }
+};
+
+const handleFormSubmit = (event) => {
+  event.preventDefault();
+  if (isFormValid()) {
+    console.log('Form is valid');
+  } else {
+    console.log('Form is not valid');
+  }
+};
+
+// Initial button state
+disableButton();
+
+// Add event listeners to the form and its elements
+form.addEventListener('input', handleInputChange);
+form.addEventListener('submit', handleFormSubmit);
+
+// Add event listener to the submit button
+submitButton.addEventListener('click', handleFormSubmit);
+
+data.formAvailability = {
+  formAvailability: form.id,
+  formAvailabilityTagName: form.tagName,
+  formAvailabilityChildren: form.children.length,
+  formAvailabilityEventListeners: form.eventListeners,
+};
+
+data.formAvailabilitySubmit = {
+  formAvailabilitySubmit: submitButton.id,
+  formAvailabilitySubmitTagName: submitButton.tagName,
+  formAvailabilitySubmitChildren: submitButton.children.length,
+  formAvailabilitySubmitEventListeners: submitButton.eventListeners,
+};
+
+// Initial button state
+disableButton();
+
+// Add event listeners to the form and its elements
+form.addEventListener('input', handleInputChange);
+form.addEventListener('submit', handleFormSubmit);
+
+// Add event listener to the submit button
+submitButton.addEventListener('click', handleFormSubmit);
+
+data.formAvailability = {
+  formAvailability: form.id,
+  formAvailabilityTagName: form.tagName,
+  formAvailabilityChildren: form.children.length,
+  formAvailabilityEventListeners: form.eventListeners,
+};
+
+data.formAvailabilitySubmit = {
+  formAvailabilitySubmit: submitButton.id,
+  formAvailabilitySubmitTagName: submitButton.tagName,
+  formAvailabilitySubmitChildren: submitButton.children.length,
+  formAvailabilitySubmitEventListeners: submitButton.eventListeners,
+};
 
 	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
 	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
