@@ -33982,6 +33982,13 @@ body.dark {
 }
 .fm\:hidden{
 display: none;
+.ft-box{
+  
+  padding: 1.5rem !important;
+  width: 48%;
+  height: 17rem;
+
+}
 }
 }
 .br-10{
@@ -33990,19 +33997,13 @@ display: none;
 .img-box{
   box-shadow: 10px 10px 0px 0px rgba(53, 91, 153, 1);
 }
-.ft-box{
-  margin: auto;
-  align-content: flex-start;
-    padding: 1.5rem !important;
-    width: 48%;
-    height: 17rem;
 
-}
 .ft-head{
   color: #ECEFF4;
   font-weight: 700;
   font-size: 1.25rem;
 }
+
 
 
 @media (min-width: 992px){
