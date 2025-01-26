@@ -33795,13 +33795,7 @@ body.dark {
 
   box-shadow: 0px -1px 2px rgba(29, 53, 87, 0.3);
 }
-.collumn-allign{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  background-color: #DCE2E8;
-}
+
 .footer-content{
   gap: 0.5rem;
   padding-top: 1rem;
@@ -33956,6 +33950,7 @@ body.dark {
 .ft-box{
   width: 100%;
   height: auto;
+  background: #335D99;
 }
 
 @media (min-width: 768px){
@@ -33996,10 +33991,8 @@ display: none;
   box-shadow: 10px 10px 0px 0px rgba(53, 91, 153, 1);
 }
 .ft-box{
-  background: #335D99;
-    width: 90vw;
-    margin: auto;
-    align-content: top;
+  margin: auto;
+  align-content: flex-start;
     padding: 1.5rem !important;
     width: 48%;
     height: 17rem;
