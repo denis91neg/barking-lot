@@ -13814,7 +13814,7 @@ body:not(.stretched) {
 a {
   color: var(--cnvs-link-color);
 }
-a:not(.btn-link):not(.text-decoration-underline):not(.more-link) {
+a:not(.btn-link):not(.text-decoration-underline):not(.more-link):not(.footer-nav-item) {
   text-decoration: none !important;
 }
 a:hover {
@@ -33849,7 +33849,7 @@ body.dark {
   font-weight: 500;
 }
 .footer-nav-item:hover{
-  text-decoration: underline !important;
+  text-decoration-line: underline !important;
 
 }
 
