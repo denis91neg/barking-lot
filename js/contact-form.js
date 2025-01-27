@@ -38,6 +38,7 @@ emailInput.addEventListener('input', checkFields);
 subjectInput.addEventListener('input', checkFields);
 messageTextarea.addEventListener('input', checkFields);
 
+// Attach submit event listener to the form, not the submit button
 const form = document.getElementById('template-contactform');
 if (form) {
   form.addEventListener('submit', handleSubmit);
