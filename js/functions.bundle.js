@@ -1103,8 +1103,12 @@ if( typeof jQuery !== 'undefined' ) {
 	const form = document.getElementById('form-availability');
 	const checkInField = document.getElementById('form-availability-from');
 	const checkOutField = document.getElementById('form-availability-to');
+	const guestsField = document.getElementById('form-availability-guests');
+	const emailField = document.getElementById('form-availability-email');
 	const checkInErrorElements = document.querySelectorAll('#check-in-error');
 	const checkOutErrorElements = document.querySelectorAll('#check-out-error');
+	const guestsErrorElements = document.querySelectorAll('#dog-number-error');
+	const emailErrorElements = document.querySelectorAll('#e-mail-error');
 	
 	form.addEventListener('submit', function(event) {
 	  // Check-in validation
@@ -1129,8 +1133,30 @@ if( typeof jQuery !== 'undefined' ) {
 		}
 	  }
 	
+	  // Guests validation
+	  if (guestsField.value.trim() === '') {
+		for (const errorElement of guestsErrorElements) {
+		  errorElement.removeAttribute('hidden');
+		}
+	  } else {
+		for (const errorElement of guestsErrorElements) {
+		  errorElement.setAttribute('hidden', '');
+		}
+	  }
+	
+	  // Email validation
+	  if (emailField.value.trim() === '') {
+		for (const errorElement of emailErrorElements) {
+		  errorElement.removeAttribute('hidden');
+		}
+	  } else {
+		for (const errorElement of emailErrorElements) {
+		  errorElement.setAttribute('hidden', '');
+		}
+	  }
+	
 	  // You might want to prevent form submission here if there are errors
-	  // if (checkInField.value.trim() === '' || checkOutField.value.trim() === '') {
+	  // if (checkInField.value.trim() === '' || checkOutField.value.trim() === '' || guestsField.value.trim() === '' || emailField.value.trim() === '') {
 	  //   event.preventDefault();
 	  // }
 	});
