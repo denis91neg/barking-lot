@@ -311,3 +311,6 @@ body:not(.form-availability-processing) .form-availability-loader { display: non
 	width: 48px;
 	height: 48px;
 }
+.invalid-date{
+	text-decoration: line-through !important;
+}
