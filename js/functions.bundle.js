@@ -1102,99 +1102,126 @@ if( typeof jQuery !== 'undefined' ) {
 	// Add your Custom JS Codes here
 
 	const form = document.getElementById('form-availability');
-	const checkInField = document.getElementById('form-availability-from');
-	const checkOutField = document.getElementById('form-availability-to');
-	const guestsField = document.getElementById('form-availability-guests');
-	const emailField = document.getElementById('form-availability-email');
-	const submitButton = document.getElementById('form-availability-submit');
-	const checkInErrorElements = document.querySelectorAll('#check-in-error');
-	const checkOutErrorElements = document.querySelectorAll('#check-out-error');
-	const guestsErrorElements = document.querySelectorAll('#dog-number-error');
-	const emailErrorElements = document.querySelectorAll('#e-mail-error');
-	const invalidGuestsErrorElements = document.querySelectorAll('#dog-invalid-number-error');
-	
-	// Function to check if all required fields are filled
-	function areRequiredFieldsFilled() {
-	  return (
-		checkInField.value.trim() !== '' &&
-		checkOutField.value.trim() !== '' &&
-		guestsField.value.trim() !== '' &&
-		emailField.value.trim() !== ''
-	  );
-	}
-	
-	// Initial button state
-	submitButton.disabled = !areRequiredFieldsFilled();
-	
-	// Event listener for input changes
-	form.addEventListener('input', function() {
-	  submitButton.disabled = !areRequiredFieldsFilled();
-	});
-	
-	// Event listener for form submission
-	form.addEventListener('submit', function(event) {
-	  // Check-in validation
-	  if (checkInField.value.trim() === '') {
-		for (const errorElement of checkInErrorElements) {
-		  errorElement.removeAttribute('hidden');
-		}
-	  } else {
-		for (const errorElement of checkInErrorElements) {
-		  errorElement.setAttribute('hidden', '');
-		}
-	  }
-	
-	  // Check-out validation
-	  if (checkOutField.value.trim() === '') {
-		for (const errorElement of checkOutErrorElements) {
-		  errorElement.removeAttribute('hidden');
-		}
-	  } else {
-		for (const errorElement of checkOutErrorElements) {
-		  errorElement.setAttribute('hidden', '');
-		}
-	  }
-	
-	  // Guests validation
-	  if (guestsField.value.trim() === '') {
-		for (const errorElement of guestsErrorElements) {
-		  errorElement.removeAttribute('hidden');
-		}
-	  } else {
-		for (const errorElement of guestsErrorElements) {
-		  errorElement.setAttribute('hidden', '');
-		}
-	  }
-	
-	  // Email validation
-	  if (emailField.value.trim() === '') {
-		for (const errorElement of emailErrorElements) {
-		  errorElement.removeAttribute('hidden');
-		}
-	  } else {
-		for (const errorElement of emailErrorElements) {
-		  errorElement.setAttribute('hidden', '');
-		}
-	  }
-	
-	  // Guests number validation
-	  const guestNumber = parseInt(guestsField.value.trim(), 10);
-	  if (isNaN(guestNumber) || guestNumber < 1 || guestNumber > 3) {
-		for (const errorElement of invalidGuestsErrorElements) {
-		  errorElement.removeAttribute('hidden');
-		}
-	  } else {
-		for (const errorElement of invalidGuestsErrorElements) {
-		  errorElement.setAttribute('hidden', '');
-		}
-	  }
-	
-	  // You might want to prevent form submission here if there are errors
-	  // if (!areRequiredFieldsFilled() || isNaN(guestNumber) || guestNumber < 1 || guestNumber > 3) {
-	  //   event.preventDefault();
-	  // }
-	});
+const checkInField = document.getElementById('form-availability-from');
+const checkOutField = document.getElementById('form-availability-to');
+const guestsField = document.getElementById('form-availability-guests');
+const emailField = document.getElementById('form-availability-email');
+const submitButton = document.getElementById('form-availability-submit');
+const checkInErrorElements = document.querySelectorAll('#check-in-error');
+const checkOutErrorElements = document.querySelectorAll('#check-out-error');
+const guestsErrorElements = document.querySelectorAll('#dog-number-error');
+const emailErrorElements = document.querySelectorAll('#e-mail-error');
+const invalidGuestsErrorElements = document.querySelectorAll('#dog-invalid-number-error');
+const invalidEmailErrorElements = document.querySelectorAll('#e-mail-invalid-error');
 
+// Function to check if all required fields are filled
+function areRequiredFieldsFilled() {
+  return (
+    checkInField.value.trim() !== '' &&
+    checkOutField.value.trim() !== '' &&
+    guestsField.value.trim() !== '' &&
+    emailField.value.trim() !== ''
+  );
+}
+
+// Function to check if guest number is valid
+function isGuestNumberValid() {
+  const guestNumber = parseInt(guestsField.value.trim(), 10);
+  return !isNaN(guestNumber) && [1, 2, 3].includes(guestNumber);
+}
+
+// Function to check if email is valid
+function isEmailValid() {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value.trim());
+}
+
+// Function to check if form is valid
+function isFormValid() {
+  return areRequiredFieldsFilled() && isGuestNumberValid() && isEmailValid();
+}
+
+// Initial button state
+submitButton.disabled = !isFormValid();
+
+// Event listener for input changes
+form.addEventListener('input', function() {
+  submitButton.disabled = !isFormValid();
+
+  // Guests number validation
+  if (!isGuestNumberValid()) {
+    for (const errorElement of invalidGuestsErrorElements) {
+      errorElement.removeAttribute('hidden');
+    }
+  } else {
+    for (const errorElement of invalidGuestsErrorElements) {
+      errorElement.setAttribute('hidden', '');
+    }
+  }
+
+  // Email validation
+  if (!isEmailValid()) {
+    for (const errorElement of invalidEmailErrorElements) {
+      errorElement.removeAttribute('hidden');
+    }
+  } else {
+    for (const errorElement of invalidEmailErrorElements) {
+      errorElement.setAttribute('hidden', '');
+    }
+  }
+});
+
+// Event listener for form submission
+form.addEventListener('submit', function(event) {
+  // Check-in validation
+  if (checkInField.value.trim() === '') {
+    for (const errorElement of checkInErrorElements) {
+      errorElement.removeAttribute('hidden');
+    }
+  } else {
+    for (const errorElement of checkInErrorElements) {
+      errorElement.setAttribute('hidden', '');
+    }
+  }
+
+  // Check-out validation
+  if (checkOutField.value.trim() === '') {
+    for (const errorElement of checkOutErrorElements) {
+      errorElement.removeAttribute('hidden');
+    }
+  } else {
+    for (const errorElement of checkOutErrorElements) {
+      errorElement.setAttribute('hidden', '');
+    }
+  }
+
+  // Guests validation
+  if (guestsField.value.trim() === '') {
+    for (const errorElement of guestsErrorElements) {
+      errorElement.removeAttribute('hidden');
+    }
+  } else {
+    for (const errorElement of guestsErrorElements) {
+      errorElement.setAttribute('hidden', '');
+    }
+  }
+
+  // Email validation
+  if (emailField.value.trim() === '') {
+    for (const errorElement of emailErrorElements) {
+      errorElement.removeAttribute('hidden');
+    }
+  } else {
+    for (const errorElement of emailErrorElements) {
+      errorElement.setAttribute('hidden', '');
+    }
+  }
+
+
+  // You might want to prevent form submission here if there are errors
+  // if (!isFormValid()) {
+  //   event.preventDefault();
+  // }
+});
 
 	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
 	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
