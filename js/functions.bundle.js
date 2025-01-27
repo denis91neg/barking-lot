@@ -1101,22 +1101,39 @@ if( typeof jQuery !== 'undefined' ) {
 
 	// Add your Custom JS Codes here
 	const form = document.getElementById('form-availability');
-const checkInField = document.getElementById('form-availability-from');
-const checkInErrorElements = document.querySelectorAll('#check-in-error');
-
-form.addEventListener('submit', function(event) {
-  if (checkInField.value.trim() === '') {
-    for (const errorElement of checkInErrorElements) {
-      errorElement.removeAttribute('hidden');
-    }
-    // You might want to prevent form submission here if there are errors
-    // event.preventDefault(); 
-  } else {
-    for (const errorElement of checkInErrorElements) {
-      errorElement.setAttribute('hidden', ''); 
-    }
-  }
-});
+	const checkInField = document.getElementById('form-availability-from');
+	const checkOutField = document.getElementById('form-availability-to');
+	const checkInErrorElements = document.querySelectorAll('#check-in-error');
+	const checkOutErrorElements = document.querySelectorAll('#check-out-error');
+	
+	form.addEventListener('submit', function(event) {
+	  // Check-in validation
+	  if (checkInField.value.trim() === '') {
+		for (const errorElement of checkInErrorElements) {
+		  errorElement.removeAttribute('hidden');
+		}
+	  } else {
+		for (const errorElement of checkInErrorElements) {
+		  errorElement.setAttribute('hidden', '');
+		}
+	  }
+	
+	  // Check-out validation
+	  if (checkOutField.value.trim() === '') {
+		for (const errorElement of checkOutErrorElements) {
+		  errorElement.removeAttribute('hidden');
+		}
+	  } else {
+		for (const errorElement of checkOutErrorElements) {
+		  errorElement.setAttribute('hidden', '');
+		}
+	  }
+	
+	  // You might want to prevent form submission here if there are errors
+	  // if (checkInField.value.trim() === '' || checkOutField.value.trim() === '') {
+	  //   event.preventDefault();
+	  // }
+	});
 
 	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
 	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
