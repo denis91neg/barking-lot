@@ -48,3 +48,20 @@ if (form) {
 
 checkFields();
 
+const newMessageButton = document.getElementById('new message');
+const formSubmitDiv = document.getElementById('form-submit');
+const formSubmitedDiv = document.getElementById('form-submited');
+
+if (newMessageButton && formSubmitDiv && formSubmitedDiv) {
+  newMessageButton.addEventListener('click', () => {
+    formSubmitedDiv.hidden = true;
+    formSubmitDiv.hidden = false;
+  });
+
+  // Add CSS transitions for smooth transition
+  const styles = {
+    transition: 'opacity 0.3s ease-in-out',
+  };
+  await setElementStyles(formSubmitDiv, styles);
+  await setElementStyles(formSubmitedDiv, styles);
+}
