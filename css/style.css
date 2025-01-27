@@ -34250,7 +34250,7 @@ color: rgba(220, 53, 69, 1)!important;
 }
 @media (min-width: 992px){
   .brdr-top{
-    border-top: solid;
+    border-top: solid 1px !important;
   }
 }
 .button:disabled{
