@@ -3,6 +3,7 @@ const emailInput = document.getElementById('template-contactform-email');
 const subjectInput = document.getElementById('template-contactform-subject');
 const messageTextarea = document.getElementById('template-contactform-message');
 const submitButton = document.getElementById('template-contactform-submit');
+const emailErrorDiv = document.getElementById('e-mail-invalid-error');
 
 function checkFields() {
   const isNameEmpty = nameInput.value.trim() === '';
@@ -11,6 +12,12 @@ function checkFields() {
   const isMessageEmpty = messageTextarea.value.trim() === '';
 
   submitButton.disabled = isNameEmpty || isEmailEmpty || isSubjectEmpty || isMessageEmpty;
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isValidEmail = emailRegex.test(emailInput.value);
+
+  // Show error if email is invalid and not empty
+  emailErrorDiv.hidden = isValidEmail || emailInput.value === ''; 
 }
 
 nameInput.addEventListener('input', checkFields);
