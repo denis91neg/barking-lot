@@ -34256,4 +34256,7 @@ color: rgba(220, 53, 69, 1)!important;
 .button:disabled{
   cursor: not-allowed !important;
 }
+.wdth-80{
+  width: 80%;
+}
 /*# sourceMappingURL=style.css.map */
