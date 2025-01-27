@@ -1220,50 +1220,7 @@ if( typeof jQuery !== 'undefined' ) {
 	  // }
 	});
 
-	jQuery(function() {
-		// Function to check if a date is before today
-		function isDateBeforeToday(date) {
-		  const today = new Date();
-		  today.setHours(0, 0, 0, 0); // Set time to midnight for comparison
-		  return date < today;
-		}
-	  
-		// Function to check if a date is before or equal to the check-in date
-		function isDateBeforeOrEqualToCheckIn(date) {
-		  const checkInDate = jQuery('#form-availability-from').datepicker('getDate');
-		  if (checkInDate) {
-			checkInDate.setHours(0, 0, 0, 0); // Set time to midnight for comparison
-			return date <= checkInDate;
-		  }
-		  return false; // If check-in date is not selected, no dates are invalid
-		}
-	  
-		// Initialize datepicker for #form-availability-from
-		jQuery('#form-availability-from').datepicker({
-		  autoclose: true,
-		  startDate: "today",
-		  beforeShowDay: function(date) {
-			if (isDateBeforeToday(date)) {
-			  return [false, 'invalid-date'];
-			} else {
-			  return [true, ''];
-			}
-		  }
-		});
-	  
-		// Initialize datepicker for #form-availability-to
-		jQuery('#form-availability-to').datepicker({
-		  autoclose: true,
-		  startDate: "today",
-		  beforeShowDay: function(date) {
-			if (isDateBeforeOrEqualToCheckIn(date)) {
-			  return [false, 'invalid-date'];
-			} else {
-			  return [true, ''];
-			}
-		  }
-		});
-	  });
+	
 
 	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
 	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
