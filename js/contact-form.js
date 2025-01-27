@@ -39,7 +39,7 @@ subjectInput.addEventListener('input', checkFields);
 messageTextarea.addEventListener('input', checkFields);
 
 // Attach submit event listener to the form, not the submit button
-const form = document.getElementById('template-contactform');
+const form = document.getElementById('contactform');
 if (form) {
   form.addEventListener('submit', handleSubmit);
 } else {
@@ -47,3 +47,4 @@ if (form) {
 }
 
 checkFields();
+
