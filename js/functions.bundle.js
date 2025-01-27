@@ -1255,7 +1255,7 @@ if( typeof jQuery !== 'undefined' ) {
 	
 		  // Reset submit button state
 		  submitButton.disabled = true;
-		}, 2000); // Adjust the delay (in milliseconds) as needed
+		}, 3500); // Adjust the delay (in milliseconds) as needed
 	  }
 	});
 
