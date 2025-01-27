@@ -34212,4 +34212,30 @@ font-size: 1.4rem !important;
 .bg-img-none{
 background-image: none !important;
 }
+
+.notification{
+display: table;
+font-family: inherit;
+font-size: 0.8rem;
+transition: height 0.2s;
+width: 100%;
+color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+}
+.notificarion-error{
+  background: #ffeded;
+  border-color: #f7cbcb;
+}
+.notification-inline{
+  border-radius: 10px;
+  line-height: 14px;
+  margin-top: 0.3rem;
+  padding: 0.3rem;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+
+}
+.notification-inline.notification-error{
+  color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+}
 /*# sourceMappingURL=style.css.map */
