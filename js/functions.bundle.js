@@ -1100,6 +1100,23 @@ if( typeof jQuery !== 'undefined' ) {
 	}();
 
 	// Add your Custom JS Codes here
+	const form = document.getElementById('form-availability');
+const checkInField = document.getElementById('form-availability-from');
+const checkInErrorElements = document.querySelectorAll('#check-in-error');
+
+form.addEventListener('submit', function(event) {
+  if (checkInField.value.trim() === '') {
+    for (const errorElement of checkInErrorElements) {
+      errorElement.removeAttribute('hidden');
+    }
+    // You might want to prevent form submission here if there are errors
+    // event.preventDefault(); 
+  } else {
+    for (const errorElement of checkInErrorElements) {
+      errorElement.setAttribute('hidden', ''); 
+    }
+  }
+});
 
 	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
 	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
