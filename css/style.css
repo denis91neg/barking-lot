@@ -34078,7 +34078,7 @@ font-size: 1.4rem !important;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   align-self: center;
 }
 .outline-button{
