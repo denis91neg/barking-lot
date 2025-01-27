@@ -6,7 +6,8 @@ const submitButton = document.getElementById('template-contactform-submit');
 const emailErrorDiv = document.getElementById('e-mail-invalid-error');
 const formSubmitedDiv = document.getElementById('form-submited');
 const formSubmitDiv = document.getElementById('form-submit');
-const newMessageButton = document.getElementById('new-message'); // Get the "New Message" button
+const newMessageButton = document.getElementById('new-message');
+const formResultDiv = document.querySelector('.form-result'); // Get the .form-result div
 
 // Ensure formSubmitedDiv is initially hidden and formSubmitDiv is initially visible
 formSubmitedDiv.hidden = true;
@@ -37,6 +38,7 @@ function handleSubmit(event) {
 newMessageButton.addEventListener('click', () => {
   formSubmitedDiv.hidden = true;
   formSubmitDiv.hidden = false;
+  formResultDiv.style.display = 'block'; // Remove display: none from .form-result
 });
 
 nameInput.addEventListener('input', checkFields);
