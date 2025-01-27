@@ -1,111 +1,157 @@
-	const button = document.querySelector('#radix-\\:R1rqfafnkq\\:');
-	const targetDiv = document.querySelector('#radix-\\:R9rqfafnkq\\:');
-	const parentDiv = document.querySelector('.mf');
-	const title = document.querySelector('.fm-title');
+const form = document.getElementById('form-availability');
+	const checkInField = document.getElementById('form-availability-from');
+	const checkOutField = document.getElementById('form-availability-to');
+	const guestsField = document.getElementById('form-availability-guests');
+	const emailField = document.getElementById('form-availability-email');
+	const submitButton = document.getElementById('form-availability-submit');
+	const checkInErrorElements = document.querySelectorAll('#check-in-error');
+	const checkOutErrorElements = document.querySelectorAll('#check-out-error');
+	const guestsErrorElements = document.querySelectorAll('#dog-number-error');
+	const emailErrorElements = document.querySelectorAll('#e-mail-error');
+	const invalidGuestsErrorElements = document.querySelectorAll('#dog-invalid-number-error');
+	const invalidEmailErrorElements = document.querySelectorAll('#e-mail-invalid-error');
+	const confirmReservationDiv = document.getElementById('form-confirm-reservation');
+	const formLoader = document.querySelector('.form-availability-loader'); // Get the form loader element
 	
-	if (!button || !targetDiv || !parentDiv || !title) {
-	  console.error('One or more elements not found');
-	} else {
-	  let isOpen = false;
-	  button.addEventListener('click', () => {
-		isOpen = !isOpen;
-		if (isOpen) {
-		  parentDiv.setAttribute('data-state', 'open');
-		  title.setAttribute('data-state', 'open');
-		  button.setAttribute('data-state', 'open');
-		  button.setAttribute('aria-expanded', 'true');
-		  targetDiv.removeAttribute('hidden');
-		} else {
-		  parentDiv.setAttribute('data-state', 'closed');
-		  title.setAttribute('data-state', 'closed');
-		  button.setAttribute('data-state', 'closed');
-		  button.setAttribute('aria-expanded', 'false');
-		  targetDiv.setAttribute('hidden', 'true');
-		}
-	  });
-	}
-
-	const newButton = document.querySelector('#radix-\\:R2rqfafnkq\\:');
-	const newTargetDiv = document.querySelector('#radix-\\:Rarqfafnkq\\:');
-	const newParentDiv = document.querySelector('.mf');
-	const newTitle = document.querySelector('.fm-title');
-	
-	if (!newButton || !newTargetDiv || !newParentDiv || !newTitle) {
-	  console.error('One or more elements not found');
-	} else {
-	  let isNewOpen = false;
-	  newButton.addEventListener('click', () => {
-		isNewOpen = !isNewOpen;
-		if (isNewOpen) {
-		  newParentDiv.setAttribute('data-state', 'open');
-		  newTitle.setAttribute('data-state', 'open');
-		  newButton.setAttribute('data-state', 'open');
-		  newButton.setAttribute('aria-expanded', 'true');
-		  newTargetDiv.removeAttribute('hidden');
-		} else {
-		  newParentDiv.setAttribute('data-state', 'closed');
-		  newTitle.setAttribute('data-state', 'closed');
-		  newButton.setAttribute('data-state', 'closed');
-		  newButton.setAttribute('aria-expanded', 'false');
-		  newTargetDiv.setAttribute('hidden', 'true');
-		}
-	  });
+	// Function to check if all required fields are filled
+	function areRequiredFieldsFilled() {
+	  return (
+		checkInField.value.trim() !== '' &&
+		checkOutField.value.trim() !== '' &&
+		guestsField.value.trim() !== '' &&
+		emailField.value.trim() !== ''
+	  );
 	}
 	
-	function setupToggle() {
-		const heightbutton = document.querySelector('#radix-\\3A R1rqfafnkq\\3A');
-		const heightfooterContent = document.querySelector('.footer-content');
-		const heighttargetDiv = document.querySelector('#radix-\\3A R9rqfafnkq\\3A');
-	  
-		if (!heightbutton || !heightfooterContent || !heighttargetDiv) {
-		  console.error('One or more elements not found');
-		  return;
+	// Function to check if guest number is valid
+	function isGuestNumberValid() {
+	  const guestNumber = parseInt(guestsField.value.trim(), 10);
+	  return !isNaN(guestNumber) && [1, 2, 3].includes(guestNumber);
+	}
+	
+	// Function to check if email is valid
+	function isEmailValid() {
+	  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailField.value.trim());
+	}
+	
+	// Function to check if form is valid
+	function isFormValid() {
+	  return areRequiredFieldsFilled() && isGuestNumberValid() && isEmailValid();
+	}
+	
+	// Initial button state
+	submitButton.disabled = !isFormValid();
+	
+	// Event listener for input changes
+	form.addEventListener('input', function() {
+	  submitButton.disabled = !isFormValid();
+	
+	  // Guests number validation
+	  for (const errorElement of invalidGuestsErrorElements) {
+		if (!isGuestNumberValid() && guestsField.value.trim() !== '') {
+		  errorElement.removeAttribute('hidden');
+		} else {
+		  errorElement.setAttribute('hidden', '');
 		}
-	  
-		let isOpen = false;
-		button.addEventListener('click', () => {
-		  isOpen = !isOpen;
-		  const accordionContentHeight = window.getComputedStyle(heighttargetDiv).getPropertyValue('--radix-accordion-content-height');
-		  footerContent.style.setProperty('--radix-accordion-content-height', isOpen ? accordionContentHeight : '0px'); 
-		  footerContent.style.transition = 'all 0.3s ease-in-out';
-		  if (isOpen) {
-			footerContent.classList.add('open');
-			requestAnimationFrame(() => {
-				footerContent.style.setProperty('--radix-accordion-content-height', accordionContentHeight);
-			  });
-		  } else {
-			footerContent.classList.remove('open');
-		  }
-		});
 	  }
-	  
-	  setupToggle();
-
-	  function setupToggle() {
-		const heightnewbutton = document.querySelector('#radix-\\:R2rqfafnkq\\:');
-		const heightnewfooterContent = document.querySelector('.footer-content');
-		const heightnewtargetDiv = document.querySelector('#radix-\\:Rarqfafnkq\\:');
-	  
-		if (!heightnewbutton || !heightnewfooterContent || !heightnewtargetDiv) {
-		  console.error('One or more elements not found');
-		  return;
+	
+	  // Email validation
+	  for (const errorElement of invalidEmailErrorElements) {
+		if (!isEmailValid() && emailField.value.trim() !== '') {
+		  errorElement.removeAttribute('hidden');
+		} else {
+		  errorElement.setAttribute('hidden', '');
 		}
-	  
-		let isOpen = false;
-		button.addEventListener('click', () => {
-		  isOpen = !isOpen;
-		  const accordionnewContentHeight = window.getComputedStyle(heightnewtargetDiv).getPropertyValue('--radix-accordion-content-height');
-		  footerContent.style.transition = 'all 0.3s ease-in-out';
-		  if (isOpen) {
-			footerContent.classList.add('open');
-			requestAnimationFrame(() => {
-				footerContent.style.setProperty('--radix-accordion-content-height', accordionnewContentHeight);
-			  });
-		  } else {
-			footerContent.classList.remove('open');
-		  }
-		});
 	  }
-	  
-	  setupToggle();
-
+	});
+	
+	// Event listener for form submission
+	form.addEventListener('submit', function(event) {
+	  // Prevent default form submission
+	  event.preventDefault();
+	
+	  // Check-in validation
+	  if (checkInField.value.trim() === '') {
+		for (const errorElement of checkInErrorElements) {
+		  errorElement.removeAttribute('hidden');
+		}
+	  } else {
+		for (const errorElement of checkInErrorElements) {
+		  errorElement.setAttribute('hidden', '');
+		}
+	  }
+	
+	  // Check-out validation
+	  if (checkOutField.value.trim() === '') {
+		for (const errorElement of checkOutErrorElements) {
+		  errorElement.removeAttribute('hidden');
+		}
+	  } else {
+		for (const errorElement of checkOutErrorElements) {
+		  errorElement.setAttribute('hidden', '');
+		}
+	  }
+	
+	  // Guests validation
+	  if (guestsField.value.trim() === '') {
+		for (const errorElement of guestsErrorElements) {
+		  errorElement.removeAttribute('hidden');
+		}
+	  } else {
+		for (const errorElement of guestsErrorElements) {
+		  errorElement.setAttribute('hidden', '');
+		}
+	  }
+	
+	  // Email validation
+	  if (emailField.value.trim() === '') {
+		for (const errorElement of emailErrorElements) {
+		  errorElement.removeAttribute('hidden');
+		}
+	  } else {
+		for (const errorElement of emailErrorElements) {
+		  errorElement.setAttribute('hidden', '');
+		}
+	  }
+	
+	  // Show confirmation div if form is valid
+	  if (isFormValid()) {
+		formLoader.style.display = 'block'; // Show the loader
+		confirmReservationDiv.removeAttribute('hidden');
+	
+		// Hide loader and confirmation after a brief delay, reset form
+		setTimeout(function() {
+		  formLoader.style.display = 'none'; // Hide the loader
+		  confirmReservationDiv.setAttribute('hidden', ''); // Hide the confirmation
+	
+		  // Reset form fields
+		  checkInField.value = '';
+		  checkOutField.value = '';
+		  guestsField.value = '';
+		  emailField.value = '';
+	
+		  // Reset error messages (if any)
+		  for (const errorElement of checkInErrorElements) {
+			errorElement.setAttribute('hidden', '');
+		  }
+		  for (const errorElement of checkOutErrorElements) {
+			errorElement.setAttribute('hidden', '');
+		  }
+		  for (const errorElement of guestsErrorElements) {
+			errorElement.setAttribute('hidden', '');
+		  }
+		  for (const errorElement of emailErrorElements) {
+			errorElement.setAttribute('hidden', '');
+		  }
+		  for (const errorElement of invalidGuestsErrorElements) {
+			errorElement.setAttribute('hidden', '');
+		  }
+		  for (const errorElement of invalidEmailErrorElements) {
+			errorElement.setAttribute('hidden', '');
+		  }
+	
+		  // Reset submit button state
+		  submitButton.disabled = true;
+		}, 4000); // Adjust the delay (in milliseconds) as needed
+	  }
+	});
