@@ -155,3 +155,5 @@ const form = document.getElementById('form-availability');
 		}, 4000); // Adjust the delay (in milliseconds) as needed
 	  }
 	});
+
+    

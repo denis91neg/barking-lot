@@ -123,46 +123,47 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="bg-light border border-f5 p-5 br-right">
-								<h3 class="mb-2">Изпратете ни мейл</h3>
+								<h3 class="mb-2">Изпратете ни имейл</h3>
 								<p class="lead">Наш представител ще Ви отговори до 48 часа.</p>
 
 								<div class="form-widget">
 
 									<div class="form-result"></div>
 
-									<form class="mb-0" id="template-contactform" name="template-contactform" action="../php/form.php" method="post">
+									<form class="mb-0" id="contactform" name="template-contactform" action="../php/form.php" method="post">
 
-										<div class="form-process">
-											<div class="css3-spinner">
-												<div class="css3-spinner-scaler"></div>
+										<div class="form-result">
+											<div class="form-availability-loader css3-spinner" style="position: relative">
+												<div class="css3-spinner-double-bounce1"></div>
+												<div class="css3-spinner-double-bounce2"></div>
 											</div>
-										</div>
 
 										<div class="row">
 											<div class="col-md-6 form-group">
-												<label for="template-contactform-name">Име <small>*</small></label>
+												<label for="template-contactform-name">Име <small class="text-danger">*</small></label>
 												<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control required">
 											</div>
 
 											<div class="col-md-6 form-group">
-												<label for="template-contactform-email">Имейл <small>*</small></label>
+												<label for="template-contactform-email">Имейл <small class="text-danger">*</small></label>
 												<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email form-control">
+												<div id="e-mail-invalid-error" class="notification notification-error notification-inline" hidden>Невалиден имейл адрес</div>
 											</div>
 
 											<div class="col-md-6 form-group">
-												<label for="template-contactform-phone">Тел.</label>
+												<label for="template-contactform-phone">Телефонен номер</label>
 												<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="form-control">
 											</div>
 
 											<div class="col-md-6 form-group">
-												<label for="template-contactform-subject">Тема <small>*</small></label>
+												<label for="template-contactform-subject">Тема <small class="text-danger">*</small></label>
 												<input type="text" id="template-contactform-subject" name="subject" value="" class="required form-control">
 											</div>
 
 											<div class="w-100"></div>
 
 											<div class="col-12 form-group">
-												<label for="template-contactform-message">Съобщение <small>*</small></label>
+												<label for="template-contactform-message">Съобщение <small class="text-danger">*</small></label>
 												<textarea class="required form-control" id="template-contactform-message" name="template-contactform-message" rows="7" cols="30"></textarea>
 											</div>
 
