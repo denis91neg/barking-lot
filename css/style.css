@@ -34242,4 +34242,10 @@ color: rgba(220, 53, 69, 1)!important;
   background: #d4edda;
   color: rgba(25, 135, 55, 1) !important;
 }
+.border-lapis{
+  border-color: #335D99 !important
+}
+.brdr-top{
+  border-top: none !important;
+}
 /*# sourceMappingURL=style.css.map */
